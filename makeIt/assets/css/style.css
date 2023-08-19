@@ -10,10 +10,6 @@ body {
     background-image: url('../img/mainBg.jpg');
 }
 
-main {
-    background-color: rgba(0, 0, 0, 0.445);
-}
-
 header {
     text-align: center;
     box-shadow: 2px 0px 70px black;
@@ -25,11 +21,11 @@ header > nav > h1 {
     color: white;
     font-size: 36px;
     font-family: cursive;
-    filter: drop-shadow(2px 2px goldenrod);
     
 }
 header i {
     border-left: 2px solid white;
+    border-bottom: 2px solid white;
     animation: bounce 2.2s;
 }
 header > nav > h1 > span {
@@ -56,51 +52,28 @@ header > nav > ul > li {
     margin: 10px;
     border: 1px solid goldenrod;
 }
-.etapas {
-    background-color: white;
-}
-.container, section {
-    margin: 30px 10px;
-    display: flex;
-    justify-content: space-between;
-}
 
-.container > section > article {
-    border: 1px solid goldenrod;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: x-large;
+.present {
+    background-color: rgba(0, 0, 0, 0.301);
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
 }
-
-.container > section > article > h2 {
-    padding: 10px;
-    color: white;
-    background-color: coral;
-    max-height: 150px;
-}
-
-.container > section> article > p {
-
+.formatCard {
+    border: 2px solid white;
+    padding: 30px;
+    margin: 10px;
     background-color: white;
     color: black;
-    border: 1px solid goldenrod;
-    font-weight: 300;
-    margin: 10px;
-
+    filter: drop-shadow(2px 2px goldenrod);
 }
-
-.mainCard {
-    padding: 100px;
-    width: 100%;
-}
-
-
-
-
 footer {
     position: fixed;
     width: 100%;
     text-align: center;
-    background-color: coral;
+    background-color: #fbac7e33;
+    background-image: linear-gradient(62deg, #fbac7ee0 0%, #f7cf68e5 100%);
+
     bottom: 0;
 }
