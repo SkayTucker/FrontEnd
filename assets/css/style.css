@@ -1,0 +1,50 @@
+
+header{
+    margin-bottom: 5px;
+}
+
+header nav {
+    padding: 10px;
+    box-shadow: 1px 0 0.1rem black;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 5px;
+}
+
+header nav ul li a {
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 1p 3px black;
+    margin: 5px;
+}
+
+
+.bg {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/LOREM.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 50%;
+    transition: 1s;
+}
+
+
+
+/* SECTION POS LOGO */
+
+.sub-menu {
+    box-shadow: 1px 0 0.1rem black;
+}
+.content-menu {
+    height: 100%;
+    text-align: center;
+}
+

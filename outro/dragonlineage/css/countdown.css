@@ -1,0 +1,21 @@
+.numbers {
+    width: 100px;
+    text-align: center;
+	font-family:"Arial";
+    font-size: 55px;
+    font-style: normal;
+	color: #fec32a;
+}
+.title {
+	width: 140px;
+	text-align: center;
+	font-family: "Arial";
+	font-size: 25px;
+	color: #FFF;
+}
+#table {
+    width: 400px;
+    height: 68px;
+    border-style: none;
+    background-color: transparent;
+}

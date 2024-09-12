@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Atividades</a></li>
+                <li><div class="logo"><img src="./assets/img/logo.png" alt="" srcset=""></div></li>
+                <!-- Menu Acessibilidade -->
+                <li class="acessibility">
+                    <ul>
+                        <li class="zoomInBtn" onclick="zoomIn()"></li>
+                        <li class="zoomOutBtn" onclick="zoomOut()"></li>
+                        <li id="DarkBtn" onclick="darkMode()"></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="bg"></div>
+    <main>
+        <section class="sub-menu">
+            <ul style="display: flex; justify-content: space-around;">
+                <li><a href="#">Ver Projetos</a></li>
+                <li><a href="#">Ver Atividades</a></li>
+                <li><a href="#">Ver Calendário</a></li>
+            </ul>
+        </section>
+        <section class="content-menu">
+            <span>
+                <h4>Organizador</h4>                
+                <h5>gerencie tudo!</h5>
+            </span>
+        </section>
+    </main>
+
+    <footer>
+        DragonDev Desenvolvimento Web
+    </footer>
+
+<script src="assets/js/Acessibilidade.js"></script>
+</body>
+</html>

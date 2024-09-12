@@ -1,0 +1,113 @@
+* {   margin: 0;    padding: 0; }
+body {
+    height: 100vh; /*responsividade*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+
+}
+
+/*Menu Acessibilidade*/
+.acessibility {
+    box-shadow: 0 2px 1px black;
+    min-width: 32px;
+    background-color: white;
+}
+.acessibility ul {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.acessibility ul li {
+    padding: 5px;
+}
+.acessibility ul li:hover {
+    cursor: pointer;
+    background-color: gold;
+    transform: scale(1.2);
+    border-radius: 90%;
+}
+
+/*Dark Mode*/
+.dark-mode {
+    background-color: black;
+    color: gold;
+}
+
+.dark-mode a {
+    text-decoration: none;
+    color: gold;
+}
+
+.dark-mode header {
+    border-bottom: 0.1rem solid white;
+}
+.dark-mode section {
+    border-top: 0.1rem solid white;
+}
+
+/* Imagens */
+.zoomInBtn {
+    background-image: url('../img/zoom-in.svg'); /* Imagem para o modo claro */
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    width: 22px; /* Largura do botão */
+    height: 22px; /* Altura do botão */
+    border: none;
+}
+
+.zoomOutBtn {
+    background-image: url('../img/zoom-out.svg'); /* Imagem para o modo claro */
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    width: 22px; /* Largura do botão */
+    height: 22px; /* Altura do botão */
+    border: none;
+}
+
+.light-mode-btn {
+    background-image: url('../img/sun.svg'); /* Imagem para o modo claro */
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    width: 20px; /* Largura do botão */
+    height: 20px; /* Altura do botão */
+    border: none;
+}
+
+.dark-mode-btn {
+    background-image: url('../img/moon.svg'); /* Imagem para o modo escuro */
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    padding: 10px;
+}
+
+
+footer {
+    opacity: 20%;
+    padding: 5px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(228, 213, 75, 0.593);
+    text-align: center;   
+    color: black;
+}
+
+footer:hover {
+    transition: 1s;
+    opacity: 100%;
+    cursor: not-allowed;
+
+}
