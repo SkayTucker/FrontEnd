@@ -1,113 +1,205 @@
-* {   margin: 0;    padding: 0; }
-body {
-    height: 100vh; /*responsividade*/
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+* {  
+    margin: 0;  
+    padding: 0; 
+    font-family: 'Roboto', 'system-ui';
 }
 
-/*Menu Acessibilidade*/
-.acessibility {
-    box-shadow: 0 2px 1px black;
-    min-width: 32px;
-    background-color: white;
+body {  
+    height: 100vh;  
+    background-color: rgb(223, 223, 223);
 }
-.acessibility ul {
+
+/* CORES */
+:root {
+    --corPrimaria: #fff;
+    --corSecundaria: #000;
+    --corPadrao: #ffe100;
+    --gradient: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(3,2,0,0.6090604026845637) 66%, rgba(23,17,1,1) 100%);
+}
+
+.gradient-primario {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(3,2,0,0.6090604026845637) 66%, rgba(23,17,1,1) 100%);
+}
+.gradient-dourado {
+    background: rgb(252,205,34);
+    background: radial-gradient(circle, rgba(252,205,34,1) 0%, rgba(204, 152, 10, 0.744) 66%, rgba(204, 152, 10, 0.758) 100%);
+}
+
+/* LOGO HEADER */
+.logo img{
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+/* HEADER HOMEPAGE */
+header{
+    position: relative;
+    box-shadow: 2px 0 50px black; 
+    padding: 2px 0;
+}
+header nav {
+    margin: 1px;
     display: flex;
-    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.acessibility ul li {
-    padding: 5px;
+header nav ul {
+    display: flex;
+    list-style: none;
 }
-.acessibility ul li:hover {
-    cursor: pointer;
-    background-color: gold;
-    transform: scale(1.2);
-    border-radius: 90%;
-}
-
-/*Dark Mode*/
-.dark-mode {
-    background-color: black;
-    color: gold;
-}
-
-.dark-mode a {
-    text-decoration: none;
-    color: gold;
-}
-
-.dark-mode header {
-    border-bottom: 0.1rem solid white;
-}
-.dark-mode section {
-    border-top: 0.1rem solid white;
-}
-
-/* Imagens */
-.zoomInBtn {
-    background-image: url('../img/zoom-in.svg'); /* Imagem para o modo claro */
-    background-size: cover; /* Ajusta o tamanho da imagem */
-    width: 22px; /* Largura do botão */
-    height: 22px; /* Altura do botão */
-    border: none;
-}
-
-.zoomOutBtn {
-    background-image: url('../img/zoom-out.svg'); /* Imagem para o modo claro */
-    background-size: cover; /* Ajusta o tamanho da imagem */
-    width: 22px; /* Largura do botão */
-    height: 22px; /* Altura do botão */
-    border: none;
-}
-
-.light-mode-btn {
-    background-image: url('../img/sun.svg'); /* Imagem para o modo claro */
-    background-size: cover; /* Ajusta o tamanho da imagem */
-    width: 20px; /* Largura do botão */
-    height: 20px; /* Altura do botão */
-    border: none;
-}
-
-.dark-mode-btn {
-    background-image: url('../img/moon.svg'); /* Imagem para o modo escuro */
-    background-size: cover;
-    width: 20px;
-    height: 20px;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-section {
+header nav ul li {
     padding: 10px;
+    margin: 5px;
+    width: 100%;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: var(--corSecundaria);
+    font-weight: 400;
+    padding-bottom: 5px;
+    text-shadow: 0 1px 0.5rem white;
+}
+header nav ul li a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    filter: brightness(100%);
 }
 
 
+
+/* SECTIONS */
+section {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    border: thick double goldenrod;
+    border-radius: 500px 500px 9px 9px / 75%;
+    box-shadow: 1px 1px 5px black;
+}
+
+section li {
+    list-style: none;
+    padding: 10px;
+    border: 2px solid #ffffff00;
+}
+
+section a {
+    text-decoration: none;
+    color: goldenrod;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 1px 0 1px white;
+
+}
+
+section li:hover{
+    border-left: 2px solid goldenrod;
+    border-right: 2px solid goldenrod;
+    border-radius: 300px 300px 300px 300px / 99%;
+    transition: 0.3s;
+}
+/* FOOTER */
 footer {
-    opacity: 20%;
+    opacity: 50%;
     padding: 5px 0;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(228, 213, 75, 0.593);
     text-align: center;   
     color: black;
 }
 
 footer:hover {
     transition: 1s;
-    opacity: 100%;
+    opacity: 80%;
     cursor: not-allowed;
+}
 
+/* RESPONSIVIDADE */
+
+/* Tela pequena (smartphones) - até 600px */
+@media (max-width: 600px) {
+    /* Diminui o tamanho da logo */
+    .logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* Ajusta o espaçamento do header */
+    header nav ul li {
+        padding: 5px;
+        margin: 2px;
+    }
+
+    /* Footer ocupa menos espaço */
+    footer {
+        padding: 3px 0;
+        font-size: 12px;
+    }
+}
+
+/* Tela média (tablets) - de 601px até 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Aumenta o tamanho da logo */
+    .logo img {
+        width: 56px;
+        height: 56px;
+    }
+
+    /* Ajusta o espaçamento do menu */
+    header nav ul li {
+        padding: 8px;
+        margin: 4px;
+    }
+
+    /* Section com mais espaço */
+    section {
+        padding: 20px;
+    }
+
+    /* Footer um pouco maior */
+    footer {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+}
+
+/* Tela grande (desktops) - acima de 1024px */
+@media (min-width: 1025px) {
+    /* Mantém o tamanho maior da logo */
+    .logo img {
+        width: 64px;
+        height: 64px;
+    }
+
+    /* Aumenta o padding do header */
+    header nav ul li {
+        padding: 12px;
+        margin: 6px;
+    }
+
+    /* Aumenta o espaçamento das sections */
+    section {
+        padding: 30px;
+    }
+
+    /* Footer com mais espaçamento */
+    footer {
+        padding: 15px 0;
+        font-size: 16px;
+    }
 }

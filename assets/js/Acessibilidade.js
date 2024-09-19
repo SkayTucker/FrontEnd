@@ -14,11 +14,11 @@ function darkMode() {
 
     // Alterna as classes do botão entre 'light-mode-btn' e 'dark-mode-btn'
     if (document.body.classList.contains('dark-mode')) {
-        darkBtn.classList.remove('light-mode-btn');
-        darkBtn.classList.add('dark-mode-btn');
-    } else {
         darkBtn.classList.remove('dark-mode-btn');
         darkBtn.classList.add('light-mode-btn');
+    } else {
+        darkBtn.classList.remove('light-mode-btn');
+        darkBtn.classList.add('dark-mode-btn');
     }
 }
 
@@ -27,9 +27,9 @@ function setDarkModeBtn() {
     const darkBtn = document.getElementById('DarkBtn');
     // Verifica se o modo escuro está ativo ao carregar a página
     if (document.body.classList.contains('dark-mode')) {
-        darkBtn.classList.add('dark-mode-btn');
-    } else {
         darkBtn.classList.add('light-mode-btn');
+    } else {
+        darkBtn.classList.add('dark-mode-btn');
     }
 }
 

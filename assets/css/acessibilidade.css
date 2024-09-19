@@ -1,0 +1,61 @@
+
+
+
+
+ /*** Menu Acessibilidade - Futuramente será um Componente com React JS ***/
+ .acessibility {
+    box-shadow: 0 2px 1px black;
+    min-width: 32px;
+}
+.acessibility ul {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.acessibility ul li {
+    padding: 5px;
+}
+.acessibility ul li:hover {
+    cursor: pointer;
+    background-color: var(--corPadrao);
+    transform: scale(1.2);
+    border-radius: 90%;
+}
+
+/*Dark Mode*/
+.dark-mode { 
+    background-color: rgb(44, 41, 36);
+    }
+.dark-mode:ba
+.dark-mode a,p,h1,h2,h3,h4,h5,h6{   color: var(--corPadrao);    }
+.dark-mode header { border-bottom: 0.1rem solid white;  }
+.dark-mode section {    border-top: 0.1rem solid white; }
+
+/* Imagens */
+.zoomInBtn {
+    background-image: url('../img/zoom-in.svg'); /* Imagem para o modo claro */
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    width: 22px; /* Largura do botão */
+    height: 22px; /* Altura do botão */
+    border: none;
+}
+.zoomOutBtn {
+    background-image: url('../img/zoom-out.svg'); /* Imagem para o modo claro */
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    width: 22px; /* Largura do botão */
+    height: 22px; /* Altura do botão */
+    border: none;
+}
+.light-mode-btn {
+    background-image: url('../img/sun.svg'); /* Imagem para o modo claro */
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    width: 20px; /* Largura do botão */
+    height: 20px; /* Altura do botão */
+    border: none;
+}
+.dark-mode-btn {
+    background-image: url('../img/moon.svg'); /* Imagem para o modo escuro */
+    background-size: cover;
+    width: 20px;
+    height: 20px;    
+}
+ /*  FIM Menu Acessibilidade */

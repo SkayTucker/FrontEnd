@@ -6,48 +6,53 @@
     <title>Home</title>
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
+    <link rel="stylesheet" href="assets/css/acessibilidade.css">
+
 </head>
 <body>
-    <header>
+    <header class="gradient-dourado">
         <nav>
+            <div class="logo"><img src="assets/img/logo.png" alt=""></div>
             <ul>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Atividades</a></li>
-                <li><div class="logo"><img src="./assets/img/logo.png" alt="" srcset=""></div></li>
-                <!-- Menu Acessibilidade -->
-                <li class="acessibility">
-                    <ul>
-                        <li class="zoomInBtn" onclick="zoomIn()"></li>
-                        <li class="zoomOutBtn" onclick="zoomOut()"></li>
-                        <li id="DarkBtn" onclick="darkMode()"></li>
-                    </ul>
-                </li>
-                
+                <li><a href="#">Home</a></li>
+                <li><a href="painel/login.php">Painel</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
+            <!-- Menu Acessibilidade -->
+            <ul>
+                <li class="zoomInBtn" onclick="zoomIn()"></li>
+                <li class="zoomOutBtn" onclick="zoomOut()"></li>
+                <li id="DarkBtn" onclick="darkMode()"></li>
+            </ul>            
         </nav>
     </header>
-    <div class="bg"></div>
+
+
+    <div class="bg"><img class="pulse" src="assets/img/LOREM.png" alt="">
+    
+    </div>
+
     <main>
-        <section class="sub-menu">
-            <ul style="display: flex; justify-content: space-around;">
-                <li><a href="#">Ver Projetos</a></li>
-                <li><a href="#">Ver Atividades</a></li>
-                <li><a href="#">Ver Calendário</a></li>
-            </ul>
+        <section>
+            <!-- Menu -->
+            <ul>
+                <li><a href="#">Sobre Mim</a></li>
+                <li><a href="#">Gameficação</a></li>
+                <li><a href="#">Habilidades</a></li>
+            </ul>   
         </section>
-        <section class="content-menu">
-            <span>
-                <h4>Organizador</h4>                
-                <h5>gerencie tudo!</h5>
-            </span>
-        </section>
+
+
+
     </main>
 
-    <footer>
+    <footer class="gradient-dourado">
         DragonDev Desenvolvimento Web
     </footer>
 
 <script src="assets/js/Acessibilidade.js"></script>
 </body>
 </html>
+
+<link rel="stylesheet" href="assets/css/style.css">
