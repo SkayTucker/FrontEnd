@@ -1,47 +1,35 @@
-.bg {
+.cards {
+    padding: 5px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-.bg img {
-    width: 630px;
-    height: 340px;
-    position: relative;
-    margin: 50px;
-    border-radius: 350px 0 350px 0 / 10%;
-    box-shadow: 1px 2px 50px black;
-    background-color: rgba(32, 28, 1, 0.39);    
+    width: 100%;
+    justify-content: space-evenly;
+    
 }
 
-.pulse {
-    animation: pulse 2s infinite ease-in-out alternate;
-  }
-  @keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
-	100% {
-		transform: scale(1);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
-}
-
-
-
-
-
-
-
-/* SECTION POS LOGO */
-
-.sub-menu {
-    box-shadow: 1px 0 0.1rem black;
-}
-.content-menu {
-    height: 100%;
+.card {
+    margin: 10px 0;
+    padding: 10px;
     text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.171);
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    border-radius: 5%; 
+    border: thick double goldenrod;
+}
+
+.cardHead{
+    display: flex;
+    align-items: center;
+    
+    padding: 5px;
+}
+.cardHead img {
+    margin: 2px;
+}
+.cardMain{
+    background-color: rgb(236, 236, 236);
+    padding: 5px;
+
 }
 

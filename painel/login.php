@@ -13,7 +13,7 @@
         <nav>
             <div class="logo">
                 <a href="../index.html" style="display:flex; flex-direction: column; text-decoration: none; color: black;">
-                    <img src="../assets/img/logo.png" alt="">< Voltar</a></div>
+                    <img src="../assets/img/logo.png" alt=""></a></div>
 
             <h1 style="text-align: center;">Painel do Usuário</h1>
         
@@ -27,10 +27,10 @@
 
    <section style="flex-direction:column;">
 
-    <div class="login">
-        <h1>Painel do Usuário</h1>
+    <div class="login" style="border: 1px solid silver; margin: 50px; padding: 20px;">
+        <h1>Login</h1>
         <!-- Formulário de Login -->
-        <form action="login.php" method="post">
+        <form action="config/logar.php" method="post">
             <label for="user">Usuário (Email)</label>
             <input type="email" name="email" id="user" required>
             <br><br>
@@ -43,10 +43,11 @@
         </form>
     </div>
 
-    <div class="register">
+
+    <div class="register" style="border: 1px solid silver; margin: 50px; padding: 20px;">
         <h1>Cadastro de Usuário</h1>    
         <!-- Formulário de Cadastro -->
-        <form action="cadastrar.php" method="post">
+        <form action="config/cadastrar.php" method="post">
             <label for="nome">Nome</label>
             <input type="text" name="nome" id="nome" required>
             <br><br>

@@ -1,7 +1,7 @@
 <?php 
 
 $hostname = "localhost";
-$banco = "projeto";
+$banco = "dragonpvp";
 $user = "root";
 $senha = "1234";
 
@@ -13,9 +13,5 @@ if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
 }
 
-echo "Conexão bem-sucedida!";
-
-// Fechar a conexão (opcional, mas recomendado ao final das operações)
-$conn->close();
-
+echo "DB OK!\n";
 ?>

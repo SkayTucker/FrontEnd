@@ -1,4 +1,5 @@
 <?php
+session_start(); // Inicia a sessão
 include 'dbconnect.php'; // Inclui o arquivo de conexão
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -6,26 +7,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     
-    /*Verificamos o método de requisição (POST) e
-    obtemos os valores de email e senha do formulário.*/
-
-    // Prepara a consulta SQL
-    $sql = "SELECT * FROM usuarios WHERE email = ? AND senha = ?";
-    
-    //Utilizamos prepare() para evitar SQL Injection e executamos a consulta ao banco de dados.
+    // Prepara a consulta SQL para buscar o usuário pelo email
+    $sql = "SELECT * FROM site_users WHERE email = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $email, $senha);
+    $stmt->bind_param("s", $email);
     $stmt->execute();
     $resultado = $stmt->get_result();
 
-
-
-    // Verifica se a consulta retornou algum resultado
+    // Verifica se o email existe no banco de dados
     if ($resultado->num_rows > 0) {
-        echo "Login bem-sucedido!";
-        // Aqui você pode redirecionar para uma página de painel ou dashboard
+        // Pega o primeiro resultado
+        $usuario = $resultado->fetch_assoc();
+        
+        // Verifica se a senha está correta
+        if (password_verify($senha, $usuario['senha'])) {
+            // Senha correta: Login bem-sucedido
+            
+            // Armazena informações do usuário na sessão
+            $_SESSION['usuario_id'] = $usuario['id'];
+            $_SESSION['usuario_nome'] = $usuario['nome'];
+            
+            // Redireciona o usuário para o dashboard
+            header("Location: ../dashboard.php");
+            exit(); // Garante que o script pare após o redirecionamento
+        } else {
+            // Senha incorreta
+            echo "<script>alert('Usuário ou senha inválidos.'); window.location.href = 'login.php';</script>";
+        }
     } else {
-        echo "Usuário ou senha inválidos.";
+        // Email não encontrado
+        echo "<script>alert('Usuário ou senha inválidos.'); window.location.href = 'login.php';</script>";
     }
 
     // Fecha a conexão
