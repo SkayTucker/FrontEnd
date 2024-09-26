@@ -1,7 +1,7 @@
 <?php 
 
 $hostname = "localhost";
-$banco = "dragonpvp";
+$banco = "dragonhb";
 $user = "root";
 $senha = "1234";
 
@@ -12,6 +12,4 @@ $conn = new mysqli($hostname, $user, $senha, $banco);
 if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
 }
-
-echo "DB OK!\n";
 ?>

@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt_verificar->close();
     } else {
         // Se não conseguir preparar a query de verificação
-        echo "<script>alert('Erro na preparação da consulta de verificação.'); window.location.href = 'cadastro.php';</script>";
+        echo "<script>alert('Erro na preparação da consulta de verificação.'); window.location.href = 'login.php';</script>";
     }
     
     // Fecha a conexão

@@ -31,8 +31,8 @@
         <h1>Login</h1>
         <!-- Formulário de Login -->
         <form action="config/logar.php" method="post">
-            <label for="user">Usuário (Email)</label>
-            <input type="email" name="email" id="user" required>
+            <label for="user">Usuário (Nome)</label>
+            <input type="text" name="nome" id="user" required>
             <br><br>
             
             <label for="pwd">Senha</label>

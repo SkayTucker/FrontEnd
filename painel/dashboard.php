@@ -1,86 +1,76 @@
 <?php
-session_start(); // Inicia a sessão
+// Inicia a sessão
+session_start();
 
 // Verifica se o usuário está logado
 if (!isset($_SESSION['usuario_id'])) {
-    // Se não estiver logado, redireciona para a página de login
     header("Location: login.php");
     exit();
 }
 
-// Conteúdo protegido: aqui fica o código do dashboard
+// Conexão com o banco de dados
+include 'config/dbconnect.php';
+
+// Obtendo informações do usuário
+$usuarioId = $_SESSION['usuario_id'];
+$sql = "SELECT nome, email, criado_em FROM site_users WHERE id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $usuarioId);
+$stmt->execute();
+$resultado = $stmt->get_result();
+
+// Verifica se o usuário foi encontrado
+if ($resultado->num_rows > 0) {
+    $usuario = $resultado->fetch_assoc();
+    $nomeUsuario = $usuario['nome'];
+    $emailUsuario = $usuario['email'];
+    $ultimoAcesso = $usuario['criado_em'];
+} else {
+    header("Location: login.php");
+    exit();
+}
+
+// Fecha a conexão
+$stmt->close();
+$conn->close();
 ?>
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Responsiva</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        main {
-            width: 100vw;
-            height: 100vh;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        ul {
-            display: flex;
-            justify-content: space-around;
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li a {
-            text-decoration: none;
-            color: black;
-            font-size: 18px;
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 24px;
-        }
-
-        @media (max-width: 600px) {
-            ul {
-                flex-direction: column; /* Torna a lista vertical em dispositivos móveis */
-                align-items: center;
-            }
-
-            h2 {
-                font-size: 20px; /* Diminui o tamanho do título em telas menores */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/acessibilidade.css">
+    <title>Dashboard</title>
 </head>
 <body>
-    <main>
-        <section class="sub-menu gradient-dourado">
-            <ul class="gradient-primario">
-                <li><a href="#">Ver Projetos</a></li>
-                <li><a href="#">Ver Atividades</a></li>
-                <li><a href="#">Ver Calendário</a></li>
-                <li>    <p><a href="config./logout.php">Logout</a></p></li>
-            </ul>
-        </section>
 
-        <section>
-            <h2>Carregar Projetos Recents</h2>
-            <h2>Carregar Atividades Recents</h2>
-            <h2>Api de Calendário</h2>
-        </section>
-    </main>
+<header class="gradient-dourado">
+    <nav>
+        <ul>
+            <li>Nome do Usuário: <?php echo htmlspecialchars($nomeUsuario); ?></li>
+            <li>Email do Usuário: <?php echo htmlspecialchars($emailUsuario); ?></li>
+        </ul>
+
+        <ul>
+            <li><p><a href="config/logout.php">Logout</a></p></li>
+        </ul>
+        <!-- Menu Acessibilidade -->
+        <ul>
+            <li class="zoomInBtn" onclick="zoomIn()"></li>
+            <li class="zoomOutBtn" onclick="zoomOut()"></li>
+            <li id="DarkBtn" onclick="darkMode()"></li>
+        </ul>            
+    </nav>
+</header>    
+
+<main>
+    <ul>
+        <li><a href="#">Projetos</a></li>
+    </ul>
+</main>
+
+<script src="../assets/js/Acessibilidade.js"></script>
 </body>
 </html>
-
