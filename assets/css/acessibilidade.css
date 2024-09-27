@@ -34,33 +34,33 @@
 .zoomInBtn {
     background-image: url('../img/zoom-in.svg'); /* Imagem para o modo claro */
     background-size: cover; /* Ajusta o tamanho da imagem */
-    width: 22px; /* Largura do botão */
-    height: 22px; /* Altura do botão */
+    width: 16px; /* Largura do botão */
+    height: 16px; /* Altura do botão */
     border: none;
 }
 .zoomOutBtn {
     background-image: url('../img/zoom-out.svg'); /* Imagem para o modo claro */
     background-size: cover; /* Ajusta o tamanho da imagem */
-    width: 22px; /* Largura do botão */
-    height: 22px; /* Altura do botão */
+    width: 16px; /* Largura do botão */
+    height: 16px; /* Altura do botão */
     border: none;
 }
 .light-mode-btn {
     background-image: url('../img/sun.svg'); /* Imagem para o modo claro */
     background-size: cover; /* Ajusta o tamanho da imagem */
-    width: 20px; /* Largura do botão */
-    height: 20px; /* Altura do botão */
+    width: 16px; /* Largura do botão */
+    height: 16px; /* Altura do botão */
     border: none;
 }
 .dark-mode-btn {
     background-image: url('../img/moon.svg'); /* Imagem para o modo escuro */
     background-size: cover;
-    width: 20px;
-    height: 20px;    
+    width: 16px;
+    height: 16px;    
 }
 
 
-@media (max-width: 600px) {
+@media (min-width: 601px) and (max-width: 1024px) {
 
 /* Imagens */
 .zoomInBtn,
@@ -68,10 +68,27 @@
 .light-mode-btn,
 .dark-mode-btn
  {
-    width: 10px; /* Largura do botão */
-    height: 10px; /* Altura do botão */
+    width: 12px; /* Largura do botão */
+    height: 12px; /* Altura do botão */
 }
 }
+
+
+
+/* Tela grande (desktops) - acima de 1024px */
+@media (min-width: 1025px) {
+
+    /* Imagens */
+    .zoomInBtn,
+    .zoomOutBtn,
+    .light-mode-btn,
+    .dark-mode-btn
+     {
+        width: 4px; /* Largura do botão */
+        height: 4px; /* Altura do botão */
+    }
+    }
+    
  /*  FIM Menu Acessibilidade */
 
 

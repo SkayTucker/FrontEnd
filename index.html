@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <title>Home</title>
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -13,11 +13,11 @@
 <body>
     <header class="gradient-dourado">
         <nav>
-            <div class="logo"><img src="assets/img/favicon.png" alt=""></div>
+            <div class="logo"><img src="assets/img/log.png" alt=""></div>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li class="active">Home</li>
                 <li><a href="painel/login.php">Painel</a></li>
-                <li><a href="#">Serviços</a></li>
+                <li><a href="gsap.html">Serviços</a></li>
                 <li><a href="jogo/index.html">Jogo</a></li>
             </ul>
             <!-- Menu Acessibilidade -->
@@ -30,7 +30,13 @@
     </header>
 
 
-    <div class="bg"><img class="pulse" src="assets/img/logo.png" alt=""> </div>
+    <div class="bg">
+        <img class="pulse" src="assets/img/logo.png" alt="">
+            <span>
+                <p>Web Designer</p>
+                <p>Consultoria em T.I</p>
+            </span>        
+     </div>
 
     <main>
         <section>
@@ -42,60 +48,6 @@
                 <li><a href="#">Contato</a></li>
             </ul>   
         </section>
-
-        <section class="animText">
-            <span>
-                <p>Web Designer</p>
-                <p>Consutoria em T.I</p>
-            </span>        
-        </section>
-
-        <section>
-            
-            <!-- Whatsapp -->
-            <div class="cards">
-                <div class="card">
-                    <div class="cardHead">
-                        <div class="cardHeadImg">
-                            <img width="32" src="assets/img/whatsapp.png" alt="whats.png">
-                        </div>
-                        <h4>Whatsapp</h4>                        
-                    </div>                        
-                    <div class="cardMain">
-                           <a href="#">Conversar</a>
-                    </div>                                    
-                </div>
-
-                <!-- Discord -->
-                <div class="card">
-                    <div class="cardHead">
-                        <div class="cardHeadImg">
-                            <img width="32" src="assets/img/discord.png" alt="whats.png">
-                        </div>
-                        <h4>Discord</h4>                        
-                    </div>                        
-                    <div class="cardMain">
-                        <a href="#">Enviar Mensagem</a>
-                    </div>                                 
-                </div>
-
-                <!-- Email -->
-                <div class="card">
-                    <div class="cardHead">
-                        <div class="cardHeadImg">
-                            <img width="32" src="assets/img/gmail.png" alt="whats.png">
-                        </div>
-                        <h4>Email</h4>                        
-                    </div>                        
-                    <div class="cardMain">
-                        <a href="#">Enviar Email</a>
-                    </div>
-                                  
-                </div>
-            </div>    
-        </section>
-
-
     </main>
 
     <footer class="gradient-dourado">

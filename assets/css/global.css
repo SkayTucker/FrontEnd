@@ -21,6 +21,7 @@
     font-family: 'Roboto', 'system-ui';
 }
 html, body {
+    background-color: rgb(24, 16, 2);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -35,72 +36,71 @@ html, body {
 }
 .gradient-dourado {
     background: rgb(252,205,34);
-    background: radial-gradient(circle, rgba(252,205,34,1) 0%, rgba(204, 152, 10, 0.744) 66%, rgba(204, 152, 10, 0.758) 100%);
+    background: radial-gradient(circle, rgb(255, 200, 0) 0%, rgba(201, 150, 11, 0.744) 66%, rgba(153, 114, 7, 0.758) 100%);
 }
 
 
 /*HEADER*/
-header{
-    position: relative;
-    box-shadow: 0 2px 7px black;
-    padding: 2px 0;
-}
+/* LOGO HEADER */
+.logo img{
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(1px 0 1px white);
+    }    
 header nav {
-    margin: 1px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0 40px;
+    font-weight: 500;
 }
 header nav ul {
     display: flex;
     list-style: none;
 }
 header nav ul li {
-    padding: 10px;
-    margin: 5px;
     width: 100%;
+    padding: 0;
 }
 header nav ul li a {
     text-decoration: none;
     color: var(--corSecundaria);
     font-weight: 500;
-    padding-bottom: 5px;
-    text-shadow: 0 1px 0.5rem white;
+    font-size: 16px;
 }
 header nav ul li a:hover {
-    border-bottom: 1px solid rgb(0, 0, 0);
-    filter: brightness(100%);
+    transition: 0.2s;
+    color: white;
+}
+header nav .active  {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    color: white;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    font-weight: 800;
+    cursor: pointer;
+    animation: pulse 2s infinite;
 }
 .bg {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    flex-direction: column;
+    margin: 50px 0 10px 0;
     padding: 0;
 }
-/* FIM HEADER */
 
-/* SECTIONS */
-section {
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-section span p{
+.bg span p{
     font-family: 'Courier New';
     font-size: 24px;
-    margin: 10px 0;
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
     animation: type 2s steps(60, end);
     text-align: center; 
+    color: white;
   }
-section span p:nth-child(2){
+  .bg span p:nth-child(2){
     animation: type2 5s steps(60, end);
   }   
   @keyframes type{ 
@@ -113,6 +113,17 @@ section span p:nth-child(2){
     100%{ width: 100; } 
   } 
   
+/* FIM HEADER */
+
+/* SECTIONS */
+section {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 section ul {
     display: flex;
@@ -169,16 +180,18 @@ footer {
 /* Tela pequena (smartphones) - até 600px */
 @media (max-width: 600px) {
 
-    /* LOGO HEADER */
-    .logo img{
-        width: 48px;
-        height: 48px;
-    }
+
     /*Diminui logo header */
     .bg img {
-        width: 480px;
-        height: 320px;
+        width: 360px;
+        height: 128px;
     }
+
+    .bg span p{
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
 
     /* Ajusta o espaçamento do header */
     header nav ul li {
@@ -201,16 +214,17 @@ footer {
 /* Tela média (tablets) - de 601px até 1024px */
 @media (min-width: 601px) and (max-width: 1024px) {
 
-    /* LOGO HEADER */
-    .logo img{
-        width: 64px;
-        height: 64px;
-    }    
-    /* LOGO CENTRO */
+
+    /*Diminui logo header */
     .bg img {
         width: 512px;
-        height: 512px;
-     }
+        height: 180px;
+    }
+
+    .bg span p{
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
 
     /* Ajusta o espaçamento do menu */
     header nav ul li {
@@ -232,25 +246,18 @@ footer {
 
 /* Tela grande (desktops) - acima de 1024px */
 @media (min-width: 1025px) {
-
-
-    /* LOGO HEADER */
-    .logo img{
-        width: 64px;
-        height: 64px;
-    }
-
     /* Logo centro */
 
     .bg img {
-        width: 620px;
-        height: 580px;
+        width: 600px;
+        height: 224px;
+        filter: drop-shadow(0 8px 1px rgba(238, 184, 5, 0.096));
      }
 
     /* Aumenta o padding do header */
     header nav ul li {
-        padding: 12px;
-        margin: 6px;
+        padding: 10px;
+        margin:  2px;
     }
 
     /* Aumenta o espaçamento das sections */
