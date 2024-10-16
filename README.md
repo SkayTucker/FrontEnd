@@ -20,3 +20,5 @@ GSAP - https://gsap.com/
 
 Image Link https://drive.google.com/file/d/1LpONtHxHWnWgn7k0rVPOqJuIOCsowCI9/view?usp=sharing
 
+Patchnotes 
+- Adicionado Sidebar para dispositivos mobiles 600px
