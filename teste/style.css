@@ -1,0 +1,27 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000; /* Fundo escuro para destacar o mapa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container {
+    width: 80vw;  /* Define um tamanho dinâmico para o mapa com base na viewport */
+    height: auto;
+    position: relative;
+}
+
+#map-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;  /* Bordas brancas para dar estilo ao mapa */
+    cursor: pointer;  /* Muda o cursor ao passar sobre o mapa */
+}
+
+/* Efeitos de hover nas áreas interativas */
+area:hover {
+    outline: 2px solid rgba(255, 0, 0, 0.7);  /* Destaca a área ao passar o mouse */
+}

@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    border: 5px solid black;
+    padding: 20px;
+}
+
+.slides {
+    height: 30vh;
+    border: 5px solid rgb(0, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+
+footer{
+    border: 5px solid rgb(255, 8, 0);
+    display: flex;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}

@@ -4,29 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <title>Home</title>
+    <title>DragonDev</title>
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/acessibilidade.css">
 </head>
 <body>
-    <header>
-
-        <!-- Abrir Menu Mobile -->
-        <button class="openMenu gradient-dourado" onclick="sideBar()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-            </svg>
-        </button>
-
-
-    <div class="logo">
-        <img src="assets/img/logo.png" alt="" width="40">
-    </div>
-    
-    <!-- Menu -->
+    <!-- HEADER/NAVBAR -->
+    <header id="header">       
+    <!-- SideBar/Navigation -->
     <div id="headerNav" class="headerNav">
+
+        <div id="logo">
+            <img style="filter: drop-shadow(0px 0px 1px rgb(255, 208, 0));" src="assets/img/favicon.png" alt="" width="48">
+        </div>
+
         <!-- Navegador de Paginas -->
-        <nav id="headerMenu">
+        <nav id="headerMenu" class="headerNav">
+            
             <!-- Fechar Menu Mobile -->
             <button class="closeMenu gradient-dourado" onclick="sideBar()">
                 Fechar
@@ -36,7 +30,8 @@
             </button> 
 
             <a href="#" class="active">Home</a>
-            <a href="#">Projetos</a>
+            <a href="painel/">Painel</a>
+            <a href="jogo/">Jogo</a>
             <a href="#">Serviços</a>
             <a href="#">Contato</a>
 
@@ -57,29 +52,53 @@
         </nav>
       
     </div>  
+
+            <!-- Abrir Menu Mobile -->
+        <button class="openMenu gradient-dourado" id="openMenu" onclick="sideBar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>    
     </header>
     
-    <main>
-    <div  id="mainBody" tabindex="0" onclick="sideBarClose()">
-    <div class="main-page">
-            <span class="text" style="color: white;">
-                011001110101101 011
-            </span>                        
-     </div>
-
-
-     
-
-
-        <img class="zapzap"  src="assets/img/whatsapp.png" alt="">
+    <main onclick="sideBarClose()">
+        <div  id="mainBody" tabindex="0">    
+            <!-- SLIDESHOW -->
+            <div class="slideshow">
+                <section class="slides" id="slides"></section>
+                <div class="slideDesc">
+                    <h1>Sergio <i>Skay</i></h1>
+                    <span class="text">
+                        011001110101101 011
+                    </span> 
+                </div>
+            </div>   
     
-    
-    
+            <!-- Projetos -->
+             <section class="meusProjetos">
+                <h1>Meus Projetos:</h1>
+                <div class="projects">
+                    <div class="projeto">
+                        <a href="#">
+                            <img src="assets/img/l2dragonworld.png" alt="">
+                        </a>
+                    </div>
+                    <div class="projeto">
+                        <a href="#">
+                            <img src="assets/img/l2dragon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="projeto">
+                        <a href="#">
+                            <img src="assets/img/dragonplanner.png" alt="">
+                        </a>
+                    </div>                                
+                 </div>
+             </section>
+
+
     </div>
 </main>
-    <footer class="gradient-dourado">
-        DragonDev Desenvolvimento Web
-    </footer>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/Acessibilidade.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -97,8 +116,40 @@
         rtl: "true",
         
         });
+
+
 });    
-   
+  
    </script>
+
+
+   <script>
+    //Array dos Endereços para adicionar no selector
+    const backgrounds = [
+        'assets/bg/1.png',
+        'assets/bg/2.png',
+        'assets/bg/3.png'
+    ];
+    //inicia a variável
+    let currentIndex = 0;
+
+    function changeBackground() {
+        //selecione no main o background-image = passa a `url($ARRAY[variável])`
+        document.getElementById('slides').style.backgroundImage = `url(${backgrounds[currentIndex]})`;
+        currentIndex = (currentIndex + 1) % backgrounds.length;
+        /*O operador % é o módulo, que retorna o resto da divisão. 
+        No contexto desse código, isso garante que o valor de 
+        currentIndex volte a 0 quando atingir o final da lista 
+        de imagens.*/
+    }
+
+    // Mudar a cada 5 segundos
+    setInterval(changeBackground, 5000);
+
+    // Definir o primeiro background assim que a página carregar
+    window.onload = changeBackground;
+
+   </script>
+
 </body>
 </html>

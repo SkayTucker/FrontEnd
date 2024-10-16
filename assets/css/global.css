@@ -1,5 +1,6 @@
 /*FONTE DO GOOGLE*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /*Animação*/
 @keyframes showSideBar {
 
@@ -10,114 +11,201 @@
     to {
         margin-left: 1px;
     }
-    
+
 }
 
 /*Cores*/
 :root {
-    --darkColor: #000000e0;
+    --darkColor: #000000da;
+    --blackColor: #252424fd;
+    --goldColor: #ffd000;
 }
+
 .gradient-primario {
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(3,2,0,0.6090604026845637) 66%, rgba(23,17,1,1) 100%);
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(3, 2, 0, 0.6090604026845637) 66%, rgba(23, 17, 1, 1) 100%);
 }
+
 .gradient-dourado {
-    background: rgb(252,205,34);
+    background: rgb(252, 205, 34);
     background: radial-gradient(circle, rgb(219, 173, 5) 0%, rgba(212, 157, 4, 0.744) 66%, rgba(153, 114, 7, 0.758) 100%);
 }
 
+
 /*Estilo Global*/
-* {      margin: 0;      padding: 0;     font-family: 'Roboto', 'system-ui';}
-body {  background-color: var(--darkColor);}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'system-ui';
+}
+
+body {
+    background-color: var(--darkColor);
+}
 
 /*HEADER*/
-header 
-.openMenu,
-.closeMenu,
-.openAcess{
-    display: none;
-}
-
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 1px 0px 10px black;
+    background-color: var(--darkColor);
+    width: 100%;
+    border-radius: 0 0 20px 20px / 10%;
+    border-bottom: 1px solid var(--goldColor);
 }
-.logo img {
-    filter: drop-shadow(1px 0px 1px rgb(114, 83, 3));
+#logo img {
+    filter: drop-shadow(1px 0px asd1px rgb(83, 60, 1));
 }
-.headerNav{
-    display: flex;
-    align-items: center;
-}
-.headerNav nav a {
-    text-decoration: none;
-    color: goldenrod;
-    padding: 10px;
-    border: 2px solid #ffffff00;
-    font-weight: 600;
-}
-.headerNav nav a:hover {
+.headerNav nav .active {
     border-left: 2px solid goldenrod;
     border-right: 2px solid goldenrod;
     border-radius: 300px 300px 300px 300px / 99%;
-    transition: 0.3s;
-    filter: brightness(130%);
+    margin: 0 5px;
 }
-.zapzap{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 30px;
-}
-.zapzap:hover{
-    background-color: white;
-}
+/*Fim Header*/
 
-.main-page {
+/*topo*/
+.slideshow {
+    margin-top: 5px;
+    padding: 20px 0 0 0;
+}
+.slides {
     display: flex;
+    height: 65vh;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    border: 1px solid black;
-    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
+    
 }
-.main-page span {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-/* FOOTER */
-footer {
-    padding: 5px 0;
-    width: 100%;
-    position: absolute;
-    text-align: center;
+.slideDesc {
     color: white;
-    left: 0;
-    bottom: 0;
-    text-shadow: 1px 1px 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--darkColor);
+    margin: 5px 0;
+}
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
 }
 
-/* Fim Stylo Global*/
+.meusProjetos {
+    text-align: center;
+    border-radius: 10px 10px 0 0/ 10%;
+    border-top: 1px solid var(--goldColor);    
+    background-color: var(--darkColor);
+    color: white;
+    padding: 10px 0;
+}
+.meusProjetos h1 {
+    padding: 10px 0;
+}
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.projeto {
+    background-color: var(--blackColor);
+    padding: 5px;
+    
+}
+.projects .projeto img {
+    width: 256px;
+}
+.projects .projeto img:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+
+}
 
 
 
+
+
+/*Section Painel*/
+.painelForm a {
+    padding: 10px;
+    border-radius: 3%;
+    background-color: white;
+    cursor: pointer;
+}
+.painelForm {
+    text-align: center;
+    width: 100%;
+}
+.painelForm h1,label {
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    margin-bottom: 10px;
+}
+
+.painelForm form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 3%;
+}
+
+.painelForm input,label {
+    padding: 4px;
+}
 
 
 
 /* RESPONSIVIDADE */
-/* Tela pequena (smartphones) - até 680px */
-@media screen and (max-width: 680px) {
-    header 
-    .openMenu,
+/*HEADER PADRÃO*/
+@media screen and (min-width: 541px) {
+
+    /*HEADER*/
+    header .openMenu,
     .closeMenu,
-    .openAcess{
-    display: block;
-    color: white;
-}    
-    .headerNav nav{
-        position: absolute;        
+    .openAcess {
+        display: none;
+        cursor: pointer;
+    }
+
+    .headerNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px;
+    }
+
+    .headerNav nav a {
+        text-decoration: none;
+        color: goldenrod;
+        padding: 10px;
+        border: 2px solid #ffffff00;
+        font-weight: 600;
+    }
+
+    .headerNav nav a:hover {
+        border-left: 2px solid goldenrod;
+        border-right: 2px solid goldenrod;
+        border-radius: 300px 300px 300px 300px / 99%;
+        transition: 0.3s;
+    }
+
+}
+
+/* RESPONSIVIDADE */
+/* Tela pequena (smartphones) - até 680px */
+@media screen and (max-width: 540px) {
+
+    /*HEADER*/
+    header .openMenu,
+    .closeMenu,
+    .openAcess {
+        display: block;
+        color: white;
+    }
+
+    .headerNav nav {
+        position: absolute;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -139,6 +227,7 @@ footer {
         border: 2px solid #ffffff00;
         font-weight: 600;
     }
+
     .headerNav nav a:hover {
         border-left: 2px solid goldenrod;
         border-right: 2px solid goldenrod;
@@ -146,5 +235,7 @@ footer {
         transition: 0.3s;
         filter: brightness(130%);
     }
-}
 
+    /*FIM HEADER*/
+
+}
