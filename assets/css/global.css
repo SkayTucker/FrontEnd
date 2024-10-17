@@ -1,5 +1,6 @@
 /*FONTE DO GOOGLE*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cretino');                
 
 /*Animação*/
 @keyframes showSideBar {
@@ -13,6 +14,7 @@
     }
 
 }
+
 
 /*Cores*/
 :root {
@@ -43,6 +45,16 @@ body {
     background-color: var(--darkColor);
 }
 
+article {
+    display: flex;
+    padding: 5px;
+    margin: 3px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
 /*HEADER*/
 header {
     background-color: var(--darkColor);
@@ -58,24 +70,44 @@ header {
     border-right: 2px solid goldenrod;
     border-radius: 300px 300px 300px 300px / 99%;
     margin: 0 5px;
+    cursor: default;
 }
 /*Fim Header*/
-
-/*topo*/
+/*Index*/
 .slideshow {
-    margin-top: 5px;
-    padding: 20px 0 0 0;
+    padding: 15px 0;
+    width: 100%;
 }
 .slides {
     display: flex;
     height: 65vh;
     align-items: center;
-    justify-content: center;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     transition: background-image 0.5s ease-in-out;
     
+}
+.menuSlides {
+    margin-top: 100px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+}
+.menuSlides a {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: goldenrod;
+    font-family: verdana;
+    width: 120px;
+    border: 1px solid gold;
+}
+.menuSlides a:hover {
+    color: white;
+    transition: 0.5s;
 }
 .slideDesc {
     color: white;
@@ -89,7 +121,6 @@ header {
     font-family: 'Courier New', Courier, monospace;
     padding: 5px;
 }
-
 .meusProjetos {
     text-align: center;
     border-radius: 10px 10px 0 0/ 10%;
@@ -119,7 +150,58 @@ header {
     transition: ease-in-out 0.2s;
 
 }
+/*FIM INDEX*/
+/*JOGO.html*/
+.fade-out {
+    opacity: 0;
+}
+#dinamicPage {
+    height: 70vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.7s ease-in;
+}
+.dinamicImg {
+    width: 620px;
+    
+}
+.dinamicBody {
+    width: 40%;
+}
+.serverBar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.serverBar nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+                                                
+}
+.serverBar a {
+    align-content: center;
+    height: 100px;
+    margin-left: 5px;
+    border-left: 3px double var(--goldColor);
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    width: 100%;
+    font-family: 'Cretino', sans-serif;
+    font-size: 76px;
+}
 
+.serverBar a:hover {
+    filter: brightness(150%);
+    text-shadow: 0px 0px 9px goldenrod;
+    transition: 0.4s;
+}
 
 
 
