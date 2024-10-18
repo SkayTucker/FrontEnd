@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel de Login</title>
     <link rel="stylesheet" href="../assets/css/global.css">
-    <link rel="stylesheet" href="../assets/css/acessibilidade.css">
 </head>
 <body>
 
@@ -28,11 +27,11 @@
                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
                     </svg>                
                 </button> 
-    
+
                 <a href="index.html">Home</a>
-                <a class="active">Painel</a>
-                <a href="jogo.html">Jogo</a>
-                <a href="#">Serviços</a>
+                <a class="active">Planner</a>
+                <a href="jogo.html">Lineage</a>
+                <a href="world.html">Lineage World</a>
                 <a href="#">Contato</a>
     
     
@@ -59,53 +58,48 @@
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
             </button>    
-        </header>
-    
-<main class="main-page">
+    </header>
+          
+<main onclick="sideBarClose()">
+    <!-- LOGIN -->
     <section>
 
         <div class="painelForm" id="loginForm">       
-            <!-- Formulário de Login -->
             <form action="config/logar.php" method="post">
-            <h1>Login no Sistema</h1>
-                <label for="user">Login</label>
-                <input type="text" placeholder="Usuário" name="nome" id="user" required>
-                <label for="pwd">Senha</label>
-                <input type="password" name="senha" id="pwd" required>
-                <br>
-                
-                <input type="submit" value="Acessar">
+                <fieldset>
+                     <legend>Painel</legend>    
+                        <label for="user">Login</label>
+                        <input type="text" placeholder="Usuário" name="nome" id="user" required>
+                        <label for="pwd">Senha</label>
+                        <input type="password" name="senha" id="pwd" required>
+                        <br>
+                        <input class="btnForm" type="submit" value="Acessar" >
+                </fieldset>   
             </form>
-
-
-            <a onclick="toggleForm()">Cadastre-se</a>
-            <a onclick="">Esqueceu a senha?</a>
-
-        </div>
-
+                <a onclick="toggleForm()"> Cadastre-se</a>
+            </div>
+         
+        <!-- CADASTRO -->
         <div class="painelForm" id="regForm">
-            <!-- Formulário de Cadastro -->
-            <form action="config/cadastrar.php" method="post">
-            <h1>Cadastro de Usuário</h1>    
+            <form action="config/cadastrar.php" method="post"> 
+                <fieldset>
+                    <legend>Cadastro</legend>                   
                 <label for="nome">Usuário</label>
                 <input type="text" placeholder="Nome do Usuário" name="nome" id="nome" required>
                 <label for="email">Email</label>
                 <input type="email" placeholder="example@example.com" name="email" id="email" required>
                 <label for="senha">Senha</label>
                 <input type="password" name="senha" id="senha" required>
-                
-                <br><input type="submit" value="Criar Usuário">
-            </form>
+                <br>
+                <input type="submit" value="Criar Usuário" class="btnForm">
+            </fieldset>   
+        </form>
 
             <a onclick="toggleForm()">Ja é Cadastrado? Faça Login</a>
         </div>
     </section>
 </main>
 
-<footer class="gradient-dourado">
-    DragonDev Desenvolvimento Web
-</footer>
-   
     <script>
         var loginForm = document.getElementById("loginForm");
         var regForm = document.getElementById("regForm");

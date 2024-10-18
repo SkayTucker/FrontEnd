@@ -46,6 +46,12 @@ body {
     background-color: var(--darkColor);
 }
 
+header {
+    background-color: var(--darkColor);
+    width: 100%;
+    border-radius: 0 0 20px 20px / 10%;
+    border-bottom: 1px solid var(--goldColor);
+}
 article {
     display: flex;
     padding: 5px;
@@ -57,12 +63,6 @@ article {
 
 
 /*HEADER*/
-header {
-    background-color: var(--darkColor);
-    width: 100%;
-    border-radius: 0 0 20px 20px / 10%;
-    border-bottom: 1px solid var(--goldColor);
-}
 #logo img {
     filter: drop-shadow(1px 0px asd1px rgb(83, 60, 1));
 }
@@ -74,6 +74,7 @@ header {
     cursor: default;
 }
 /*Fim Header*/
+
 /*Index*/
 .slideshow {
     padding: 15px 0;
@@ -197,45 +198,56 @@ header {
     font-family: 'Cretino', sans-serif;
     font-size: 76px;
 }
-
 .serverBar a:hover {
     filter: brightness(150%);
     text-shadow: 0px 0px 9px goldenrod;
     transition: 0.4s;
 }
-
-
-
-
-/*Section Painel*/
-.painelForm a {
-    padding: 10px;
-    border-radius: 3%;
-    background-color: white;
-    cursor: pointer;
-}
-.painelForm {
-    text-align: center;
-    width: 100%;
-}
-.painelForm h1,label {
+/*FIM JOGO.html*/
+/*Painel*/
+section #loginForm, #regForm{
     color: white;
-    text-shadow: 1px 1px 4px black;
-    margin-bottom: 10px;
+    text-align: center;
 }
-
-.painelForm form {
+.painelForm form{
     display: flex;
-    flex-direction: column;
-    padding: 30px;
-    margin-bottom: 20px;
-    box-shadow: 1px 1px 5px black;
-    border-radius: 3%;
+    justify-content: center;
+    margin: 0;
+    padding: 50px;
 }
-
-.painelForm input,label {
+.painelForm form fieldset{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px black;
+}
+.painelForm form fieldset legend{
+    font-size: xx-large;
     padding: 4px;
 }
+
+.painelForm form fieldset label,input{
+    padding: 5px;
+}
+
+.painelForm form fieldset input:hover{
+    cursor: pointer;
+}
+.painelForm a{
+    padding: 8px;
+    border-radius: 10%;
+    background-color: var(--blackColor);
+    color: white;
+    margin-left: 10px;
+}
+.painelForm a:hover{
+    box-shadow: 0px 0px 2px var(--goldColor);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
 
 
 
