@@ -4,7 +4,7 @@ session_start();
 
 // Verifica se o usuário está logado
 if (!isset($_SESSION['usuario_id'])) {
-    header("Location: login.php");
+    header("Location: painel/dashboard.php");
     exit();
 }
 
@@ -26,117 +26,157 @@ if ($resultado->num_rows > 0) {
     $emailUsuario = $usuario['email'];
     $ultimoAcesso = $usuario['criado_em'];
 } else {
-    header("Location: login.php");
+    header("Location: ../../painel.php");
     exit();
 }
-
-// Busca as contas do usuário
-$sqlAccounts = "SELECT login FROM accounts WHERE user_id = ? LIMIT 3";
-$stmtAccounts = $conn->prepare($sqlAccounts);
-$stmtAccounts->bind_param("i", $usuarioId);
-$stmtAccounts->execute();
-$resultadoAccounts = $stmtAccounts->get_result();
-
-// Conta o número de contas
-$numAccounts = $resultadoAccounts->num_rows;
-
-// Busca os personagens do usuário
-$sqlCharacters = "SELECT charId, char_name, level FROM character_site WHERE account_name = ?";
-$stmtCharacters = $conn->prepare($sqlCharacters);
-$stmtCharacters->bind_param("s", $usuarioId);
-$stmtCharacters->execute();
-$resultadoCharacters = $stmtCharacters->get_result();
-
-// Conta o número de personagens
-$numCharacters = $resultadoCharacters->num_rows;
 
 // Fecha a conexão
 $stmt->close();
 $conn->close();
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/global.css">
-    <link rel="stylesheet" href="../assets/css/acessibilidade.css">
-    <title>Dashboard</title>
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Dragon Quests</title>
+    <!-- Inclua o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Inclua o ImageMapster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imagemapster/1.5.4/jquery.imagemapster.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Ativando o plugin ImageMapster na imagem
+            $('img[usemap]').mapster({
+                fillColor: 'FFFFFF', // Cor de preenchimento ao passar o mouse
+                fillOpacity: 0.5,    // Opacidade do preenchimento
+                stroke: true,        // Exibir a borda ao redor da área
+                strokeWidth: 1,
+                strokeColor: 'FFFFFF', // Cor da borda
+                isSelectable: true,  // seleção de áreas
+                showToolTip: true,    // Habilitar tooltips
+                toolTipContainer: '<div style="background-color: #fff; border: 1px solid #000; padding: 5px;"></div>',
+                toolTipClose: ['area-mouseout']
+            });
+
+            // Função para capturar eventos de clique nas áreas do mapa
+            $('area').on('click', function(event) {
+                event.preventDefault();
+                const areaId = $(this).attr('alt');
+                $('.info').text('Você clicou na região: ' + areaId);
+            });
+        });
+    </script>
 </head>
-<body>
+<body class="gradient-dourado">
+    <!-- HEADER/ASIDE -->
+    <header class="gradient-dourado">
+        <div id="logo"><img src="../assets/img/favicon.png" alt="" width="48">ragon Quests</div>  
 
-<header class="gradient-dourado">
-    <nav>
-        <ul>
-            <li>Nome do Usuário: <?php echo htmlspecialchars($nomeUsuario); ?></li>
-            <li>Email do Usuário: <?php echo htmlspecialchars($emailUsuario); ?></li>
-        </ul>
+        <nav class="navDashboard">
+            <a href="#" data-page="home.php">Status</a>
+            <a href="#" data-page="char.php">Personagem</a>
+            <a href="#" data-page="cidade.php">Cidade</a>
+            <a href="config/logout.php">Sair</a>
+        </nav>
 
-        <ul>
-            <li><p><a href="config/logout.php">Logout</a></p></li>
-        </ul>       
-    </nav>
-</header>    
+             
+    <div class="statusDashboard">
+            <fieldset>
+                <legend>Informações do Usuário</legend>
+                <div id="name"><strong>Usuário</strong>: <?php echo htmlspecialchars($nomeUsuario); ?></div>
+                <div id="email"><strong>Email</strong>: <?php echo htmlspecialchars($emailUsuario); ?></div>
+            </fieldset>
+            
+            <fieldset id="actions">
+                <legend>Ações</legend>
+                <a href="#" id="home">Casa</a>
+                <a href="#" id="habilidades">Skills</a>
+                <a href="#" id="cidade">Cidade</a>
+                <a href="#" id="clans">Clan</a>
+                <a href="#" id="amigos">Amigos</a>
+            </fieldset>
 
-<main>
-    <!-- Carrega os personagens se criados, caso não tenha conta criada, retorne que não existe personagem -->
-    <div class="myChars">
-        <div class="titulo">
-            <h1>Meus Personagens</h1>
-            <h5>Máx 3 Personagens</h5>
-        </div>
-        <ul style="flex-direction:column;">
-            <?php if ($numCharacters > 0): ?>
-                <?php while ($personagem = $resultadoCharacters->fetch_assoc()): ?>
-                    <li>
-                        ID: <?php echo htmlspecialchars($personagem['charId']); ?>, 
-                        Nome: <?php echo htmlspecialchars($personagem['char_name']); ?>, 
-                        Nível: <?php echo htmlspecialchars($personagem['level']); ?>
-                    </li>
-                <?php endwhile; ?>
-            <?php else: ?>
-                <li>Nenhum personagem encontrado.</li>
-            <?php endif; ?>
-        </ul>
-    </div><br>
 
-    <!-- Cria conta pra poder Criar personagem, se a conta estiver criada, exiba as contas -->
-    <div class="Contas">
-        <div class="myContas">
-            <h2>Contas</h2>
-            <ul>
-                <?php if ($numAccounts > 0): ?>
-                    <?php while ($conta = $resultadoAccounts->fetch_assoc()): ?>
-                        <li><?php echo htmlspecialchars($conta['login']); ?></li>
-                    <?php endwhile; ?>
-                <?php else: ?>
-                    <li>Nenhuma conta criada.</li>
-                <?php endif; ?>
-            </ul>
-        </div>
+            <fieldset id="charQuests">
+                <legend>Quests/Missões</legend>
+                <div id="quests">
+                    <fieldset>
+                        <legend>Atuais</legend>
+                        <div id="questAtiva"></div>
+                    </fieldset>
 
-        <!-- Menu de criação de contas, se já tiver 3 contas, esconda-o -->
-        <?php if ($numAccounts < 3): ?>
-            <div class="criarConta">
-                <h2>Criar Nova Conta</h2>
-                <form action="config/criar_conta.php" method="post">
-                    <label for="login">Login:</label>
-                    <input type="text" name="login" id="login" required>
-                    <br><br>
+                    <fieldset>
+                        <legend>Recomendadas</legend>
+                        <div id="questRec"></div>
+                    </fieldset>
 
-                    <label for="senha">Senha:</label>
-                    <input type="password" name="senha" id="senha" required>
-                    <br><br>
+                    <fieldset>
+                        <legend>Importantes</legend>
+                        <div class="questImportante"></div>
+                    </fieldset>
+                </div>
+            </fieldset>
 
-                    <input type="submit" value="Criar Conta">
-                </form>
-            </div>
-        <?php endif; ?>
     </div>
 
 
+    <footer>
+        Dragon Quests <sub style="font-size: 10px; color:black;">Versão Beta</sub>
+    </footer>
+
+    </header>  
+    <!-- <section>
+        <form action="includes/criar_personagem.php" method="POST">
+            <fieldset>
+                <legend>Criar Personagem</legend>
+                <label for="genero">Escolha o gênero do personagem:</label><br>
+                <input type="radio" id="male" name="genero" value="male">
+                <label for="male">Masculino</label><br>
+                <input type="radio" id="female" name="genero" value="female">
+                <label for="female">Feminino</label><br><br>
+                <input type="submit" value="Criar Personagem">
+            </fieldset>            
+        </form>
+    </section> -->
+<main id="game-content">   
 </main>
 
-<script src="../assets/js/Acessibilidade.js"></script>
+<script>
+    // Função para carregar o conteúdo da página clicada
+    function carregarConteudoJogo(pagina) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "pages/" + pagina, true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById("game-content").innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    }
+
+    // Função para adicionar o evento de clique na navegação
+    function configurarNavegacao() {
+        var links = document.querySelectorAll('.navDashboard a[data-page]');
+        links.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Impede o comportamento padrão de redirecionamento
+                var pagina = this.getAttribute('data-page');
+                carregarConteudoJogo(pagina); // Carrega a página clicada
+            });
+        });
+    }
+
+    // Carrega o conteúdo inicial e configura a navegação ao carregar a página
+    window.onload = function() {
+        carregarConteudoJogo("home.php"); // Página inicial padrão
+        configurarNavegacao(); // Configura os cliques da navegação
+    };
+</script>
+
+
 </body>
 </html>

@@ -8,6 +8,6 @@ session_unset();
 session_destroy();
 
 // Redireciona o usuário para a página de login
-header("Location: ../../painel.php");
+header("Location: ../../painel.html");
 exit();
 ?>

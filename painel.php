@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Login</title>
-    <link rel="stylesheet" href="../assets/css/global.css">
+    <title>Dragon Quests</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -65,7 +67,7 @@
     <section>
 
         <div class="painelForm" id="loginForm">       
-            <form action="config/logar.php" method="post">
+            <form action="jogo/painel/config/logar.php" method="post">
                 <fieldset>
                      <legend>Painel</legend>    
                         <label for="user">Login</label>
@@ -81,7 +83,7 @@
          
         <!-- CADASTRO -->
         <div class="painelForm" id="regForm">
-            <form action="config/cadastrar.php" method="post"> 
+            <form action="jogo/painel/config/cadastrar.php" method="post"> 
                 <fieldset>
                     <legend>Cadastro</legend>                   
                 <label for="nome">Usuário</label>

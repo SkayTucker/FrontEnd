@@ -7,7 +7,7 @@ include 'dbconnect.php';
 
 // Verifica se o usuário está logado
 if (!isset($_SESSION['usuario_id'])) {
-    header("Location: ../index.php");
+    header("Location: ../../painel.html");
     exit();
 }
 
@@ -43,12 +43,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($stmt->affected_rows > 0) {
             echo "<script>alert('Conta criada com sucesso!'); window.location.href = '../dashboard.php';</script>";
         } else {
-            echo "<script>alert('Erro ao criar a conta.'); window.location.href = '../index.php';</script>";
+            echo "<script>alert('Erro ao criar a conta.'); window.location.href = '../../painel.html';</script>";
         }
 
         $stmt->close();
     } else {
-        echo "<script>alert('Erro na consulta.'); window.location.href = '../index.php';</script>";
+        echo "<script>alert('Erro na consulta.'); window.location.href = '../../painel.html';</script>";
     }
 }
 
