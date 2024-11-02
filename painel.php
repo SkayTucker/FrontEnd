@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body class="pagePainel">
 
     <!-- HEADER/NAVBAR -->
     <header id="header">       
@@ -76,9 +76,10 @@
                         <input type="password" name="senha" id="pwd" required>
                         <br>
                         <input class="btnForm" type="submit" value="Acessar" >
+                        <a onclick="toggleForm()"> Cadastre-se</a>
                 </fieldset>   
             </form>
-                <a onclick="toggleForm()"> Cadastre-se</a>
+
             </div>
          
         <!-- CADASTRO -->
@@ -94,10 +95,11 @@
                 <input type="password" name="senha" id="senha" required>
                 <br>
                 <input type="submit" value="Criar Usuário" class="btnForm">
+                <a onclick="toggleForm()">Ja é Cadastrado? Faça Login</a>
             </fieldset>   
         </form>
 
-            <a onclick="toggleForm()">Ja é Cadastrado? Faça Login</a>
+
         </div>
     </section>
 </main>

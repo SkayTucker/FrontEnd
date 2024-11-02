@@ -1,26 +1,11 @@
 /*FONTE DO GOOGLE*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cretino');                
-@import url('https://fonts.cdnfonts.com/css/understand');
-
-/*Animação*/
-@keyframes showSideBar {
-
-    from {
-        margin-left: -45vw;
-    }
-
-    to {
-        margin-left: 1px;
-    }
-
-}
-
 
 /*Cores*/
 :root {
     --darkColor: #000000da;
-    --blackColor: #252424fd;
+    --blackColor: #191818fd;
     --goldColor: #ffd000;
 }
 
@@ -42,87 +27,28 @@
     font-family: 'Roboto', 'system-ui';
 }
 
+
 body {
     background-color: var(--darkColor);
 }
 
-header {
-    background-color: var(--darkColor);
-    width: 100%;
-    border-radius: 0 0 20px 20px / 10%;
-    border-bottom: 1px solid var(--goldColor);
-}
-article {
-    display: flex;
-    padding: 5px;
-    margin: 3px;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
-
-
-/*HEADER*/
-#logo img {
-    filter: drop-shadow(1px 0px asd1px rgb(83, 60, 1));
-}
-.headerNav nav .active {
-    border-left: 2px solid goldenrod;
-    border-right: 2px solid goldenrod;
-    border-radius: 300px 300px 300px 300px / 99%;
-    margin: 0 5px;
-    cursor: default;
-}
-/*Fim Header*/
-
-/*Index*/
-.slideshow {
-    padding: 15px 0;
+main {
+    border-radius: 20px 20px 0 0 / 10%;
     width: 100%;
 }
-.slides {
-    display: flex;
-    height: 65vh;
-    align-items: center;
-    background-size: contain;
+
+.pagePainel{
+    background-image: url('../img/bglogin.jpg');
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    transition: background-image 0.5s ease-in-out;
-    
+    height: 100vh;
 }
-.menuSlides {
-    margin-top: 100px;
-    display: flex;
-    position: absolute;
-    right: 0;
-    top: 0;
-    flex-direction: column;
-}
-.menuSlides a {
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    color: goldenrod;
-    font-family: verdana;
-    width: 120px;
-    border: 1px solid gold;
-}
-.menuSlides a:hover {
-    color: white;
-    transition: 0.5s;
-}
-.slideDesc {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--darkColor);
-    margin: 5px 0;
-}
-.text {
-    font-family: 'Courier New', Courier, monospace;
-    padding: 5px;
-}
+
+
+
+
 .meusProjetos {
     text-align: center;
     border-radius: 10px 10px 0 0/ 10%;
@@ -138,6 +64,7 @@ article {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 .projeto {
     background-color: var(--blackColor);
@@ -213,7 +140,10 @@ section #loginForm, #regForm{
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 50px;
+    padding: 30px;
+    background-color: var(--darkColor);
+    border-radius: 100px 800px  / 59%;
+    opacity: 80%;
 }
 .painelForm form fieldset{
     display: flex;
@@ -235,11 +165,11 @@ section #loginForm, #regForm{
     cursor: pointer;
 }
 .painelForm a{
+    margin: 10px 0;
     padding: 8px;
     border-radius: 10%;
     background-color: var(--blackColor);
     color: white;
-    margin-left: 10px;
 }
 .painelForm a:hover{
     box-shadow: 0px 0px 2px var(--goldColor);
@@ -255,35 +185,8 @@ section #loginForm, #regForm{
 /*HEADER PADRÃO*/
 @media screen and (min-width: 541px) {
 
-    /*HEADER*/
-    header .openMenu,
-    .closeMenu,
-    .openAcess {
-        display: none;
-        cursor: pointer;
-    }
 
-    .headerNav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 5px;
-    }
 
-    .headerNav nav a {
-        text-decoration: none;
-        color: goldenrod;
-        padding: 10px;
-        border: 2px solid #ffffff00;
-        font-weight: 600;
-    }
-
-    .headerNav nav a:hover {
-        border-left: 2px solid goldenrod;
-        border-right: 2px solid goldenrod;
-        border-radius: 300px 300px 300px 300px / 99%;
-        transition: 0.3s;
-    }
 
 }
 

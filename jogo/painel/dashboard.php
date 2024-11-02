@@ -40,13 +40,20 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImageMapster</title>
+    <title>Dragon Quests</title>
+
     <!-- Inclua o jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Inclua o ImageMapster -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imagemapster/1.5.4/jquery.imagemapster.min.js"></script>
+    
+
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/pages.css">
+
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/global.css">
+
     <script>
         $(document).ready(function() {
             // Ativando o plugin ImageMapster na imagem
@@ -71,6 +78,7 @@ $conn->close();
         });
     </script>
 </head>
+
 <body>
    <!-- HEADER DA PÁGINA -->
    <header id="header">       
@@ -108,88 +116,124 @@ $conn->close();
     </header>
     
 <main>
+    <div class="game">
+        <!-- HEADER DO JOGO -->    
+        <section>
+            <div class="gradient-dourado headerGame">
+                <div id="logo"><img src="../../assets/img/favicon.png" alt="" width="48">ragon Quests</div>  
 
-   <!-- HEADER DO JOGO -->
-    <header class="gradient-dourado">
-        <div id="logo"><img src="../../assets/img/favicon.png" alt="" width="48">ragon Quests</div>  
+                <nav class="navDashboard">
+                    <a href="#" data-page="home.php">Status</a>
+                    <a href="#" data-page="char.php">Personagem</a>
+                    <a href="#" data-page="cidade.php">Cidade</a>
+                    <a href="config/logout.php">Sair</a>
+                </nav>
 
-        <nav class="navDashboard">
-            <a href="#" data-page="home.php">Status</a>
-            <a href="#" data-page="char.php">Personagem</a>
-            <a href="#" data-page="cidade.php">Cidade</a>
-            <a href="config/logout.php">Sair</a>
-        </nav>
-
-             
-    <div class="statusDashboard">
-            <fieldset>
-                <legend>Informações do Usuário</legend>
-                <div id="name"><strong>Usuário</strong>: <?php echo htmlspecialchars($nomeUsuario); ?></div>
-                <div id="email"><strong>Email</strong>: <?php echo htmlspecialchars($emailUsuario); ?></div>
-            </fieldset>
-            
-            <fieldset id="actions">
-                <legend>Ações</legend>
-                <a href="#" id="home">Casa</a>
-                <a href="#" id="habilidades">Skills</a>
-                <a href="#" id="cidade">Cidade</a>
-                <a href="#" id="clans">Clan</a>
-                <a href="#" id="amigos">Amigos</a>
-            </fieldset>
-
-
-            <fieldset id="charQuests">
-                <legend>Quests/Missões</legend>
-                <div id="quests">
-                    <fieldset>
-                        <legend>Atuais</legend>
-                        <div id="questAtiva"></div>
+                    
+            <div class="statusDashboard">                   
+                    <fieldset id="actions">
+                        <legend>Ações</legend>
+                        <a href="#" id="home">Casa</a>
+                        <a href="#" id="habilidades">Skills</a>
+                        <a href="#" id="cidade">Cidade</a>
+                        <a href="#" id="clans">Clan</a>
+                        <a href="#" id="amigos">Amigos</a>
                     </fieldset>
 
-                    <fieldset>
-                        <legend>Recomendadas</legend>
-                        <div id="questRec"></div>
+
+                    <fieldset id="charQuests">
+                        <legend>Quests/Missões</legend>
+                        <div id="quests">
+                            <fieldset>
+                                <legend>Atuais</legend>
+                                <div id="questAtiva"></div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Recomendadas</legend>
+                                <div id="questRec"></div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Importantes</legend>
+                                <div class="questImportante"></div>
+                            </fieldset>
+                        </div>
                     </fieldset>
 
-                    <fieldset>
-                        <legend>Importantes</legend>
-                        <div class="questImportante"></div>
-                    </fieldset>
-                </div>
-            </fieldset>
-
-    </div>
-
-
-    <footer>
-        Dragon Quests <sub style="font-size: 10px; color:black;">Versão Beta</sub>
-    </footer>
-
-    </header>  
-
-    <div id="game-content">
-        <img  src="../../assets/img/mapa.png" alt="Mapa de Exemplo" usemap="#mapaExemplo"/>
-
-        <!-- Definindo as áreas da imagem -->
-        <map name="mapaExemplo">
-            <!-- coords = left,top,right,bottom -->
-            <!-- coords = left,bottom,right,top -->
-            <area shape="rect" coords="310,60,150,140" href="#" alt="Templo" />
-            <area shape="rect" coords="500,120,330,160" href="#" alt="Loja de Armas" />
-            <area shape="rect" coords="430,175,370,240" href="#" alt="Banco" />
-            <area shape="rect" coords="5,240,110,200" href="#" alt="Humanos" />
-            <area shape="rect" coords="35,280,140,240" href="#" alt="Orcs" />
-            <area shape="rect" coords="40,285,130,330" href="#" alt="Elfos" />
-            <area shape="rect" coords="170,400,210,340" href="#" alt="Dark Elfos" />
-            <area shape="rect" coords="260,400,220,340" href="#" alt="Anões" />
-            <area shape="rect" coords="360,390,265,340" href="#" alt="Loja Mágica" />
-            <area shape="rect" coords="330,310,250,260" href="#" alt="Gatekeeper" />
-        </map>
+            </div>
+            <footer class="gradient-dourado">
+                Dragon Quests <sub style="font-size: 10px; color:black;">Versão Beta</sub>
+            </footer>
+            </div>  
+        </section>
+        
+        <!-- CONTEUDO DO JOGO -->
+        <section>
+            <div id="game-content">
+            </div>
+        </section>
+        
+        <!-- Mapa Interativo e Janela de Ação -->
+        <section>
+        <div class="mapa">
+            <img  src="../../assets/img/mapa.png" alt="Mapa de Exemplo" usemap="#mapaExemplo"/>
+            <!-- Definindo as áreas da imagem -->
+            <map name="mapaExemplo">
+                <!-- coords = left,top,right,bottom -->
+                <!-- coords = left,bottom,right,top -->
+                <area shape="rect" coords="310,60,150,140" href="#" alt="Templo" />
+                <area shape="rect" coords="500,120,330,160" href="#" alt="Loja de Armas" />
+                <area shape="rect" coords="430,175,370,240" href="#" alt="Banco" />
+                <area shape="rect" coords="5,240,110,200" href="#" alt="Humanos" />
+                <area shape="rect" coords="35,280,140,240" href="#" alt="Orcs" />
+                <area shape="rect" coords="40,285,130,330" href="#" alt="Elfos" />
+                <area shape="rect" coords="170,400,210,340" href="#" alt="Dark Elfos" />
+                <area shape="rect" coords="260,400,220,340" href="#" alt="Anões" />
+                <area shape="rect" coords="360,390,265,340" href="#" alt="Loja Mágica" />
+                <area shape="rect" coords="330,310,250,260" href="#" alt="Gatekeeper" />
+            </map>
+        </div>
 
         <!-- Informação sobre a área clicada -->
         <div class="info">Clique em uma região do mapa.</div>
+        </section>     
     </div>
+
 </main>
 
+
+
+<script>
+    // Função para carregar o conteúdo da página clicada
+    function carregarConteudoJogo(pagina) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "pages/" + pagina, true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById("game-content").innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    }
+
+    // Função para adicionar o evento de clique na navegação
+    function configurarNavegacao() {
+        var links = document.querySelectorAll('.navDashboard a[data-page]');
+        links.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Impede o comportamento padrão de redirecionamento
+                var pagina = this.getAttribute('data-page');
+                carregarConteudoJogo(pagina); // Carrega a página clicada
+            });
+        });
+    }
+
+    // Carrega o conteúdo inicial e configura a navegação ao carregar a página
+    window.onload = function() {
+        carregarConteudoJogo("home.php"); // Página inicial padrão
+        configurarNavegacao(); // Configura os cliques da navegação
+    };
+</script>
 </body>
 </html>

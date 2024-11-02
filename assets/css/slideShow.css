@@ -1,0 +1,41 @@
+
+/*Index*/
+.slideShow {
+    border: 5px solid coral;
+    height: 50vh;
+    margin: 10px;
+}
+
+.slider{
+    
+    border: 5px solid gold;
+    text-align: center;
+    
+}
+
+.slides {
+    position: relative;
+    border: 5px solid red;
+    height: 300px;
+    margin: 10px;
+}
+/*Tamanho dos Slides*/
+.slides img.slide  {
+    width: 500px;
+}
+
+
+.slides{
+    display: flex;
+    align-items: center;
+}
+
+.slide{
+    display: none;
+}
+
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+}

@@ -1,0 +1,198 @@
+/*FONTE DO GOOGLE*/
+@import url('https://fonts.cdnfonts.com/css/understand');
+
+html, body, section.horizontal {
+    overflow-x: hidden;
+    background-color: black;
+  }
+
+/*BGS*/
+.headerBg{
+    background-image: url('../assets/img/headerBgAden.jpg');   
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+header {
+    position: relative;
+    z-index: 2;
+    height: 90vh;
+   
+}
+.welcome {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.logoDragon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.logoDragon img{
+    height: 256px;
+}
+
+header nav {
+    border-bottom: 2px solid goldenrod;
+    border-radius: 0 0 150px 150px / 5%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    min-height: 48px;
+    flex-wrap: wrap;
+    border: 2px solid gold;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid gold;
+    height: 100%;
+    width: 20%;
+}
+
+
+body {  
+  margin: 0;
+  padding: 0;
+}
+
+.blank {
+    padding: 20px 10px;
+    color: white;
+}
+
+
+main nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+main nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    width: 100%;
+    padding: 10px;
+}
+main nav a:hover{
+    color: goldenrod;
+    transition: 0.3s;
+}
+
+
+section h1 {
+  margin: 0;
+  padding: 50px 0 0 50px;
+}
+
+section p {
+  margin: 0;
+  padding: 50px 0 50px 50px;
+
+}
+
+section {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  font-size: larger;
+}
+
+section.horizontal {
+  overflow-x: hidden;
+}
+
+section.horizontal .pin-wrap,
+section.horizontal .animation-wrap {
+    display: flex;
+    position: relative;
+    z-index: 1;  
+    height: 100vh;
+}
+
+
+section.horizontal .item {
+    position: relative;
+    padding: 150px 80px;
+    flex: 0 0 500px;
+    height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+    line-height: 1.7;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.514);
+    background-color: rgba(255, 255, 255, 0.392);
+}
+
+
+section.horizontal .item:before {
+    position: absolute;
+    font-size: 100px;
+    opacity: .5;
+    font-weight: bold;    
+    z-index: -1;
+    -webkit-transform: translate(-30px, -50px);
+    transform: translate(-30px, -50px);
+    line-height: 1;
+}
+
+
+
+
+section.horizontal .animation-wrap.to-right {
+    counter-reset: item;
+    float: left;
+}
+
+section.horizontal .animation-wrap.to-left {
+    counter-reset: item 11;
+    float: right; 
+}
+
+section.horizontal .animation-wrap.to-right .item:before {
+    counter-increment: item;
+    content: counter(item);
+    
+
+
+}
+
+section.horizontal .animation-wrap.to-left .item:before {
+    counter-increment: item -1;
+    content: counter(item);
+}
+
+
+
+section.horizontal .animation-wrap .item:nth-child(2n+2) {
+    align-items: flex-start;
+    
+}
+
+section.horizontal .animation-wrap .item:nth-child(4n+4) {
+    align-items: flex-end;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .headerBg {
+        display: none;
+    }
+    
+}

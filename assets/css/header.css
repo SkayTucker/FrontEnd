@@ -1,0 +1,136 @@
+/*Animação*/
+@keyframes showSideBar {
+
+    from {
+        margin-left: -45vw;
+    }
+
+    to {
+        margin-left: 1px;
+    }
+
+}
+
+/*HEADER*/
+header .openMenu,
+.closeMenu,
+.openAcess {
+    display: none;
+    cursor: pointer;
+}
+
+
+header {
+    background-color: var(--blackColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 0 20px 20px / 10%;
+    border-bottom: 0.1mm solid var(--goldColor);
+    box-shadow: 10px 0px 10px rgb(0, 0, 0);    
+    padding: 10px 0;
+}
+
+header #logo img{
+    width: 190px;
+    height: 45px;
+    filter: drop-shadow(1px 0px 1px goldenrod);
+}
+
+.headerNav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.headerNav #logo img{
+    width: 190px;
+    height: 45px;
+    padding: 0 5px;
+    filter: drop-shadow(1px 0px 1px goldenrod);
+}
+
+.headerNav nav a {
+    text-decoration: none;
+    color: goldenrod;
+    padding: 5px 10px;
+    border: 2px solid #e4000000;
+    font-weight: 300;
+    font-size: large;
+    margin-left: 5px;
+}
+.headerNav nav a:hover {
+    border-left: 2px solid goldenrod;
+    border-right: 2px solid goldenrod;
+    border-radius: 300px 300px 300px 300px / 99%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.headerNav nav .active {
+    border-left: 2px solid goldenrod;
+    border-right: 2px solid goldenrod;
+    border-radius: 300px 300px 300px 300px / 99%;
+    margin: 0 5px;
+}
+
+
+
+            /* RESPONSIVIDADE */
+/* Tela pequena (smartphones) - até 680px */
+@media screen and (max-width: 700px) {
+    
+    /*HEADER*/
+    header .openMenu,
+    .closeMenu,
+    .openAcess {
+        display: block;
+        color: white;
+    }
+
+    .closeMenu{
+        padding: 2px;
+        margin: 20px 0 50px 0;
+    }
+
+    header button.openMenu{
+        position: relative;
+
+    }
+
+    .headerNav nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--darkColor);
+        top: 0;
+        left: 0;
+        margin-left: -45vw;
+        animation-duration: 0.5s;
+        z-index: 2;
+        width: 40%;
+        height: 100%;
+
+    }
+
+
+
+    
+    .headerNav nav a {
+        text-decoration: none;
+        color: goldenrod;
+        padding: 10px;
+        border: 2px solid #ffffff00;
+        font-weight: 600;
+    }
+
+    .headerNav nav a:hover {
+        border-left: 2px solid goldenrod;
+        border-right: 2px solid goldenrod;
+        border-radius: 300px 300px 300px 300px / 99%;
+        transition: 0.3s;
+        filter: brightness(130%);
+    }
+
+
+}

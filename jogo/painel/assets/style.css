@@ -1,56 +1,21 @@
-/*FONTE DO GOOGLE*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/cretino');                
-@import url('https://fonts.cdnfonts.com/css/understand');
-
-/*Animação*/
-@keyframes showSideBar {
-
-    from {
-        margin-left: -45vw;
-    }
-
-    to {
-        margin-left: 1px;
-    }
-
-}
-
-
-/*Cores*/
-:root {
-    --darkColor: #000000da;
-    --blackColor: #252424fd;
-    --goldColor: #ffd000;
-}
-
-.gradient-primario {
-    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(3, 2, 0, 0.6090604026845637) 66%, rgba(23, 17, 1, 1) 100%);
-}
-
-.gradient-dourado {
-    background: radial-gradient(circle, rgb(219, 173, 5) 0%, rgba(212, 157, 4, 0.744) 66%, rgba(153, 114, 7, 0.758) 100%);
-}
-
-
-/*Estilo Global*/
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-main {
+.game {
+    margin-left: 300px;
     display: flex;
+    justify-content: space-between;
 }
+.headerGame{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    height: 100vh;
+}   
 
 .navDashboard{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 .navDashboard a{
     text-decoration: none;
     padding: 5px;
@@ -90,22 +55,30 @@ main {
     margin: 0 4px;
     border: 1px solid red;
 }
-
-#charQuests{
-    height: 50vh;
-}
-header footer {
-    position: absolute;
-    bottom: 0;
-    width: 20%;
-    text-align: center;
+.headerGame footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color:white;
 }
 
 #game-content{
-    width: 100%;
-    border: 6px double orange;
-    margin: 5px;
-    padding: 10px;
-    background-color: white;
+    border: 3px double orange;
+    color: white;
+    text-align: center;
+    height: 95vh;
+    width: 50vw;
 }
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px double orange;
+}
+.mapa img{
+    width: 97%;
+}
+
+
