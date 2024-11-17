@@ -15,6 +15,23 @@ html, body, section.horizontal {
     height: 100%;
 
 }
+
+
+.pergaminhoBgRight {
+    background-image: url('../assets/bg/helbound.jpg');   
+    background-position: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.pergaminhoBgLeft {
+    background-image: url('../assets/bg/helbound.jpg');   
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
 header {
     position: relative;
     z-index: 2;
@@ -91,6 +108,7 @@ main nav a:hover{
     color: goldenrod;
     transition: 0.3s;
 }
+
 
 
 section h1 {

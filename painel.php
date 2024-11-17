@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon Quests</title>
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body class="pagePainel">
-
     <!-- HEADER/NAVBAR -->
-    <header id="header">       
+    <header id="header">    
+
+        <!-- Abrir Menu Mobile -->
+        <button class="openMenu gradient-dourado" id="openMenu" onclick="sideBar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button> 
+
+        <!-- LOGO -->
+        <div id="logo">
+            <img src="assets/img/logo.png" alt="Logo da Empresa">
+        </div> 
+
         <!-- SideBar/Navigation -->
-        <div id="headerNav" class="headerNav">
-    
-            <div id="logo">
-                <img style="filter: drop-shadow(0px 0px 2px rgb(255, 208, 0));" src="assets/img/favicon.png" alt="" width="48">
-            </div>
-    
+        <div class="headerNav">
             <!-- Navegador de Paginas -->
-            <nav id="headerMenu" class="headerNav">
+            <nav id="headerMenu" >
                 
                 <!-- Fechar Menu Mobile -->
                 <button class="closeMenu gradient-dourado" onclick="sideBar()">
@@ -30,13 +38,13 @@
                     </svg>                
                 </button> 
 
-                <a href="index.html">Home</a>
-                <a class="active">Planner</a>
-                <a href="jogo.html">Lineage</a>
-                <a href="world.html">Lineage World</a>
-                <a href="#">Contato</a>
-    
-    
+                <a class="active">Home</a>
+                <a id="sobreMim">Sobre</a>
+                <a id="servicosWeb">Serviços</a>
+                <a id="meuContato">Contato</a>
+                <a href="dragon_world/index.html">Lineage World</a>
+
+
                 <!-- Abrir Menu Acessibilidade -->
                 <button class="openAcess" onclick="showAcess()">
                     ♿
@@ -51,23 +59,18 @@
                         </ul>  
                     </div> -->              
             </nav>
-          
+
         </div>  
+
     
-                <!-- Abrir Menu Mobile -->
-            <button class="openMenu gradient-dourado" id="openMenu" onclick="sideBar()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                </svg>
-            </button>    
     </header>
-          
+        
 <main onclick="sideBarClose()">
     <!-- LOGIN -->
     <section>
 
         <div class="painelForm" id="loginForm">       
-            <form action="jogo/painel/config/logar.php" method="post">
+            <form action="planner/config/logar.php" method="post">
                 <fieldset>
                      <legend>Painel</legend>    
                         <label for="user">Login</label>
@@ -84,7 +87,7 @@
          
         <!-- CADASTRO -->
         <div class="painelForm" id="regForm">
-            <form action="jogo/painel/config/cadastrar.php" method="post"> 
+            <form action="planner/config/cadastrar.php" method="post"> 
                 <fieldset>
                     <legend>Cadastro</legend>                   
                 <label for="nome">Usuário</label>

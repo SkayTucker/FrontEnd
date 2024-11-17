@@ -1,0 +1,98 @@
+Para criar um chatbot usando a API do WhatsApp em localhost, você pode usar o WhatsApp Business API, Twilio, ou soluções de código aberto como o Baileys (para JavaScript). Vamos explorar uma abordagem com o Baileys, que é uma biblioteca popular para criar bots de WhatsApp no Node.js.
+
+1. Pré-requisitos
+Node.js e NPM instalados no seu sistema.
+Conta no WhatsApp (você vai precisar conectar a sua conta ou uma conta comercial para testes).
+Baileys: biblioteca para interagir com o WhatsApp Web usando WebSocket, o que permite o funcionamento do bot sem o uso da API oficial do WhatsApp Business.
+2. Instalação do Baileys
+Abra o terminal e crie uma nova pasta para o projeto:
+
+bash
+Copiar código
+mkdir whatsapp-bot
+cd whatsapp-bot
+Inicie o projeto Node.js e instale o Baileys:
+
+bash
+Copiar código
+npm init -y
+npm install @whiskeysockets/baileys
+3. Criando o Bot de WhatsApp com Baileys
+Agora vamos criar um bot simples que responde automaticamente com uma mensagem de boas-vindas.
+
+Crie um arquivo bot.js e adicione o seguinte código:
+
+javascript
+Copiar código
+const { default: makeWASocket, useSingleFileAuthState } = require('@whiskeysockets/baileys')
+const { Boom } = require('@hapi/boom')
+const fs = require('fs')
+const path = require('path')
+
+// Armazena o estado de autenticação em um arquivo
+const { state, saveState } = useSingleFileAuthState('auth_info.json')
+
+// Função para iniciar o bot
+async function startBot() {
+    // Cria uma conexão com o WhatsApp
+    const sock = makeWASocket({
+        auth: state,
+        printQRInTerminal: true, // Mostra o QR code no terminal
+    })
+
+    // Lida com a conexão e reconexão
+    sock.ev.on('connection.update', (update) => {
+        const { connection, lastDisconnect } = update
+        if (connection === 'close') {
+            const shouldReconnect = (lastDisconnect.error = Boom)?.output?.statusCode !== DisconnectReason.loggedOut
+            console.log('Conexão fechada. Reconectar: ', shouldReconnect)
+            if (shouldReconnect) startBot()
+        } else if (connection === 'open') {
+            console.log('Conectado com sucesso ao WhatsApp!')
+        }
+    })
+
+    // Salva o estado de autenticação no arquivo
+    sock.ev.on('creds.update', saveState)
+
+    // Função para responder mensagens recebidas
+    sock.ev.on('messages.upsert', async (messageUpdate) => {
+        const message = messageUpdate.messages[0]
+        if (!message.key.fromMe && message.message) {
+            const sender = message.key.remoteJid
+            console.log(`Mensagem recebida de ${sender}`)
+
+            // Enviar uma resposta automática
+            await sock.sendMessage(sender, { text: 'Olá! Como posso ajudar você hoje?' })
+        }
+    })
+}
+
+startBot()
+Salve o arquivo e execute o bot:
+
+bash
+Copiar código
+node bot.js
+O QR code será exibido no terminal. Escaneie-o com o aplicativo do WhatsApp para conectar o bot à sua conta.
+
+4. Testando o Bot
+Depois de escanear o QR code, envie uma mensagem para o número associado à sua conta do WhatsApp. O bot responderá automaticamente com "Olá! Como posso ajudar você hoje?".
+
+5. Adicionando Funcionalidades ao Chatbot
+Você pode expandir o bot para responder a mensagens específicas, executar comandos ou até mesmo integrar com APIs externas. Por exemplo, adicione uma resposta condicional:
+
+javascript
+Copiar código
+if (message.message.conversation === 'Oi') {
+    await sock.sendMessage(sender, { text: 'Oi! Como posso ajudar?' })
+} else if (message.message.conversation === 'Ajuda') {
+    await sock.sendMessage(sender, { text: 'Aqui estão algumas opções: ...' })
+} else {
+    await sock.sendMessage(sender, { text: 'Desculpe, não entendi sua mensagem.' })
+}
+Observações Importantes
+Baileys funciona em cima do WhatsApp Web, portanto, o bot é desconectado se a conta for usada em outro dispositivo ou navegador.
+API oficial do WhatsApp Business é recomendada para ambientes de produção, mas geralmente precisa de uma configuração de servidor em nuvem e aprovação do Facebook.
+Compliance: verifique as políticas de uso do WhatsApp, especialmente se o bot será usado em produção.
+Esta é uma introdução básica ao desenvolvimento de um bot de WhatsApp localmente. Se precisar de funcionalidades adicionais, basta pedir!
