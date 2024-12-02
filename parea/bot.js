@@ -44,7 +44,6 @@ async function connectToWhatsApp() {
         const messageId = message.key.id;    // ID único da mensagem recebida
 
         console.log('Mensagem recebida:', JSON.stringify(m, undefined, 2));
-
         // Evita responder para si mesmo
         if (message.key.fromMe) {
             console.log('Mensagem recebida de si mesmo, ignorando...');
