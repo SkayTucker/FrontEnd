@@ -1,0 +1,22 @@
+{
+    "etapas": [
+      {
+        "titulo": "🏁 Etapa 1 - Criação do Projeto",
+        "tarefas": [
+          { "descricao": "Criar repositório no GitHub", "concluido": false },
+          { "descricao": "Configurar estrutura base do projeto no Android Studio", "concluido": false },
+          { "descricao": "Criar estrutura de pacotes (MVC ou MVVM)", "concluido": false },
+          { "descricao": "Configurar navegação entre telas", "concluido": false }
+        ]
+      },
+      {
+        "titulo": "🎨 Etapa 2 - Dependências e Estilização das Views",
+        "tarefas": [
+          { "descricao": "Definir tema e identidade visual", "concluido": false },
+          { "descricao": "Adicionar dependências essenciais (Material Design, Retrofit, etc.)", "concluido": false },
+          { "descricao": "Criar telas", "concluido": false }
+        ]
+      }
+    ]
+  }
+  

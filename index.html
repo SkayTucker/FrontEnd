@@ -7,13 +7,15 @@
     <title>DragonDev</title>
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/slideShow.css">
 
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
 
 </head>
+
 <body>
     <!-- HEADER/NAVBAR -->
     <header id="header">    
@@ -24,12 +26,6 @@
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
             </svg>
         </button> 
-
-        <!-- LOGO -->
-        <div id="logo">
-            <img src="assets/img/logo.png" alt="Logo da Empresa">
-        </div> 
-
         <!-- SideBar/Navigation -->
         <div class="headerNav">
             <!-- Navegador de Paginas -->
@@ -44,9 +40,10 @@
                 </button> 
 
                 <a class="active">Home</a>
-                <a id="sobreMim">Sobre</a>
+                <a id="projetos">Projetos</a>
                 <a id="servicosWeb">Serviços</a>
                 <a id="meuContato">Contato</a>
+                <a href="painel.php">Usuario</a>
                 <a href="dragon_world/index.html">Lineage World</a>
 
 
@@ -70,80 +67,214 @@
     
     </header>
     
+
     <!-- sideBarClose() quando clicar em todo o main, 
         caso o sidebar esteja aberto ele irá fechar -->
     <main onclick="sideBarClose()">
-        <div  id="mainBody" tabindex="0">    
+       <div  id="mainBody" tabindex="0">    
             
-        <!-- Vitrine de Serviços -->
-        <section class="serviceShowcase">
-            <nav class="menu">
-                <button data-page="service1.html">Serviço 1</button>
-                <button data-page="service2.html">Serviço 2</button>
-                <button data-page="service3.html">Serviço 3</button>
-            </nav>
-            <div class="content">
-                <p>Selecione um serviço no menu acima para visualizar mais detalhes.</p>
+            <!-- Vitrine -->
+            <div id="home" class="showroom">
+                <span>
+                    <h3 class="text-gradient">Sérgio <i>Skay</i> Tagino<br>Desenvolvedor Full Stack</h3>
+                    <p id="textHome">011101011101101100101011</p>
+                    
+                    <div class="certificates">
+                        <h4>Formações:</h4>
+                        <ul>
+                            <li><a target="_blank" href="./assets/img/certificados/cert1.jpg"><img src="./assets/img/certificados/cert1.jpg" alt=""></a></li>
+                            <li><a target="_blank" href="./assets/img/certificados/cert2.jpg"><img src="./assets/img/certificados/cert2.jpg" alt=""></a></li>
+                            <li><a target="_blank" href="./assets/img/certificados/cert2.jpg"><img src="./assets/img/certificados/cert2.jpg" alt=""></a></li>
+                        </ul>
+                        <h4>Formações Complementares:</h4>
+                        <ul>
+                            <li><a target="_blank" href="./assets/img/certificados/cert1.jpg"><img src="./assets/img/certificados/cert1.jpg" alt=""></a></li>
+                            <li><a target="_blank" href="./assets/img/certificados/cert2.jpg"><img src="./assets/img/certificados/cert2.jpg" alt=""></a></li>
+                            <li><a target="_blank" href="./assets/img/certificados/cert2.jpg"><img src="./assets/img/certificados/cert2.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </span>
             </div>
-        </section>
 
-        
+            <!-- Sobre & Projetos -->
+             <section id="sobre">
+                    <div class="sobre">
+
+                        <h1 class="text-gradient">Sobre mim</h1>
+                        <span>
+                            Desenvolvedor web apaixonado por criar interfaces gameficadas e 
+                            experiências incríveis. Tenho experiência em diversas tecnologias como 
+                            HTML, CSS, Node.js e Java, desenvolvendo projetos que vão desde landing pages, Jogos e até
+                            sistemas complexos.
+                        </span>
 
 
 
-            <!-- <div class="slideshow">
-                <section class="slides" id="slides"></section>
-                <div class="slideDesc">
-                    <h1>Sergio <i>Skay</i></h1>
-                    <span class="text">
-                        011001110101101 011
-                    </span> 
-                </div>
-            </div>    -->
-    
-            <!-- Projetos -->
-             <section class="meusProjetos">
-                <h1>Meus Projetos:</h1>
-                <div class="projects">
-                    <div class="projeto">
-                        <a href="world.html">
-                            <img src="assets/img/l2dragonworld.png" alt="">
-                        </a>
+                        <div class="skills">
+                            <h1 class="text-gradient">Habilidades principais</h1>
+                                    <div class="experience">
+                                        <div class="expHeader">
+                                            <h3>Frontend Development</h3>
+                                            <ul>
+                                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="html5image.png"></li>
+                                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="css3.png"></li>
+                                                <li><img src="https://www.w3schools.com/whatis/img_js.png" alt="js.png"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="expBody">
+                                            <h6>Landing Pages, Design Wordpress e Marketplaces</h6>
+                                            <div class="progress-bar">
+                                                <div class="progress" data-progress="80"></div>
+                                            </div>
+                                            <p class="percentage">85%</p>
+                                        </div>
+                                    </div>                                            
+                                    <div class="experience">
+                                        <h3>Backend Development</h3>
+                                        <div class="expHeader">
+                                            <ul>
+                                                
+                                                <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="html5image.png"></li>
+                                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="html5image.png"></li>
+                                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="html5image.png"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="expBody">
+                                            <h6>PHP, Java e Python</h6>
+                                            <div class="progress-bar">
+                                                <div class="progress" data-progress="70"></div>
+                                            </div>
+                                            <p class="percentage">75%</p>
+                                        </div>
+                                    </div> 
+                                    <div class="experience">
+                                        <h3>Banco de Dados</h3>
+                                        <div class="expHeader">
+                                            <ul>
+                                                <li><img src="https://e7.pngegg.com/pngimages/747/798/png-clipart-mysql-mysql-thumbnail.png" alt="html5image.png"></li>
+                                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="html5image.png"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="expBody">
+                                            <h6>MySql, PostGre e Sql Server </h6>
+                                            <div class="progress-bar">
+                                                <div class="progress" data-progress="65"></div>
+                                            </div>
+                                            <p class="percentage">65%</p>
+                                        </div>
+                                    </div> 
+                                    <div class="experience">
+                                        <h3>Design/Web design</h3>
+                                        <div class="expHeader">
+                                            <ul>
+                                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/640px-Adobe_Photoshop_CC_icon.svg.png" alt="html5image.png"></li>
+                                                <li><img src="https://img.utdstc.com/icon/62f/136/62f1369d2e49fdcdf4989596eefad984413b9f39a8edcb775ceda2ad736e686c:200" alt="html5image.png"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="expBody">
+                                            <h6>Photoshop e CorelDraw</h6>
+                                            <div class="progress-bar">
+                                                <div class="progress" data-progress="50"></div>
+                                            </div>
+                                            <p class="percentage">50%</p>
+                                        </div>
+                                    </div>                                     
+                                </div>
+                            </div>
+ 
+                        </div>
+
+
                     </div>
-                    <div class="projeto">
-                        <a href="jogo.html">
-                            <img src="assets/img/l2dragon.png" alt="">
-                        </a>
-                    </div>
-                    <div class="projeto">
-                        <a href="painel.php">
-                            <img src="assets/img/dragonplanner.png" alt="">
-                        </a>
-                    </div>                                
-                 </div>
              </section>
 
+             <!-- Serviços -->
+              <section id="projetos">
+                    <div class="projetos">
+
+                        <h1 class="text-gradient">Projetos Web</h1>
+                        <div class="projects">
+                            <div class="projeto">
+                                <a href="world.html">
+                                    <img src="assets/img/l2dragonworld.png" alt="">
+                                </a>
+                            </div>
+                            <div class="projeto">
+                                <a href="jogo.html">
+                                    <img src="assets/img/l2dragon.png" alt="">
+                                </a>
+                            </div>
+                            <div class="projeto">
+                                <a href="painel.php">
+                                    <img src="assets/img/dragonplanner.png" alt="">
+                                </a>
+                            </div>                                
+                        </div>
+
+                        <h1 class="text-gradient">Sistemas</h1>
+                        <div class="projects">
+                            <div class="projeto">
+                                <a href="world.html">
+                                    <img src="assets/img/l2dragonworld.png" alt="">
+                                </a>
+                            </div>
+                            <div class="projeto">
+                                <a href="jogo.html">
+                                    <img src="assets/img/l2dragon.png" alt="">
+                                </a>
+                            </div>
+                            <div class="projeto">
+                                <a href="painel.php">
+                                    <img src="assets/img/dragonplanner.png" alt="">
+                                </a>
+                            </div>                                
+                        </div>
+                    </div>                  
+              </section>
 
     </div>
 </main>
+
+
+<footer>
+    <div class="footerHeader">
+
+    </div>
+
+    <div class="footerBody">
+        ©2024 DragonDev, Todos os Direitos Reservados.
+    </div>
+    
+</footer>
+
 <script src="assets/js/headerSideBar.js"></script>
-<script src="assets/js/slideShow.js"></script>
 <script src="assets/js/Acessibilidade.js"></script>
-
-
+<script src="assets/js/script.js"></script>
 
 <script>
-    // use a script tag or an external JS file
-    document.addEventListener("DOMContentLoaded", (event) => {
-     gsap.to('.text', {
-        duration: 2,
-        text: "Desenvolvimento Web",
-        ease: "none",
-        rtl: "true",
-        
-        });
-});    
-   </script>
+    // Seleciona o formulário
+    const form = document.getElementById("contactForm");
+
+    // Adiciona um evento de envio ao formulário
+    form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Validações simples
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+        alert("Por favor, preencha todos os campos!");
+        return;
+    }
+
+    // Exibe uma mensagem de sucesso
+    alert(`Obrigado, ${name}! Sua mensagem foi enviada com sucesso.`);
+    form.reset(); // Limpa os campos do formulário
+    });
+
+</script>
 
 
 <script>

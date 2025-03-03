@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@keyframes fadeInBg {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.2;
+  }  
+  100% {
+    opacity: 0.3;
+  }  
+}
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Roboto';
+}
+#rain-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.homeBg {
+  background-image: url('../img/homebg.jpeg'); /* Substitua pelo caminho correto */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1; /* Fica abaixo do texto */
+  opacity: 0;
+  animation: fadeInBg 10s ease forwards; /* Gradual fade-in da imagem de fundo */
+  animation-delay: 3s; /* Começa após 3 segundos */
+}
+#story {
+  opacity: 0;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 500px;
+  z-index: 9999; /* Deve sobrepor a imagem e a chuva */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeInText 20s ease forwards; /* 10s de fade-in */
+  animation-delay: 3s; /* Começa após 3 segundos */
+}
+.homeStory {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  color: white;
+}
+.story-section {
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  z-index: 9999;
+}
+
+
+main {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: white;
+  z-index: 9999;
+}
+.sectionBg {
+  background-image: url('../img/homeSection.jpg'); /* Substitua pelo caminho correto */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0; /* Fica abaixo do texto */
+  opacity: 0;
+  animation: fadeInBg 5s ease forwards; /* Gradual fade-in da imagem de fundo */
+  animation-delay: 3s; /* Começa após 3 segundos */
+}
+main ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+main ul li {
+  margin: 10px 0;
+}
+
+
+.navigation-section {
+  padding: 50px 20px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+
+.nav-tabs {
+  display: flex;
+  justify-content: center; /* Mantém os elementos centralizados inicialmente */
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.tab {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin: 0 20px;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.image.good {
+  background-image: url('../img/good.png'); /* Substitua pelo caminho correto */
+}
+
+.image.evil {
+  background-image: url('../img/evil.png'); /* Substitua pelo caminho correto */
+}
+

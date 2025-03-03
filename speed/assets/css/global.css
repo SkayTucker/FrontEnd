@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Animações*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animação do slide */
+@keyframes customSlideAnimation {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+body {
+  font-family: 'IBM Plex Sans', serif;
+  background-color: var(--primary);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+/* Elementos animados iniciam visíveis, mas só animam quando o JS adiciona a classe "animate". */
+.animate {
+  opacity: 1;
+  /* Visível por padrão */
+  transform: translateY(0);
+  /* Sem deslocamento por padrão */
+  transition: none;
+  /* Sem transições aplicadas inicialmente */
+}
+
+/* Quando a animação está ativa (iniciada pelo JS) */
+.animate.start {
+  opacity: 0;
+  /* Tornar invisível até estar visível */
+  transform: translateY(20px);
+  /* Posição inicial da animação */
+  transition: all 1s ease-in-out;
+}
+
+/* Quando o elemento entra na visualização */
+.animate.start.visible {
+  opacity: 1;
+  /* Torna visível */
+  transform: translateY(0);
+  /* Posição final */
+}
+
+
+.navHeader {
+  display: flex;
+  background-color: black;
+}
+
+:root {
+  --primary: #277f9d;
+  --secondary: #fbae2f;
+  --background: #e0e0e0;
+  --text-color: #181818;
+}
+
+
+
+
+
+
+
+/*Backgrounds*/
+/* Background padrão para cada slide */
+.slide-1 {
+  background-image: url('../img/1366x768.JPG');
+}
+
+.slide-2 {
+  background-image: url('../img/1366x768-2.jpg');
+}
+
+.slide-3 {
+  background-image: url('../img/1366x768-3.JPG');
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .home-section {
+    height: 90vh;
+  }
+  .homeSlideshow .slide {
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+  }
+  .slide-1 {
+    background-image: url('../img/1024x800.JPG');
+  }
+
+  .slide-2 {
+    background-image: url('../img/1024x800-2.JPG');
+  }
+
+  .slide-3 {
+    background-image: url('../img/1024x800-3.JPG');
+  }
+}
+
+
+
+@media (max-width: 560px) {
+  .home-section {
+    height: 90vh;
+  }
+  .homeSlideshow .slide {
+    background-size: contain;
+    background-position: top;
+    margin-top: 60px;
+  }
+
+  .slide-1 {
+    background-image: url('../img/320x460.JPG');
+  }
+
+  .slide-2 {
+    background-image: url('../img/320x460-2.JPG');
+  }
+
+  .slide-3 {
+    background-image: url('../img/320x460-3.JPG');
+  }
+}

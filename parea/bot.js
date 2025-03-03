@@ -1,83 +1,124 @@
-import { makeWASocket, useMultiFileAuthState, DisconnectReason, Browsers } from '@whiskeysockets/baileys';
-import * as fs from 'fs';
-import { Boom } from '@hapi/boom';
+const { Client, LocalAuth, MessageMedia, Buttons } = require('whatsapp-web.js');
+const qrcode = require('qrcode-terminal');
+const { isUserRegistered, validateUser, getEstablishmentNameByPhone } = require('./db/userQueries');
+const path = require('path');
+const userStates = {};  // Objeto para armazenar o estado de login de cada usuário
 
-// Caminho onde o estado de autenticação será armazenado
-const authPath = './auth_info_baileys';
 
-// Função para salvar e restaurar o estado de autenticação
-const { state, saveCreds } = await useMultiFileAuthState(authPath);
+// Função para verificar se o usuário está logado
+function isUserLoggedIn(phoneNumber) {
+    return userStates[phoneNumber] && userStates[phoneNumber].isLoggedIn;
+}
 
-// Objeto para rastrear as últimas mensagens processadas
-const recentMessages = new Map();
 
-async function connectToWhatsApp() {
-    // Cria a conexão com o WhatsApp
-    const sock = makeWASocket({
-        auth: state, // Usa o estado de autenticação para evitar escanear o QR novamente
-        browser: Browsers.macOS('Desktop'),
-        printQRInTerminal: true, // Exibe o QR no terminal
-        syncFullHistory: true // Sincroniza todo o histórico de mensagens
-    });
+const client = new Client({
+    authStrategy: new LocalAuth(),
+    puppeteer: { headless: true }
+});
 
-    // Lida com eventos de conexão
-    sock.ev.on('connection.update', (update) => {
-        const { connection, lastDisconnect, qr } = update;
-        if (connection === 'close') {
-            const shouldReconnect = (lastDisconnect.error && lastDisconnect.error.output && lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut);
-            console.log('Conexão fechada devido a', lastDisconnect.error, ', reconectando', shouldReconnect);
-            if (shouldReconnect) {
-                connectToWhatsApp(); // Tenta reconectar automaticamente
+client.on('qr', (qr) => {
+    console.log('QR Code recebido:');
+    qrcode.generate(qr, { small: true });
+});
+
+client.on('ready', () => {
+    console.log('Cliente está pronto!');
+});
+
+
+// Função para enviar botões
+function sendButtonMessage(chatId) {
+    const buttons = [
+        { id: 'customId', body: 'Entrar/Login 🛠️' },
+        { body: 'Veja nossa imagem 📷' },
+        { body: 'Informações sobre a empresa ℹ️' },
+        { body: 'Nome da CEO e empresa desenvolvedora 👩‍💻' },
+        { body: 'Encerrar conversa ❌' },
+    ];
+
+    // Cria o objeto Buttons com o texto e os botões formatados
+    const formattedButtons = new Buttons(
+        'Escolha uma das opções abaixo:', 
+        buttons, 
+        'Menu Inicial', 
+        'Parea Bot 🤖'
+    );
+
+    // Envia a mensagem com os botões
+    client.sendMessage(chatId, formattedButtons);
+}
+
+
+// Função para o menu após login (logado)
+function sendLoggedButtons(chatId) {
+    const message = `*Parea Bot* 🤖:
+
+Escolha uma opção:
+
+1️⃣ Cadastrar Produto 🛒
+2️⃣ Ver Produtos 📦
+3️⃣ Ver Validades 📅
+4️⃣ Voltar para Home ⬅️`;
+
+    client.sendMessage(chatId, message);
+}
+
+
+client.on('message', async (message) => {
+    const phoneNumber = message.from;  // Número de telefone do remetente
+    const messageBody = message.body.trim();  // Mensagem enviada pelo usuário
+    
+    if (messageBody.toLowerCase() === 'olá') {
+        // Responde com Menu
+        sendButtonMessage(message.from);  // Exibe o menu para o usuário
+        return;
+    }
+
+    try {
+        if (!isUserLoggedIn(phoneNumber)) {
+            if (messageBody === 'entrar/login') {
+                // Realizar a validação de login...
+                // Lógica de login
+            } else if (messageBody === 'veja nossa imagem') {
+                // Enviar imagem...
+            } else if (messageBody === 'informações sobre a empresa') {
+                // Informações da empresa...
+            } else if (messageBody === 'nome da ceo e empresa desenvolvedora') {
+                // Nome da CEO e desenvolvedora...
+            } else if (messageBody === 'encerrar conversa') {
+                client.sendMessage(phoneNumber, 'Conversa encerrada. Envie *Olá* para iniciar novamente.');
+            } else {
+                client.sendMessage(phoneNumber, 'Opção inválida. Envie *Olá* para ver as opções disponíveis.');
             }
-        } else if (connection === 'open') {
-            console.log('Conexão aberta com sucesso!');
-        } else if (qr) {
-            console.log('QR code gerado. Escaneie com o WhatsApp:');
-            console.log(qr); // Exibe diretamente o QR code gerado
+        } else {
+            // Se o usuário está logado, mostra o menu de opções pós-login
+            switch (messageBody) {
+                case '1': // Cadastrar Produto
+                    client.sendMessage(phoneNumber, 'Por favor, informe os detalhes do produto.');
+                    registerProduct(phoneNumber);
+                    break;
+                case '2': // Ver Produtos
+                    client.sendMessage(phoneNumber, 'Buscando produtos...');
+                    listProducts(phoneNumber);
+                    break;
+                case '3': // Histórico de Cadastro
+                    client.sendMessage(phoneNumber, 'Por favor, informe a data de validade no formato (YYYY-MM-DD).');
+                    client.once('message', (dateMessage) => {
+                        const expiryDate = dateMessage.body.trim();
+                        viewByExpiryDate(phoneNumber, expiryDate);
+                    });
+                    break;
+                case '4': // Voltar para Home
+                    sendSimulatedButtons(phoneNumber);  // Exibe o menu para o usuário
+                    break;
+                default:
+                    client.sendMessage(phoneNumber, 'Opção inválida. Envie "1", "2", "3" ou "4".');
+            }
         }
-    });
+    } catch (error) {
+        console.error('Erro no bot:', error);
+        client.sendMessage(phoneNumber, 'Erro no sistema. Tente novamente mais tarde.');
+    }
+});
 
-    // Lida com mensagens recebidas
-    sock.ev.on('messages.upsert', async (m) => {
-        const message = m.messages[0];
-        const sender = message.key.remoteJid; // ID do remetente da mensagem
-        const messageId = message.key.id;    // ID único da mensagem recebida
-
-        console.log('Mensagem recebida:', JSON.stringify(m, undefined, 2));
-        // Evita responder para si mesmo
-        if (message.key.fromMe) {
-            console.log('Mensagem recebida de si mesmo, ignorando...');
-            return;
-        }
-
-        // Verifica se a mensagem já foi processada
-        if (recentMessages.get(sender) === messageId) {
-            console.log('Mensagem já processada, ignorando...');
-            return;
-        }
-
-        // Armazena o ID da mensagem processada para evitar duplicação
-        recentMessages.set(sender, messageId);
-
-        // Define um tempo para limpar a memória (opcional, evita acumular dados antigos)
-        setTimeout(() => recentMessages.delete(sender), 60 * 1000); // Remove após 1 minuto
-
-        // Responde automaticamente à mensagem recebida
-        if (sender) {
-            await sock.sendMessage(sender, { text: '*PARÊA BOT*: \nOlá, estou aqui!' });
-            console.log(`Resposta enviada para ${sender}`);
-        }
-    });
-
-    // Salva as credenciais sempre que o estado de autenticação for alterado
-    sock.ev.on('creds.update', saveCreds);
-
-    return sock;
-}
-
-// Função principal para inicializar a conexão
-async function main() {
-    await connectToWhatsApp();
-}
-
-main().catch(err => console.error('Erro ao conectar:', err));
+client.initialize();

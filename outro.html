@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rain of Blood and Story</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/rainBlood.css">
+</head>
+<body>
+
+<div class="home">
+  <div class="homeBg"></div>
+
+  <div class="homeStory">
+    <canvas id="rain-canvas"></canvas>
+    <div id="story"></div>
+  </div>
+
+  <section class="story-section">
+    <div class="content">
+      <p>Ao deslizar para baixo, você descobrirá mais sobre a história deste mundo...</p>
+    </div>
+  </section>
+</div>
+
+
+
+<main>
+  <div class="sectionBg"></div>
+    <section class="navigation-section">
+      <div class="nav-tabs">
+        <div class="tab" id="good-tab">
+          <div class="image good"></div>
+          <p>O Bem</p>
+        </div>
+        <div class="tab" id="evil-tab">
+          <div class="image evil"></div>
+          <p>O Mal</p>
+        </div>
+      </div>
+      <div class="tab-content">
+        <div id="good-content" class="content">
+          <p>O Bem é representado pelos guardiões, aqueles que lutam para proteger o equilíbrio e a harmonia do mundo.</p>
+        </div>
+        <div id="evil-content" class="content">
+          <p>O Mal representa os poderes sombrios, prontos para consumir tudo em sua escuridão infinita.</p>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger,ScrollToPlugin)
+
+ 
+    // Seleciona os elementos "O Bem" e "O Mal"
+    const goodTab = document.getElementById("good-tab");
+    const evilTab = document.getElementById("evil-tab");
+
+    // Configuração inicial: elementos centralizados
+    gsap.set([goodTab, evilTab], {
+      x: 0, // Inicialmente no centro
+      opacity: 1,
+    });
+
+    // Animação ao scrollar
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".navigation-section", // Inicia ao entrar na section
+        start: "top center", // Início do gatilho
+        end: "bottom center", // Fim do gatilho
+        scrub: true, // Animação fluida com o scroll
+      },
+    })
+      .to(goodTab, {
+        x: -300, // Move "O Bem" para a esquerda
+        opacity: 1,
+        duration: 2,
+      })
+      .to(
+        evilTab,
+        {
+          x: 300, // Move "O Mal" para a direita
+          opacity: 1,
+          duration: 2,
+        },
+        "<" // Inicia simultaneamente com o "goodTab"
+      );
+  });
+
+  </script>
+  <script src="assets/js/rainBlood.js"></script>
+</body>
+</html>
