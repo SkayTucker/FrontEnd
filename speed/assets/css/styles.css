@@ -1,0 +1,273 @@
+  @import url('assets/css/global.css');
+
+
+  /*START PAGE CONTENT*/
+  main {
+    background: #f9f9f9;
+  }
+
+  /* Section: Serviços */
+  .services {
+    text-align: center;
+    height: 100%;
+    padding: 30px 0;
+  }
+
+  .services h1 {
+    font-size: 2rem;
+    color: var(--secondary);
+    padding-top: 40px;
+  }
+
+  .services h1 b {
+    color: var(--primary);
+  }
+
+  .services h2 {
+    font-size: 2.5rem;
+    padding: 80px 0 10px 0;
+  }
+
+  .services p {
+    margin: 20px 80px;
+    font-size: 1.3rem;
+  }
+
+  .serviceCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 10px 0;
+
+  }
+
+  .serviceCard .card {
+    width: 20%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.168);
+  }
+
+  .serviceCardHeader {
+    width: 120px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .serviceCardHeader img {
+    width: 100px;
+  }
+
+  .serviceCardBody {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .serviceCardBody h3 {
+    font-size: 1.6rem;
+    padding-top: 10px;
+    color: var(--primary);
+  }
+
+  .serviceCardBody p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+  }
+
+  .duvidas {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .duvidas .duvidasContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rebeccapurple;
+  }
+
+
+  .duvidas .dropdown-section {
+    width: 30%;
+    margin: 10px 150px 0 0;
+    padding: 10px;
+  }
+
+  .dropdown-section {
+    text-align: left;
+  }
+
+  .dropdown-section details {
+    margin: 10px 0;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+
+  .dropdown-section summary {
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdown-section summary::after {
+    content: "▼";
+    font-size: 12px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sobreNos h2 {
+    margin: 10px 0;
+    font-size: 4rem;
+  }
+  .sobreNos {
+    height: 100%;
+    text-align:justify;
+    padding: 10px 50px;
+    font-size: larger;
+  }
+  .sobreNos p {
+    margin: 10px 0;
+  }
+
+  /*Cep Section */
+  .backgroundCep {
+    background-color: var(--background);
+  }
+
+  #cepCheckSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px 10px;
+  }
+
+  .cepCheck {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  #cepCheckSection h1 {
+    padding: 20px 0;
+    font-size: 2rem;
+  }
+
+  .cep p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 20px;
+  }
+
+  .cep form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 40px 40px / 70%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .cep input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .cep button {
+    background-color: var(--primary);
+    color: var(--background);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .cep button:hover {
+    background-color: #fbae2f;
+  }
+
+  .cep h2 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+  }
+
+  .speedTest h2 {
+    padding: 10px 0;
+  }
+
+
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-content i {
+    margin: 5px;
+    font-size: 1.2rem;
+
+  }
+
+  .footer-content h3 {
+    margin-bottom: 10px;
+  }
+
+  .footer-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+  }
+
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-note {
+    margin-top: 20px;
+    font-size: 0.8rem;
+  }

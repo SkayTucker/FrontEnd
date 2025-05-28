@@ -1,0 +1,5 @@
+img[alt="Coelho da Páscoa"] {
+    position: fixed;
+    transition: opacity 0.5s, transform 0.5s ease-out;
+    filter: drop-shadow(1px 1px 2px black);
+}

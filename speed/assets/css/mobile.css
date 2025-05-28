@@ -1,0 +1,140 @@
+@media (max-width: 1024px) {
+  header nav {
+    display: none;
+  }
+  header .logo .logoFull {
+    display: none;
+  }
+
+  header .logo .logoIcon {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+    position: absolute;
+    width: 40%;
+    margin: 0;
+    right: 0;
+    padding: 10px 0;
+    background-color: var(--light-primary);
+  }
+
+  header.full {
+    background-color: var(--light-primary);
+  }
+  .menuHeadOpen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    transition: 0.5s;
+    filter: drop-shadow(1px 2px 2px black);
+  }
+
+  .btnMenuOpen {
+    display: block;
+  }
+
+  header nav a {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.178);
+  }
+
+  header button {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  header .clientArea {
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+    width: 55%;
+  }
+  /*homeShow*/
+  .home-section {
+    height: 90vh;
+  }
+  .homeSlideshow .slide {
+    background-size: contain;
+    background-position: center;
+  }
+
+  /*planos*/
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .planContainer {
+    padding: 0 10px;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .planFibraBasic,
+  .planFibra,
+  .plan {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .planBody {
+    height: auto;
+    margin: 0 10px;
+  }
+
+  .planFooter button {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  
+
+}
+
+
+/* Celulares */
+@media (max-width: 700px) {
+  /*homeShow*/
+  .home-section {
+    height: 90vh;
+  }
+  .homeSlideshow .slide {
+    background-size: contain;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-container h1 {
+    font-size: 1.8rem;
+    padding: 30px 0 10px;
+  }
+
+  .planFooter .footerHeader p {
+    font-size: 2rem;
+  }
+
+  .planFooter .footerHeader b {
+    font-size: 1.2rem;
+  }
+
+  .slider-btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}

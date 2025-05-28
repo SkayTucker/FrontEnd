@@ -1,0 +1,13 @@
+/* Estilização do menu dropdown */
+
+  
+  /* Modo escuro com redução de brilho */
+  .dark-mode {
+    filter: brightness(0.7);
+  }
+  
+  /* Modo de baixo contraste */
+  .low-contrast {
+    filter: contrast(0.7);
+  }
+  

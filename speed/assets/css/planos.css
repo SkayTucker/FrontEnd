@@ -1,0 +1,263 @@
+/*Planos*/
+#planos {
+    margin: 10px 0;
+}
+
+/*container do slideshow planos*/
+.planContainer {
+    text-align: center;
+    height: 100%;
+}
+
+/*Titulo dos planos*/
+.plan-container h1 {
+    font-size: 2.5rem;
+    padding: 40px 0 0 0 ;
+}
+
+.slider-navigation {
+    margin: 10px 0;
+}
+.plan-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.planNavBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.439);
+    color: var(--primary);
+    box-shadow: 1px 1px 2px black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 2;
+}
+
+.prevPlan {
+    left: 10px;
+}
+
+.nextPlan {
+    right: 10px;
+}
+
+.planNavBtn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Conteudo dos Planos*/
+.slider {
+    display: flex;
+    align-items: center;
+    transition: transform 0.8s ease;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+/*Style dos Cards dos PLanos*/
+.planFibraBasic,
+.planFibra{
+    margin: 0 5px;
+    border: 2px solid var(--primary);
+    width: 100%;
+    background: #fff;
+    border-radius: 60px 60px / 10%;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.383);
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.plan {
+    margin: 0 5px;
+    border: 2px solid var(--primary);
+    min-width: 290px;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 60px 60px / 10%;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.383);
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.planBusiness {
+    margin: 0 5px;
+    border: 2px solid var(--primary);
+    min-width: 300px;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 60px 60px / 10%;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.383);
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*Nome do plano*/
+.planTitle {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 700;
+    margin: 10px;
+    padding: 5px 0 0 0;
+}
+
+/*Topo do plano*/
+.planHeader {
+    display: flex;
+    text-align: center;
+    width: 90%;
+    justify-content: center;
+    background-color: var(--secondary);
+    border-radius: 60px 60px / 80%;
+    border: 2px solid var(--primary);
+    height: 80px;
+    margin: 10px 0;
+}
+
+/*Velocidade*/
+.planHeader h3 {
+    font-size: 2.8rem;
+    align-self: center;
+}
+
+/*MB/GB/TB*/
+.planHeader h4 {
+    font-size: 2.4rem;
+    margin-left: 5px;
+    align-self: center;
+}
+
+/*Tamanho do Conteudo do Plano*/
+.planBody {
+    height: 280px;
+    margin: 0 20px;
+}
+
+.planBody ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    justify-content: baseline;
+    margin: 0 25px;
+}
+
+.planBody ul li {
+    margin: 10px 0 0 0;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.594);
+    font-size: 1.12rem;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 4px 0;
+}
+
+/*Valor do Plano*/
+.planFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.planFooter .footerHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.planFooter .footerHeader p {
+    font-size: 2.6rem;
+    font-weight: 700;
+
+}
+
+.planFooter .footerHeader b {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.planFooter h2 {
+    border-top: 1px solid var(--primary);
+}
+
+.planFooter button {
+    color: var(--background);
+    background-color: var(--primary);
+    border: 1px solid;
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 40px 40px / 70%;
+    transition: 0.3s;
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+.planFooter button:hover {
+    cursor: pointer;
+    background: #fff;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+
+}
+
+.slider-btn {
+    background: #ccc;
+    border: none;
+    margin: 3px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.slider-btn:hover {
+    background: #888;
+    transform: scale(1.1);
+}
+
+/* Estilização do botão ativo */
+.slider-btn.active {
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+/* Efeito carta de baralho */
+.planFibraBasic,
+.planFibra,
+.plan {
+    opacity: 0;
+    transform: translateX(-80px) rotateY(-20deg);
+    transition: opacity 3.9s ease, transform 1.2s ease;
+    transform-origin: left center;
+    perspective: 1000px;
+}
+
+.plan-active {
+    opacity: 1;
+    transform: translateX(0) rotateY(0);
+}

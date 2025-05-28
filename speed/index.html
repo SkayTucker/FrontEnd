@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <title>SpeedInfo Telecom - Internet Rápida e Confiável</title>
-
   <!-- SEO Meta Tags -->
   <meta name="description"
     content="A SpeedInfo Telecom oferece internet rápida, estável e com preços acessíveis. Conecte-se ao melhor serviço de telecomunicações da sua região.">
@@ -14,21 +13,40 @@
     content="SpeedInfo Telecom, internet rápida, internet fibra, telecomunicações, internet confiável">
   <meta name="author" content="SpeedInfo Telecom">
   <meta name="robots" content="index, follow">
-
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:title" content="SpeedInfo Telecom - Internet Rápida e Confiável">
   <meta property="og:description"
     content="A SpeedInfo Telecom oferece internet rápida, estável e com preços acessíveis. Conecte-se ao melhor serviço de telecomunicações da sua região.">
-  <meta property="og:image" content="https://speedinfo.net.br/assets/img/favicon.ico">
-  <meta property="og:url" content="https://speedinfo.net.br/">
-  <meta property="og:type" content="website">
-
   <!-- Canonical URL -->
-  <meta property="og:image" content="https://speedinfo.net.br/assets/img/favicon.ico">
+  <meta property="og:image" content="https://speedinfotelecom.com.br/assets/img/favicon.ico">
+  <meta property="og:url" content="https://speedinfotelecom.com.br/">
+  <meta property="og:type" content="website">
+  <!-- Temático -->
+  <link rel="stylesheet" href="assets/css/diadasmaes.css">
+  <!-- PÁSCOA <link rel="stylesheet" href="assets/css/coelho.css"> -->
+  <script src="assets/js/diadasmaes.js"></script>
 
-  <!-- Stylesheets -->
-  <link id="themeStylesheet" rel="stylesheet" href="assets/css/theme2.css">
-  <link rel="stylesheet" href="assets/css/chatbot.css">
+  <!--  Global CSS -->
+  <link id="themeStylesheet" rel="stylesheet" href="assets/css/global.css">
+  <!--  PRINCIPAL CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Header da Pagina -->
+  <link rel="stylesheet" href="assets/css/header.css">
+  <!-- Acessibilidade da Pagina -->
+  <link rel="stylesheet" href="assets/css/acessibilidade.css">
+
+  <!-- Homeslideshow da Pagina -->
+  <link rel="stylesheet" href="assets/css/homeslideshow.css">
+  <!-- Canais do Homeslideshow -->
+  <link rel="stylesheet" href="assets/css/canaisSlider.css">
+  <!-- Whatssapp da Pagina -->
+  <link rel="stylesheet" href="assets/css/whatsapp.css">
+
+  <!-- Canais do Homeslideshow -->
+  <link rel="stylesheet" href="assets/css/planos.css">
+
+  <link rel="stylesheet" href="assets/css/mobile.css">
 
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/f5de20681c.js" crossorigin="anonymous"></script>
@@ -45,7 +63,7 @@
     <button id="btnMenu"><i class="fa-solid fa-bars"></i></button>
 
     <nav id="menuHeader" class="menuHeader">
-      <button id="btnCloseMenu">X</button>
+      <button id="btnCloseMenu" aria-label="Fechar menu">X</button>
       <a href="#home">Início</a>
       <a href="#planos">Planos</a>
       <a href="#serviços">Serviços</a>
@@ -53,119 +71,147 @@
 
       <a id="btnApp">Apps</a>
 
-      <nav id="dropDown" class="dropDown">
-        <div class="dropdown-content">
-          <a href="#">Google Play</a>
-          <a href="#">Apple Store</a>
+      <nav id="dropDownApp" class="dropDownApp">
+        <div class="dropDownApp-content">
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.r3r.speedinfotelecom"><img
+              src="assets/img/googleplay.png" width="128px" alt="googleplay.ico"></a>
+          <a target="_blank" href="https://apps.apple.com/br/app/speedinfo-telecom/id6738890170"><img
+              src="assets/img/applestore.png" width="128px" alt="googleplay.ico"></a>
         </div>
       </nav>
 
 
       <a target="_blank" href="https://speedinfo.sgp.net.br/accounts/central/login" class="clientArea">Área do
         Cliente</a>
+
+      <a id="btnAcess"><img src="assets/img/acess.png" width="24px" alt="acessibilidade.png"></a>
+      <!-- Acessibilidade -->
+      <nav id="dropDownPcd" class="dropDownPcd">
+        <div class="dropDownPcd-content">
+          <a href="#">Modo Escuro</a>
+          <a href="#">Baixo Contraste</a>
+        </div>
+      </nav>
     </nav>
 
   </header>
-  <!-- Chatbot Lateral -->
-  <button id="chatbotButton" class="chatbot-button" style="font-size: small;">
-    <i class="fa fa-whatsapp"></i>
-  </button>
-  <div id="chatbot" class="chatbot">
-    <div class="chatbot-header">
-      <h3 style="color: white;">Suporte Rápido</h3>
-      <button id="closeChatbot">✖</button>
-    </div>
-    <div class="chatbot-body">
-      <h5>Precisa de Ajuda?</h5>
-      <ul>
-        <li><a style="text-decoration: none;" href="http://wa.me/558186074648">Atendimento</a></li>
-        <li>
-          <details>
-            <summary>Ajuda Rápida</summary>
-            <ul>
-              <li><a style="text-decoration: none;" href="#">Como contratar um plano</a></li>
-              <li><a style="text-decoration: none;" href="#">Configurações técnicas</a></li>
-              <li><a style="text-decoration: none;" href="#">Perguntas frequentes</a></li>
-              <li><a style="text-decoration: none;" href="https://www.google.com" target="_blank">Ver mais</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul>
-    </div>
-  </div>
 
-  <!-- Section 1: Apresentação -->
+  <!-- Section 1: HomeSection -->
   <section id="home" class="home-section">
     <!-- Slideshow de fundo -->
     <div class="homeSlideshow">
-      <div class="overlay"></div>
-      <div class="slide slide-1"></div>
-      <div class="slide slide-2"></div>
-      <div class="slide slide-3"></div>
+      <div class="slide slide-1 active">
+        <div class="slide-progress"></div>
+      </div>
+      <div class="slide slide-2">
+        <div class="slide-progress"></div>
+      </div>
+      <div class="slide slide-3">
+        <div class="slide-progress"></div>
+      </div>
 
       <!-- Botões de navegação -->
       <button class="prevSlide">&#10094;</button>
       <button class="nextSlide">&#10095;</button>
     </div>
-
-    <!-- Canais -->
   </section>
-  <a href="#" class="canaisContainer">
-    <div class="canais">
-      <h1>Aproveite o que temos de melhor!</h1>
-      <!-- Canais -->
-      <div class="customSlideContainer">
-        <div class="customSlideWrapper">
-          <div class="customSlideTrack">
-            <div class="customSlideItem"><img src="assets/img/canais/zen.png" alt="Canal 1"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/unamed.png" alt="Canal 2"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/unnamed.png" alt="Canal 3"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/ubook.png" alt="Canal 4"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/socialcomics.png" alt="Canal 5"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/smart.png" alt="Canal 6"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/ritualfit.png" alt="Canal 7"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/ubook.png" alt="Canal 8"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/PlayKids.png" alt="Canal 9"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/pl.png" alt="Canal 10"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/p.png" alt="Canal 11"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/nutri.png" alt="Canal 12"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/noping.png" alt="Canal 13"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/nba.png" alt="Canal 14"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/looke.png" alt="Canal 15"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/kapersky.png" alt="Canal 16"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/j.png" alt="Canal 17"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/hube.png" alt="Canal 18"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/hotgo.png" alt="Canal 19"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/fluid.png" alt="Canal 20"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/e+.png" alt="Canal 21"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/docway.png" alt="Canal 22"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/doc.png" alt="Canal 23"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/deezer.png" alt="Canal 24"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/curta.png" alt="Canal 25"></div>
-            <div class="customSlideItem"><img src="assets/img/canais/360.png" alt="Canal 26"></div>
+
+  <!-- Canais e Botão whatsapp -->
+  <div class="conteudoDinamico">
+    <!-- Canais  -->
+    <a href="https://wa.me/558186074648" class="canaisSliderLink" aria-label="Fale conosco via WhatsApp">
+      <div class="canaisSlider">
+        <h4>Aproveite o que temos de melhor!</h4>
+        <div class="customSlideContainer">
+          <div class="customSlideWrapper">
+            <div class="customSlideTrack">
+              <!-- Canais adicionados dinamicamente ou manualmente -->
+              <div class="customSlideItem"><img src="assets/img/canais/zen.png" alt="Canal 1" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/unamed.png" alt="Canal 2" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/unnamed.png" alt="Canal 3" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/ubook.png" alt="Canal 4" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/socialcomics.png" alt="Canal 5" loading="lazy">
+              </div>
+              <div class="customSlideItem"><img src="assets/img/canais/smart.png" alt="Canal 6" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/ritualfit.png" alt="Canal 7" loading="lazy">
+              </div>
+              <div class="customSlideItem"><img src="assets/img/canais/ubook.png" alt="Canal 8" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/PlayKids.png" alt="Canal 9" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/pl.png" alt="Canal 10" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/p.png" alt="Canal 11" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/nutri.png" alt="Canal 12" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/noping.png" alt="Canal 13" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/nba.png" alt="Canal 14" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/looke.png" alt="Canal 15" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/kapersky.png" alt="Canal 16" loading="lazy">
+              </div>
+              <div class="customSlideItem"><img src="assets/img/canais/j.png" alt="Canal 17" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/hube.png" alt="Canal 18" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/hotgo.png" alt="Canal 19" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/fluid.png" alt="Canal 20" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/e+.png" alt="Canal 21" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/docway.png" alt="Canal 22" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/doc.png" alt="Canal 23" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/deezer.png" alt="Canal 24" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/curta.png" alt="Canal 25" loading="lazy"></div>
+              <div class="customSlideItem"><img src="assets/img/canais/360.png" alt="Canal 26" loading="lazy"></div>
+            </div>
           </div>
         </div>
       </div>
+    </a>
+    <!-- Whatsapp -->
+    <button id="chatbotButton" class="chatbot-button" style="font-size: small;">
+      <i class="fa fa-whatsapp"></i>
+    </button>
+    <div id="chatbot" class="chatbot">
+      <div class="chatbot-header">
+        <h3 style="color: white;">Suporte Rápido</h3>
+        <button id="closeChatbot">✖</button>
+      </div>
+      <div class="chatbot-body">
+        <h5>Precisa de Ajuda?</h5>
+        <ul>
+          <li><a style="text-decoration: none;" href="http://wa.me/558186074648">Atendimento</a></li>
+          <li>
+            <details>
+              <summary>Ajuda Rápida</summary>
+              <ul>
+                <li><a style="text-decoration: none;" href="#">Como contratar um plano</a></li>
+                <li><a style="text-decoration: none;" href="#">Configurações técnicas</a></li>
+                <li><a style="text-decoration: none;" href="#">Perguntas frequentes</a></li>
+                <li><a style="text-decoration: none;" href="https://www.google.com" target="_blank">Ver mais</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
     </div>
-  </a>
+  </div>
+
+  <!-- Content Page -->
   <main>
     <!-- Section 2: Planos -->
-    <section id="planos" class="animate">
+    <section id="planos" class="">
       <!-- Slideshow de Planos -->
-      <div class="planContainer animate">
+      <div class="planContainer">
         <div class="plan-container">
           <h1>Conheça nossos Planos</h1>
-          <button class="planNavBtn prevPlan">&#10094;</button> <!-- Botão Anterior -->
+          <div class="slider-navigation">
+            <button class="slider-btn" data-slide="0">Fibra</button>
+            <button class="slider-btn" data-slide="1">Telefonia</button>
+            <button class="slider-btn" data-slide="2">Empresas</button>
+          </div>
+          <!-- Botão Anterior -->
+          <button class="planNavBtn prevPlan">&#10094;</button>
 
           <!-- Slider -->
           <div class="slider">
-
-
             <!-- Plano de Fibra -->
             <div class="slide">
               <div class="container">
-                <div class="planFibraBasic animate">
-                  <div class="planDesc">Plano Pro</div>
+                <div class="planFibraBasic">
+                  <div class="planTitle">Plano Pro</div>
                   <div class="planHeader">
                     <h3>250</h3>
                     <h4>MEGA</h4>
@@ -185,34 +231,33 @@
                     <a href="http://wa.me/558186074648"><button>Assinar</button></a>
                   </div>
                 </div>
-                <div class="planFibraBasic animate">
-                  <div class="planDesc">Plano Ultra</div>
-                  <div class="planHeader">
+                <div class="planFibraBasic">
+                  <div class="planTitle">Plano Ultra</div>
+                  <div class="planHeader  ">
 
                     <h3>500</h3>
                     <h4>MEGA</h4>
                   </div>
                   <div class="planBody">
                     <ul>
-                      <ul>
-                        <li><i class="fa-solid fa-download"></i>500mb Download</li>
-                        <li><i class="fa-solid fa-upload"></i> 250mb Upload</li>
-                        <li><i class="fa-solid fa-house-signal"></i> Wifi Dual Band</li>
-                        <li><i class="fa-solid fa-photo-film"></i> Canais Ao Vivo</li>
-                        <li><i class="fa-solid fa-screwdriver-wrench"></i> Suporte 24h</li>
-                      </ul>
+                      <li><i class="fa-solid fa-download"></i>500mb Download</li>
+                      <li><i class="fa-solid fa-upload"></i> 250mb Upload</li>
+                      <li><i class="fa-solid fa-house-signal"></i> Wifi Dual Band</li>
+                      <li><i class="fa-solid fa-photo-film"></i> Canais Ao Vivo</li>
+                      <li><i class="fa-solid fa-screwdriver-wrench"></i> Suporte 24h</li>
+                    </ul>
                   </div>
                   <div class="planFooter">
-                    <div class="footerHeader">
+                    <div class="footerHeader ">
                       <p>R$80,90</p> <b>MENSAL</b>
                     </div>
                     <a href="http://wa.me/558186074648"><button>Assinar</button></a>
                   </div>
                 </div>
                 <!-- 750MB -->
-                <div class="planFibra animate">
-                  <div class="planDesc">Plano Premium</div>
-                  <div class="planHeader">
+                <div class="planFibra">
+                  <div class="planTitle">Plano Premium</div>
+                  <div class="planHeader ">
                     <h3>750</h3>
                     <h4>MEGA</h4>
                   </div>
@@ -226,17 +271,17 @@
                     </ul>
                   </div>
                   <div class="planFooter">
-                    <div class="footerHeader">
+                    <div class="footerHeader ">
                       <p>R$100,90</p> <b>MENSAL</b>
                     </div>
                     <a href="http://wa.me/558186074648"><button>Assinar</button></a>
                   </div>
                 </div>
                 <!-- 1giga -->
-                <div class="planFibra animate">
-                  <div class="planDesc">Plano VIP</div>
-                  <div class="planHeader">
-                    <h3>1</h3>
+                <div class="planFibra">
+                  <div class="planTitle">Plano VIP</div>
+                  <div class="planHeader ">
+                    <h3>1 </h3>
                     <h4>GIGA</h4>
                   </div>
                   <div class="planBody">
@@ -264,7 +309,7 @@
             <div class="slide">
               <div class="container">
                 <div class="plan">
-                  <div class="planHeader">
+                  <div class="planHeader  ">
                     <h3>5</h3>
                     <h4>GIGA</h4>
                   </div>
@@ -275,12 +320,14 @@
                     </ul>
                   </div>
                   <div class="planFooter">
-                    <p>R$ 39,90/mês</p>
+                    <div class="footerHeader">
+                      <p>R$ 39,90/mês</p>
+                    </div>
                     <a href="http://wa.me/558186074648"><button>Assinar</button></a>
                   </div>
                 </div>
                 <div class="plan">
-                  <div class="planHeader">
+                  <div class="planHeader  ">
                     <h3>8</h3>
                     <h4>GIGA</h4>
                   </div>
@@ -291,9 +338,11 @@
                     </ul>
                   </div>
                   <div class="planFooter">
-                    <p>R$ 49,90/mês</p>
+                    <div class="footerHeader">
+                      <p>R$ 49,90/mês</p>
+                    </div>
                     <a href="http://wa.me/558186074648"><button>Assinar</button></a>
-                  </div>
+                  </div>                  
                 </div>
                 <div class="plan">
                   <div class="planHeader">
@@ -309,9 +358,11 @@
                     </ul>
                   </div>
                   <div class="planFooter">
-                    <p>R$ 69,90/mês</p>
+                    <div class="footerHeader">
+                      <p>R$ 69,90/mês</p>
+                    </div>
                     <a href="http://wa.me/558186074648"><button>Assinar</button></a>
-                  </div>
+                  </div>                  
                 </div>
                 <div class="plan">
                   <div class="planHeader">
@@ -327,9 +378,11 @@
                     </ul>
                   </div>
                   <div class="planFooter">
-                    <p>R$ 89,90/mês</p>
+                    <div class="footerHeader">
+                      <p>R$ 89,90/mês</p>
+                    </div>
                     <a href="http://wa.me/558186074648"><button>Assinar</button></a>
-                  </div>
+                  </div>                  
                 </div>
               </div>
             </div>
@@ -337,7 +390,7 @@
             <!-- PLano empresas -->
             <div class="slide">
               <div class="container">
-                <div class="plan">
+                <div class="planBusiness">
                   <div class="planHeader">
                     <h3>500</h3>
                     <h4>MEGA</h4>
@@ -357,7 +410,7 @@
                     <a href="http://wa.me/558186074648"><button>Assinar</button></a>
                   </div>
                 </div>
-                <div class="plan">
+                <div class="planBusiness">
                   <div class="planHeader">
                     <h3>1</h3>
                     <h4>GIGA</h4>
@@ -382,11 +435,6 @@
           </div>
 
           <button class="planNavBtn nextPlan">&#10095;</button> <!-- Botão Próximo -->
-          <div class="slider-navigation">
-            <button class="slider-btn" data-slide="0">Fibra</button>
-            <button class="slider-btn" data-slide="1">Telefonia</button>
-            <button class="slider-btn" data-slide="2">Empresas</button>
-          </div>
 
         </div>
 
@@ -527,7 +575,8 @@
 
       <p>
         Comprometida com a inovação e o bem-estar da comunidade, a Speedinfo não só entrega conectividade
-        de ponta, mas também se posiciona como um agente de transformação social, promovendo o acesso à informação e incentivando o crescimento
+        de ponta, mas também se posiciona como um agente de transformação social, promovendo o acesso à informação e
+        incentivando o crescimento
         sustentável na região.
       </p>
     </section>
@@ -552,7 +601,6 @@
 
     </section>
   </main>
-
   <!-- Footer -->
   <footer class="animate">
     <div class="footer-content">
@@ -602,31 +650,16 @@
     <p class="footer-note">&copy; 2025 - Speedinfo. Todos os direitos reservados.</p>
   </footer>
 
+
+  <!-- Temática -->
+  <div id="modalMaes" class="modal-maes-overlay">
+    <div class="modal-maes-content">
+      <span class="modal-maes-close">&times;</span>
+      <img src="assets/img/diaDasMaes.jpg" alt="Feliz Dia das Mães" class="modal-maes-img">
+    </div>
+  </div>
+  <!-- Menu Flutuante Responsivo obrigatório -->
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const animateElements = document.querySelectorAll(".animate");
-
-
-      // Adicione a classe `start` para iniciar as animações apenas após o carregamento
-      animateElements.forEach(el => el.classList.add("start"));
-
-      const observer = new IntersectionObserver(
-        (entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible"); // Ativa a animação
-              observer.unobserve(entry.target); // Para de observar após a animação
-            }
-          });
-        },
-        {
-          threshold: 0.1, // Percentual do elemento visível para ativar
-        }
-      );
-
-      animateElements.forEach(element => observer.observe(element));
-    });
-
     const menu = document.getElementById("menuHeader");
     const btnMenuToogle = document.getElementById("btnMenu");
     const btnClose = document.getElementById("btnCloseMenu");
@@ -639,15 +672,26 @@
       menu.classList.toggle('menuHeadOpen');
     });
 
-    const dropMenu = document.getElementById("dropDown");
+    const dropApp = document.getElementById("dropDownApp");
     const btnApp = document.getElementById("btnApp");
     btnApp.addEventListener('click', () => {
-      dropMenu.classList.toggle('dropDownShow');
+      dropApp.classList.toggle('dropDownAppShow');
+    });
+
+    const dropMenuPcd = document.getElementById("dropDownPcd");
+    const btnAcess = document.getElementById("btnAcess");
+    btnAcess.addEventListener('click', () => {
+      dropMenuPcd.classList.toggle('dropDownPcdShow');
     });
   </script>
-  <script src="theme2.js"></script>
-  <script src="assets/js/navigation.js"></script>
-  <script src="assets/js/chatbot.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/homeslideshow.js"></script>
+  <script src="assets/js/canaisslider.js"></script>
+  <script src="assets/js/planosSlider.js"></script>
+  <script src="assets/js/acessibilidade.js"></script>
+  <!-- <script src="assets/js/chatbot.js"></script> -->
+  <script src="assets/js/navigation.js" defer></script>
+  <!-- <script src="assets/js/planostransition.js" defer></script> -->
 </body>
 
 </html>
