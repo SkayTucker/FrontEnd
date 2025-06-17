@@ -114,11 +114,14 @@ details[open] p {
 
 /* ====== SLIDESHOW BACKGROUNDS ====== */
 .slide-1 {
-  background-image: url('../img/1366x768.JPG');
+  /* background-image: url('../img/1366x768.JPG'); */
+  background-image: url('../img/SAOJOAO-1366X768.png');
+  background-position: bottom;
 }
 
 .slide-2 {
-  background-image: url('../img/1366x768-2.JPG');
+  /* background-image: url('../img/1366x768-2.JPG'); */
+  background-image: url('../img/SAOJOAO-1366X768.png');
 }
 
 .slide-3 {
@@ -128,11 +131,13 @@ details[open] p {
 /* Celulares */
 @media (max-width: 700px) {
   .slide-1 {
-    background-image: url('../img/320x460.JPG');
+    /* background-image: url('../img/320x460.JPG'); */
+    background-image: url('../img/SAOJAO-MOBILE.JPG');
   }
 
   .slide-2 {
-    background-image: url('../img/320x460-2.JPG');
+    /* background-image: url('../img/320x460-2.JPG'); */
+    background-image: url('../img/SAOJAO-MOBILE.JPG');
   }
 
   .slide-3 {

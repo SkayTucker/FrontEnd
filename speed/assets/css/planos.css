@@ -206,7 +206,7 @@
     color: var(--background);
     background-color: var(--primary);
     border: 1px solid;
-    width: 100%;
+    min-width: 200px;
     padding: 12px 0;
     border-radius: 40px 40px / 70%;
     transition: 0.3s;

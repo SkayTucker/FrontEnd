@@ -1,0 +1,25 @@
+.festa-container {
+  position: absolute; /* para manter fixo no topo */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none; /* para não atrapalhar cliques */
+  opacity: 0.8;
+}
+
+.bandeirinhas {
+  width: 99%;
+  height: 100px;
+  margin: 0 5px;
+  background: url('../img/bandeirinhas.png') repeat-x;
+  background-size: contain;
+  animation: balancar 7s ease-in-out infinite;
+}
+
+@keyframes balancar {
+  0% { transform: rotateZ(1deg); }
+  50% { transform: rotateZ(-1deg); }
+  100% { transform: rotateZ(1deg); }
+}

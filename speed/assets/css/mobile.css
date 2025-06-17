@@ -2,6 +2,7 @@
   header nav {
     display: none;
   }
+
   header .logo .logoFull {
     display: none;
   }
@@ -23,6 +24,7 @@
   header.full {
     background-color: var(--light-primary);
   }
+
   .menuHeadOpen {
     display: flex;
     flex-direction: column;
@@ -59,10 +61,12 @@
     text-align: center;
     width: 55%;
   }
+
   /*homeShow*/
   .home-section {
     height: 90vh;
   }
+
   .homeSlideshow .slide {
     background-size: contain;
     background-position: center;
@@ -78,7 +82,7 @@
   }
 
   .planContainer {
-    padding: 0 10px;
+    padding: 10px 0 10px 0;
   }
 
   .container {
@@ -101,20 +105,23 @@
     font-size: 1rem;
     padding: 10px 0;
   }
-  
+
 
 }
 
 
 /* Celulares */
 @media (max-width: 700px) {
+
   /*homeShow*/
   .home-section {
     height: 90vh;
   }
+
   .homeSlideshow .slide {
-    background-size: contain;
+    background-size: cover;
   }
+
   .container {
     grid-template-columns: 1fr;
   }
@@ -137,4 +144,38 @@
     font-size: 0.95rem;
     padding: 10px;
   }
+
+  .serviceCardHeader img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+  }
+
+  .serviceCardBody {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .serviceCard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .serviceCard .card {
+    width: 37%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.168);
+  }
+
 }

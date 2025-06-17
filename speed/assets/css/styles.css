@@ -10,42 +10,29 @@
   .services {
     text-align: center;
     height: 100%;
-    padding: 30px 0;
+    padding: 0;
   }
 
   .services h1 {
     font-size: 2rem;
     color: var(--secondary);
-    padding-top: 40px;
+    padding-top: 90px;
   }
 
   .services h1 b {
     color: var(--primary);
   }
 
-  .services h2 {
-    font-size: 2.5rem;
-    padding: 80px 0 10px 0;
-  }
-
-  .services p {
-    margin: 20px 80px;
-    font-size: 1.3rem;
-  }
-
   .serviceCard {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:  center;
     flex-wrap: wrap;
     text-align: center;
-    margin: 10px 0;
-
   }
 
   .serviceCard .card {
-    width: 20%;
-    height: 280px;
+    width: 25%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,16 +60,17 @@
     flex-direction: column;
     width: 100%;
     margin: 5px 0;
+    height: 180px;
   }
 
   .serviceCardBody h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding-top: 10px;
     color: var(--primary);
   }
 
   .serviceCardBody p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--text-color);
     font-weight: 500;
     text-align: center;
@@ -106,9 +94,13 @@
 
 
   .duvidas .dropdown-section {
-    width: 30%;
-    margin: 10px 150px 0 0;
+    width: 100%;
+    margin: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .dropdown-section {
