@@ -1,0 +1,336 @@
+@media (max-width: 1024px) {
+  .menuWrapper {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .menuWrapper.show {
+    display: flex !important;
+    animation: slideInFromTop 0.3s ease-out;
+  }
+
+  #menuHeader,
+  .subMenuHeader {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px 0;
+  }
+
+  /* Quando menuWrapper está aberto, mostramos os menus */
+  .menuWrapper.show #menuHeader,
+  .menuWrapper.show .subMenuHeader {
+    display: flex;
+  }
+
+  #menuHeader {
+    background-color: var(--primary);
+  }
+
+  #menuHeader a {
+    padding: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #menuHeader a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .subMenuHeader {
+    background-color: var(--primary-dark);
+  }
+
+  .subMenuHeader a {
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .subMenuHeader a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  #btnMenu {
+    display: block;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1000;
+  }
+
+  #btnMenu .bar {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Posiciona as 3 barras */
+  #btnMenu .bar:nth-child(1) {
+    top: 0;
+  }
+
+  #btnMenu .bar:nth-child(2) {
+    top: 10px;
+  }
+
+  #btnMenu .bar:nth-child(3) {
+    top: 20px;
+  }
+
+  /* Quando aberto, transforma hambúrguer em X */
+  #btnMenu.open .bar:nth-child(1) {
+    top: 10px;
+    transform: rotate(45deg);
+  }
+
+  #btnMenu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #btnMenu.open .bar:nth-child(3) {
+    top: 10px;
+    transform: rotate(-45deg);
+  }
+
+  #sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sobreContainer {
+    width: 80%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .sobreContainer h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    filter: drop-shadow(1px 1px 5px var(--primary));
+  }
+
+  .sobreContainer p {
+    width: 100%;
+    text-align: left;
+    margin: 0 20px;
+  }
+
+  .sobreContainer b {
+    width: 100%;
+    text-align: right;
+    margin: 30px 0;
+  }
+
+
+  /*Solucoes*/
+  .solucoes-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .solucoes-list li {
+    width: 80%;
+    height: 100px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .solucoes-list li p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .solucoes-list li i {
+    font-size: 3rem;
+    margin: 10px 0;
+  }
+
+  .mobile-image-logo img {
+    width: auto;
+    height: 100%;
+  }
+
+  .mobile-container {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    z-index: 1000;
+    border-radius: 10px;
+    background-color: var(--primary-dark);
+  }
+
+  .mobile-content {
+    text-align: center;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .mobile-content p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: right
+  }
+
+  .depoimentos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 20px 0;
+    width: 100%;
+
+  }
+
+  .depoimentos-content {
+    height: 500px;
+  }
+
+  .depoimentos-content p {
+    padding: 0;
+  }
+
+  .depoimentos-content .people-profile {
+    display: flex
+  }
+
+  .depoimentos-content img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .depoimentos-content .people-profile-info p,
+  i {
+    font-size: 1rem;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+  #sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sobreContainer {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .sobreContainer h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .sobreContainer p {
+    width: 100%;
+    text-align: left;
+    margin: 0 20px;
+  }
+
+  .sobreContainer b {
+    width: 100%;
+    text-align: right;
+    margin: 30px 0;
+  }
+
+
+  /*Solucoes*/
+  .solucoes-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .solucoes-list li {
+    width: 80%;
+    height: 100px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .solucoes-list li p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .solucoes-list li i {
+    font-size: 3rem;
+    margin: 10px 0;
+  }
+
+  table {
+    display: flex;
+    font-size: 0.9rem;
+    
+    /* largura mínima para evitar colunas esmagadas */
+  }
+
+  th,
+  td {
+    padding: 0.75rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .solucoes-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .solucoes-list li {
+    width: 50%;
+    text-align: center;
+  }
+
+  .solucoes-list li {
+    width: 80%;
+    height: 100px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .mobile-image img {
+    display: none;
+  }
+
+
+}

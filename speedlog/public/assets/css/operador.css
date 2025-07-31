@@ -1,0 +1,391 @@
+@import url('./global.css');
+
+/*Page*/
+.vehicles-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuVehicles-header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 5px;
+    background-color: var(--background);
+}
+
+.menuVehicles-header .card {
+    width: 200px;
+}
+
+.menuVehicles-list {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.menuVehicles-content {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    padding: 0 10px;
+}
+
+.menuVehicles-info {
+    position: relative;
+    background: #fff;
+    cursor: pointer;
+    min-height: 200px;
+    border-radius: 8px;
+    width: 300px;
+    /* a borda será substituída pela coluna de status */
+}
+
+.menuVehicles-info:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #f5f5f5;
+}
+
+/* Coluna pequena que mostra o status */
+.menuVehicles-info .status-col {
+    padding: 10px;
+    color: var(--background);
+    font-weight: 700;
+    border-radius: 8px 8px 0 0;
+    font-size: 0.9rem;
+    text-align: center;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+/*UNCLICABLE INDISPONIVEL*/
+.menuVehicles-info.indisponível {
+    filter: opacity(0.3);
+}
+
+/* Cores da coluna status conforme o estado */
+.menuVehicles-info.disponível .status-col {
+    background-color: var(--primary, #007bff);
+}
+
+.menuVehicles-info.emuso .status-col {
+    background-color: var(--secondary, #6c757d);
+}
+
+.menuVehicles-info.manutenção .status-col {
+    background-color: #dc3545;
+}
+
+.menuVehicles-info.indisponível .status-col {
+    background-color: #474747;
+}
+
+/* Coluna que contém a imagem e as informações do veículo */
+.menuVehicles-info .content-col {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.menuVehicles-info img {
+    max-width: 100%;
+    margin-bottom: 12px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.menuVehicles-info h3 {
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.menuVehicles-info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+/* Outros componentes e containers */
+.image-type-group {
+    margin: 10px 5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    padding: 5px;
+    color: var(--primary);
+    background-color: var(--background);
+}
+
+.images-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-type-group {
+    flex: 1 1 250px;
+    max-width: 100%;
+}
+
+.image-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.image-grid img {
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.no-images {
+    font-style: italic;
+    color: #777;
+}
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+button.load-modal-content,
+button[disabled] {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.load-modal-content:hover:not(:disabled) {
+    background: #0056b3;
+    box-shadow: 0 4px 14px rgba(0, 86, 179, 0.6);
+}
+
+button[disabled] {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+    color: #887e7e;
+}
+
+
+
+/*Menu Veiculo*/
+.vehicle-info {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.vehicle-info h1 {
+    font-size: 1.3rem;
+}
+
+.vehicle-info fieldset legend {
+    font-size: 1rem;
+}
+
+.vehicle-info fieldset,
+.lastCheckin p h4 {
+    font-size: 0.8rem
+}
+
+
+.solicitar-veiculos-info {
+    display: flex;
+    border: none;
+}
+
+
+#solicitarForm fieldset {
+    width: 100%;
+    padding: 5px;
+}
+
+#solicitarForm fieldset input,
+#solicitarForm fieldset select {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 2px 0;
+    text-align: center;
+}
+
+
+#solicitarForm fieldset input {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.checklist-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.checklist-content .marcarTudo {
+    background-color: rgba(218, 165, 32, 0.445);
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.checklist-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.checklist-items fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: var(--primary-light);
+}
+
+.checklist-items label {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Estilo do container principal */
+/* Estilo base da tabela */
+/* Estilo do container principal */
+.historico-container {
+    padding: 20px;
+    background-color: var(--background);
+    font-family: sans-serif;
+}
+
+/* Título */
+.historico-container h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Tabela do histórico */
+.table-historico {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Cabeçalho da tabela */
+.table-historico thead {
+    background-color: var(--primary);
+    color: white;
+    text-align: left;
+}
+
+.table-historico thead th {
+    padding: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Corpo da tabela */
+.table-historico tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+}
+
+.table-historico tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.table-historico td {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #333;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+/* Texto com limite e tooltip */
+.table-historico .truncate {
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-historico .truncate:hover {
+    white-space: normal;
+    overflow: visible;
+    background: #fff8dc;
+    border-radius: 4px;
+    z-index: 10;
+    position: relative;
+}
+
+/* Link do mapa */
+.table-historico a.map-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.table-historico a.map-link:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+/* Responsivo para 1024px e menor */
+@media screen and (max-width: 1024px) {
+    .table-historico thead {
+        display: none;
+    }
+
+    .table-historico,
+    .table-historico tbody,
+    .table-historico tr,
+    .table-historico td {
+        display: block;
+        width: 100%;
+    }
+
+    .table-historico tr {
+        margin-bottom: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .table-historico td {
+        padding: 8px;
+        border: none;
+        position: relative;
+    }
+
+    .table-historico td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: var(--primary);
+        display: block;
+        margin-bottom: 4px;
+    }
+}

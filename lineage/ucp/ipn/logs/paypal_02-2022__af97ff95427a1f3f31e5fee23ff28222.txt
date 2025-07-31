@@ -1,0 +1,539 @@
+01/02/2022 12:40: Transação recebida e processada com sucesso! #2 - Dump: Array
+(
+  [mc_gross] => 10.54
+  [protection_eligibility] => Eligible
+  [address_status] => confirmed
+  [payer_id] => 58RY76SQWBCK6
+  [address_street] => George Enescu Nr 151
+Arad
+  [payment_date] => 07:40:42 Feb 01, 2022 PST
+  [payment_status] => Pending
+  [charset] => UTF-8
+  [address_zip] => 
+  [first_name] => Ioan
+  [address_country_code] => RO
+  [address_name] => Ioan Pop
+  [notify_version] => 3.9
+  [custom] => 102
+  [payer_status] => verified
+  [business] => karolveras77@gmail.com
+  [address_country] => Romania
+  [address_city] => Nadlac
+  [quantity] => 1
+  [verify_sign] => Av33sKFStaOnmQCdIDmEJL5K-yThAleE8JAiomqQoRcUSaAW9Z2v9R.N
+  [payer_email] => oanenolove515@gmail.com
+  [txn_id] => 8P097605BR6818404
+  [payment_type] => instant
+  [last_name] => Pop
+  [address_state] => 
+  [receiver_email] => karolveras77@gmail.com
+  [shipping_discount] => 0.00
+  [insurance_amount] => 0.00
+  [receiver_id] => SG2TRM2CYZHB4
+  [pending_reason] => multi_currency
+  [txn_type] => web_accept
+  [item_name] => Invoice 102 - 17 Ticket Donate
+  [discount] => 0.00
+  [mc_currency] => EUR
+  [item_number] => 
+  [residence_country] => RO
+  [shipping_method] => Default
+  [transaction_subject] => 
+  [payment_gross] => 
+  [ipn_track_id] => f569394f79880
+)
+
+01/02/2022 12:53: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [mc_gross] => 10.54
+  [settle_amount] => 54.06
+  [protection_eligibility] => Eligible
+  [address_status] => confirmed
+  [payer_id] => 58RY76SQWBCK6
+  [tax] => 0.00
+  [address_street] => George Enescu Nr 151
+Arad
+  [payment_date] => 07:40:42 Feb 01, 2022 PST
+  [payment_status] => Completed
+  [charset] => UTF-8
+  [address_zip] => 
+  [first_name] => Ioan
+  [mc_fee] => 1.02
+  [address_country_code] => RO
+  [exchange_rate] => 5.67864
+  [address_name] => Ioan Pop
+  [notify_version] => 3.9
+  [settle_currency] => BRL
+  [custom] => 102
+  [payer_status] => verified
+  [business] => karolveras77@gmail.com
+  [address_country] => Romania
+  [address_city] => Nadlac
+  [quantity] => 1
+  [verify_sign] => A0DmtC2bQNzFv5RxxVeMtqZH8Zs2AFM5Lv6Foqhyn3n4Zm.3KpTkAdMV
+  [payer_email] => oanenolove515@gmail.com
+  [txn_id] => 8P097605BR6818404
+  [payment_type] => instant
+  [last_name] => Pop
+  [address_state] => 
+  [receiver_email] => karolveras77@gmail.com
+  [payment_fee] => 
+  [shipping_discount] => 0.00
+  [insurance_amount] => 0.00
+  [receiver_id] => SG2TRM2CYZHB4
+  [txn_type] => web_accept
+  [item_name] => Invoice 102 - 17 Ticket Donate
+  [discount] => 0.00
+  [mc_currency] => EUR
+  [item_number] => 
+  [residence_country] => RO
+  [shipping_method] => Default
+  [handling_amount] => 0.00
+  [transaction_subject] => 
+  [payment_gross] => 
+  [shipping] => 0.00
+  [ipn_track_id] => f84355737d211
+)
+
+01/02/2022 12:53: A alteração de status da doação foi barrada pelo fato dela já ter sido processada e entregue. - Dump: Array
+(
+  [mc_gross] => 10.54
+  [settle_amount] => 54.06
+  [protection_eligibility] => Eligible
+  [address_status] => confirmed
+  [payer_id] => 58RY76SQWBCK6
+  [tax] => 0.00
+  [address_street] => George Enescu Nr 151
+Arad
+  [payment_date] => 07:53:43 Feb 01, 2022 PST
+  [payment_status] => Completed
+  [charset] => UTF-8
+  [address_zip] => 
+  [first_name] => Ioan
+  [mc_fee] => 1.02
+  [address_country_code] => RO
+  [exchange_rate] => 5.67864
+  [address_name] => Ioan Pop
+  [notify_version] => 3.9
+  [settle_currency] => BRL
+  [custom] => 102
+  [payer_status] => verified
+  [address_country] => Romania
+  [address_city] => Nadlac
+  [quantity] => 1
+  [verify_sign] => ANlxTDgLg.HKrMky6kJz4fZGDRosAqbxz5MaFC2lipTTBBMfZQoymwiB
+  [payer_email] => oanenolove515@gmail.com
+  [txn_id] => 8P097605BR6818404
+  [payment_type] => instant
+  [last_name] => Pop
+  [address_state] => 
+  [receiver_email] => karolveras77@gmail.com
+  [payment_fee] => 
+  [shipping_discount] => 0.00
+  [insurance_amount] => 0.00
+  [receiver_id] => SG2TRM2CYZHB4
+  [txn_type] => web_accept
+  [item_name] => Invoice 102 - 17 Ticket Donate
+  [discount] => 0.00
+  [mc_currency] => EUR
+  [item_number] => 
+  [residence_country] => RO
+  [shipping_method] => Default
+  [handling_amount] => 0.00
+  [transaction_subject] => 
+  [payment_gross] => 
+  [shipping] => 0.00
+  [ipn_track_id] => f84355737d211
+)
+
+02/02/2022 12:56: Transação recebida e processada com sucesso! #2 - Dump: Array
+(
+  [mc_gross] => 6.20
+  [protection_eligibility] => Eligible
+  [address_status] => confirmed
+  [payer_id] => ZDB3JH3XAATMQ
+  [address_street] => 28 oktovriou 69
+  [payment_date] => 07:56:25 Feb 02, 2022 PST
+  [payment_status] => Pending
+  [charset] => UTF-8
+  [address_zip] => 40300
+  [first_name] => Giorgos
+  [address_country_code] => GR
+  [address_name] => Giorgos Chrysopoulos
+  [notify_version] => 3.9
+  [custom] => 112
+  [payer_status] => unverified
+  [business] => karolveras77@gmail.com
+  [address_country] => Greece
+  [address_city] => Farsala
+  [quantity] => 1
+  [verify_sign] => AMaWXH-sI0J90qpZImWyByOoYCIRAC7BWQKH7.kakX.WaGb2-NZ23X7r
+  [payer_email] => xrysopoulosg@hotmail.com
+  [txn_id] => 6ME89208GM929644G
+  [payment_type] => instant
+  [last_name] => Chrysopoulos
+  [address_state] => 
+  [receiver_email] => karolveras77@gmail.com
+  [shipping_discount] => 0.00
+  [insurance_amount] => 0.00
+  [receiver_id] => SG2TRM2CYZHB4
+  [pending_reason] => multi_currency
+  [txn_type] => web_accept
+  [item_name] => Invoice 112 - 10 Ticket Donate
+  [discount] => 0.00
+  [mc_currency] => EUR
+  [item_number] => 
+  [residence_country] => GR
+  [shipping_method] => Default
+  [transaction_subject] => 
+  [payment_gross] => 
+  [ipn_track_id] => f59508795ea43
+)
+
+02/02/2022 12:59: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [mc_gross] => 6.20
+  [settle_amount] => 31.06
+  [protection_eligibility] => Eligible
+  [address_status] => confirmed
+  [payer_id] => ZDB3JH3XAATMQ
+  [tax] => 0.00
+  [address_street] => 28 oktovriou 69
+  [payment_date] => 07:56:25 Feb 02, 2022 PST
+  [payment_status] => Completed
+  [charset] => UTF-8
+  [address_zip] => 40300
+  [first_name] => Giorgos
+  [mc_fee] => 0.75
+  [address_country_code] => GR
+  [exchange_rate] => 5.69883
+  [address_name] => Giorgos Chrysopoulos
+  [notify_version] => 3.9
+  [settle_currency] => BRL
+  [custom] => 112
+  [payer_status] => unverified
+  [business] => karolveras77@gmail.com
+  [address_country] => Greece
+  [address_city] => Farsala
+  [quantity] => 1
+  [verify_sign] => Awo.b4OioyWdGNUUXSqkhTb39YFTACSIxQuHYOGxVRUjfLLwaT.4r4qS
+  [payer_email] => xrysopoulosg@hotmail.com
+  [txn_id] => 6ME89208GM929644G
+  [payment_type] => instant
+  [last_name] => Chrysopoulos
+  [address_state] => 
+  [receiver_email] => karolveras77@gmail.com
+  [payment_fee] => 
+  [shipping_discount] => 0.00
+  [insurance_amount] => 0.00
+  [receiver_id] => SG2TRM2CYZHB4
+  [txn_type] => web_accept
+  [item_name] => Invoice 112 - 10 Ticket Donate
+  [discount] => 0.00
+  [mc_currency] => EUR
+  [item_number] => 
+  [residence_country] => GR
+  [shipping_method] => Default
+  [handling_amount] => 0.00
+  [transaction_subject] => 
+  [payment_gross] => 
+  [shipping] => 0.00
+  [ipn_track_id] => f272948646c77
+)
+
+02/02/2022 12:59: A alteração de status da doação foi barrada pelo fato dela já ter sido processada e entregue. - Dump: Array
+(
+  [mc_gross] => 6.20
+  [settle_amount] => 31.06
+  [protection_eligibility] => Eligible
+  [address_status] => confirmed
+  [payer_id] => ZDB3JH3XAATMQ
+  [tax] => 0.00
+  [address_street] => 28 oktovriou 69
+  [payment_date] => 07:59:31 Feb 02, 2022 PST
+  [payment_status] => Completed
+  [charset] => UTF-8
+  [address_zip] => 40300
+  [first_name] => Giorgos
+  [mc_fee] => 0.75
+  [address_country_code] => GR
+  [exchange_rate] => 5.69883
+  [address_name] => Giorgos Chrysopoulos
+  [notify_version] => 3.9
+  [settle_currency] => BRL
+  [custom] => 112
+  [payer_status] => unverified
+  [address_country] => Greece
+  [address_city] => Farsala
+  [quantity] => 1
+  [verify_sign] => Azrd88-yJIzAw3F80eLg1SH7tacLAsE-5iE0swEiqvrQzW2mZwL4jZn3
+  [payer_email] => xrysopoulosg@hotmail.com
+  [txn_id] => 6ME89208GM929644G
+  [payment_type] => instant
+  [last_name] => Chrysopoulos
+  [address_state] => 
+  [receiver_email] => karolveras77@gmail.com
+  [payment_fee] => 
+  [shipping_discount] => 0.00
+  [insurance_amount] => 0.00
+  [receiver_id] => SG2TRM2CYZHB4
+  [txn_type] => web_accept
+  [item_name] => Invoice 112 - 10 Ticket Donate
+  [discount] => 0.00
+  [mc_currency] => EUR
+  [item_number] => 
+  [residence_country] => GR
+  [shipping_method] => Default
+  [handling_amount] => 0.00
+  [transaction_subject] => 
+  [payment_gross] => 
+  [shipping] => 0.00
+  [ipn_track_id] => f272948646c77
+)
+
+03/02/2022 01:30: A alteração de status da doação foi barrada pelo fato dela já ter sido processada e entregue. - Dump: Array
+(
+  [mc_gross] => -6.44
+  [settle_amount] => 33.35
+  [protection_eligibility] => Eligible
+  [payer_id] => ENSEDSHTUPYEW
+  [address_street] => Carrion 1346 Dpto 602
+  [payment_date] => 20:30:42 Feb 02, 2022 PST
+  [payment_status] => Reversed
+  [charset] => UTF-8
+  [address_zip] => 8320000
+  [first_name] => Manuel
+  [mc_fee] => -0.76
+  [address_country_code] => CL
+  [exchange_rate] => 5.17857
+  [address_name] => Manuel Carroz
+  [notify_version] => 3.9
+  [reason_code] => buyer_complaint
+  [settle_currency] => BRL
+  [custom] => 18
+  [business] => karolveras77@gmail.com
+  [address_country] => Chile
+  [address_city] => Indepedencia
+  [verify_sign] => AgRb.Lnu72zKIuZcaGxeHBXlhdZeAuvysrAGW19JYyjI.X4TXflBDEI4
+  [payer_email] => loyaltypaypalevo@gmail.com
+  [parent_txn_id] => 22E74443R3464004P
+  [txn_id] => 0UX275174X0272043
+  [payment_type] => instant
+  [last_name] => Carroz
+  [address_state] => RM
+  [receiver_email] => karolveras77@gmail.com
+  [payment_fee] => -0.76
+  [shipping_discount] => 0.00
+  [receiver_id] => SG2TRM2CYZHB4
+  [insurance_amount] => 0.00
+  [item_name] => Factura 18 - 10 Ticket Donate
+  [discount] => 0.00
+  [mc_currency] => USD
+  [item_number] => 
+  [residence_country] => CL
+  [handling_amount] => 0.00
+  [shipping_method] => Default
+  [transaction_subject] => 
+  [payment_gross] => -6.44
+  [shipping] => 0.00
+  [ipn_track_id] => 8c1ed9fc6ef2a
+)
+
+03/02/2022 01:31: RAW POSTs incompletos! #1 - Dump: Array
+(
+  [txn_type] => new_case
+  [payment_date] => 16:15:11 Jan 29, 2022 PST
+  [case_id] => PP-D-141133981
+  [case_type] => dispute
+  [business] => karolveras77@gmail.com
+  [verify_sign] => AHnfz6CMJjYItwxJ3h.lmfdKt4pPA6K6iQjfKVesHbZU5XJSFt72eZOT
+  [payer_email] => loyaltypaypalevo@gmail.com
+  [txn_id] => 22E74443R3464004P
+  [case_creation_date] => 20:30:31 Feb 02, 2022 PST
+  [receiver_email] => karolveras77@gmail.com
+  [payer_id] => ENSEDSHTUPYEW
+  [receiver_id] => SG2TRM2CYZHB4
+  [reason_code] => not_as_described
+  [custom] => 18
+  [charset] => UTF-8
+  [notify_version] => 3.9
+  [ipn_track_id] => 8c1ed9fc6ef2a
+)
+
+03/02/2022 17:05: Transação recebida e processada com sucesso! #2 - Dump: Array
+(
+  [mc_gross] => 10.08
+  [protection_eligibility] => Eligible
+  [address_status] => confirmed
+  [payer_id] => 58RY76SQWBCK6
+  [address_street] => George Enescu Nr 151
+Arad
+  [payment_date] => 12:05:15 Feb 03, 2022 PST
+  [payment_status] => Pending
+  [charset] => UTF-8
+  [address_zip] => 
+  [first_name] => Ioan
+  [address_country_code] => RO
+  [address_name] => Ioan Pop
+  [notify_version] => 3.9
+  [custom] => 121
+  [payer_status] => verified
+  [business] => karolveras77@gmail.com
+  [address_country] => Romania
+  [address_city] => Nadlac
+  [quantity] => 1
+  [verify_sign] => A9BMXRxNqW49DdZjPKHdrzxw-VzXAv9g1D2mRn5xoSvTBpg0qhfMgp22
+  [payer_email] => oanenolove515@gmail.com
+  [txn_id] => 7Y958983XY637040U
+  [payment_type] => instant
+  [last_name] => Pop
+  [address_state] => 
+  [receiver_email] => karolveras77@gmail.com
+  [shipping_discount] => 0.00
+  [insurance_amount] => 0.00
+  [receiver_id] => SG2TRM2CYZHB4
+  [pending_reason] => multi_currency
+  [txn_type] => web_accept
+  [item_name] => Invoice 121 - 14 Ticket Donate
+  [discount] => 0.00
+  [mc_currency] => USD
+  [item_number] => 
+  [residence_country] => RO
+  [shipping_method] => Default
+  [transaction_subject] => 
+  [payment_gross] => 10.08
+  [ipn_track_id] => f90473355275c
+)
+
+03/02/2022 17:54: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [mc_gross] => 10.08
+  [settle_amount] => 46.29
+  [protection_eligibility] => Eligible
+  [address_status] => confirmed
+  [payer_id] => 58RY76SQWBCK6
+  [tax] => 0.00
+  [address_street] => George Enescu Nr 151
+Arad
+  [payment_date] => 12:05:15 Feb 03, 2022 PST
+  [payment_status] => Completed
+  [charset] => UTF-8
+  [address_zip] => 
+  [first_name] => Ioan
+  [mc_fee] => 0.95
+  [address_country_code] => RO
+  [exchange_rate] => 5.07039
+  [address_name] => Ioan Pop
+  [notify_version] => 3.9
+  [settle_currency] => BRL
+  [custom] => 121
+  [payer_status] => verified
+  [business] => karolveras77@gmail.com
+  [address_country] => Romania
+  [address_city] => Nadlac
+  [quantity] => 1
+  [verify_sign] => APxsKCC3cSCVLODAWqxKsGzqWE1sAD-.TaGXm38qdje.lTnLMb0bp1jh
+  [payer_email] => oanenolove515@gmail.com
+  [txn_id] => 7Y958983XY637040U
+  [payment_type] => instant
+  [last_name] => Pop
+  [address_state] => 
+  [receiver_email] => karolveras77@gmail.com
+  [payment_fee] => 0.95
+  [shipping_discount] => 0.00
+  [insurance_amount] => 0.00
+  [receiver_id] => SG2TRM2CYZHB4
+  [txn_type] => web_accept
+  [item_name] => Invoice 121 - 14 Ticket Donate
+  [discount] => 0.00
+  [mc_currency] => USD
+  [item_number] => 
+  [residence_country] => RO
+  [shipping_method] => Default
+  [handling_amount] => 0.00
+  [transaction_subject] => 
+  [payment_gross] => 10.08
+  [shipping] => 0.00
+  [ipn_track_id] => f9871152c6ca8
+)
+
+03/02/2022 17:54: A alteração de status da doação foi barrada pelo fato dela já ter sido processada e entregue. - Dump: Array
+(
+  [mc_gross] => 10.08
+  [settle_amount] => 46.29
+  [protection_eligibility] => Eligible
+  [address_status] => confirmed
+  [payer_id] => 58RY76SQWBCK6
+  [tax] => 0.00
+  [address_street] => George Enescu Nr 151
+Arad
+  [payment_date] => 12:54:29 Feb 03, 2022 PST
+  [payment_status] => Completed
+  [charset] => UTF-8
+  [address_zip] => 
+  [first_name] => Ioan
+  [mc_fee] => 0.95
+  [address_country_code] => RO
+  [exchange_rate] => 5.07039
+  [address_name] => Ioan Pop
+  [notify_version] => 3.9
+  [settle_currency] => BRL
+  [custom] => 121
+  [payer_status] => verified
+  [address_country] => Romania
+  [address_city] => Nadlac
+  [quantity] => 1
+  [verify_sign] => AHDFK3HOT3PL.wdb6SZ5FRTal.rQAGWhV9lPERR4pDTKorZuPBUxhEGJ
+  [payer_email] => oanenolove515@gmail.com
+  [txn_id] => 7Y958983XY637040U
+  [payment_type] => instant
+  [last_name] => Pop
+  [address_state] => 
+  [receiver_email] => karolveras77@gmail.com
+  [payment_fee] => 0.95
+  [shipping_discount] => 0.00
+  [insurance_amount] => 0.00
+  [receiver_id] => SG2TRM2CYZHB4
+  [txn_type] => web_accept
+  [item_name] => Invoice 121 - 14 Ticket Donate
+  [discount] => 0.00
+  [mc_currency] => USD
+  [item_number] => 
+  [residence_country] => RO
+  [shipping_method] => Default
+  [handling_amount] => 0.00
+  [transaction_subject] => 
+  [payment_gross] => 10.08
+  [shipping] => 0.00
+  [ipn_track_id] => f9871152c6ca8
+)
+
+05/02/2022 18:39: RAW POSTs incompletos! #1 - Dump: Array
+(
+  [transaction_subject] => 
+  [txn_type] => send_money
+  [payment_date] => 13:39:27 Feb 05, 2022 PST
+  [last_name] => Monserrat Alburquenque
+  [residence_country] => CL
+  [payment_gross] => 
+  [mc_currency] => BRL
+  [business] => karolveras77@gmail.com
+  [payment_type] => instant
+  [protection_eligibility] => Eligible
+  [verify_sign] => ATK3XFCzAotZz6Ficv-BdS.QSjuAAtIS4xAVIEHj1JfaVREodmWfZk6J
+  [payer_status] => verified
+  [payer_email] => l2gamers@hotmail.cl
+  [txn_id] => 61Y1580650799942E
+  [receiver_email] => karolveras77@gmail.com
+  [first_name] => José
+  [payer_id] => E5NRZ5YRZBEJ6
+  [receiver_id] => SG2TRM2CYZHB4
+  [memo] => L2GAMERS
+  [payer_business_name] => L2Gamers
+  [payment_status] => Denied
+  [mc_gross] => 70.00
+  [charset] => UTF-8
+  [notify_version] => 3.9
+  [ipn_track_id] => f9223170f9b90
+)
+

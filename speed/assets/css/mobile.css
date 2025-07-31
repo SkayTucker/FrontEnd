@@ -110,8 +110,112 @@
 }
 
 
+@media (max-width: 800px) {
+
+  /*homeShow*/
+  .home-section {
+    height: 90vh;
+  }
+
+  .homeSlideshow .slide {
+    background-size: cover;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-container h1 {
+    font-size: 1.8rem;
+    padding: 30px 0 10px;
+  }
+
+  .planFooter .footerHeader p {
+    font-size: 2rem;
+  }
+
+  .planFooter .footerHeader b {
+    font-size: 1.2rem;
+  }
+
+  .slider-btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .serviceCardHeader img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+  }
+
+  .serviceCardBody {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .serviceCard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .serviceCard .card {
+    width: 37%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.168);
+  }
+
+  
+  /*planos*/
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .planContainer {
+    padding: 10px 0 10px 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .planFibraBasic,
+  .planFibra,
+  .plan {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .planBody {
+    height: auto;
+    margin: 0 10px;
+  }
+
+  .planFooter button {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+}
+
 /* Celulares */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
   /*homeShow*/
   .home-section {

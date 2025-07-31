@@ -1,8 +1,4 @@
 /*Planos*/
-#planos {
-    margin: 10px 0;
-}
-
 /*container do slideshow planos*/
 .planContainer {
     text-align: center;
@@ -12,12 +8,13 @@
 /*Titulo dos planos*/
 .plan-container h1 {
     font-size: 2.5rem;
-    padding: 40px 0 0 0 ;
+    padding: 40px 0 0 0;
 }
 
 .slider-navigation {
     margin: 10px 0;
 }
+
 .plan-container {
     position: relative;
     overflow: hidden;
@@ -63,11 +60,11 @@
 
 /*Style dos Cards dos PLanos*/
 .planFibraBasic,
-.planFibra{
+.planFibra {
     margin: 0 5px;
     border: 2px solid var(--primary);
     width: 100%;
-    background: #fff;
+    background-color: var(--background);
     border-radius: 60px 60px / 10%;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.383);
     text-align: center;

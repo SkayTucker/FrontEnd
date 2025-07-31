@@ -1,0 +1,340 @@
+/* ====== IMPORTS ====== */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rajdhani:wght@500&display=swap');
+
+
+
+/* Fontes locais */
+@font-face {
+  font-family: 'Riga';
+  src: url('../font/Riga.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Riga Light';
+  src: url('../font/Riga-Light.ttf') format('truetype');
+}
+
+/* Animação opcional */
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-100px) rotate(10deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes floatLogo {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-10px) rotate(-10deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(10deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+}
+
+.favicon-float {
+  position: absolute;
+  background-image: url('../img/favicon.ico');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: 0;
+  animation: float 20s infinite ease-in-out;
+}
+
+.favicon1 {
+  top: 10%;
+  left: 15%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 22s;
+}
+
+.favicon2 {
+  top: 40%;
+  left: 70%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 18s;
+}
+
+.favicon3 {
+  top: 70%;
+  left: 30%;
+  width: 50px;
+  height: 50px;
+  animation-duration: 24s;
+}
+
+.favicon4 {
+  top: 20%;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  animation-duration: 20s;
+}
+
+.favicon5 {
+  top: 60%;
+  left: 80%;
+  width: 35px;
+  height: 35px;
+  animation-duration: 26s;
+}
+
+.favicon6 {
+  top: 80%;
+  left: 10%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 23s;
+}
+
+.favicon6 {
+  top: 80%;
+  left: 10%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 23s;
+}
+
+.favicon7 {
+  top: 50%;
+  left: 10%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 13s;
+}
+
+.favicon8 {
+  top: 80%;
+  left: 50%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 7s;
+}
+
+.favicon9 {
+  top: 80%;
+  left: 90%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 25s;
+}
+
+.favicon10 {
+  top: 80%;
+  left: 10%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 23s;
+}
+
+.favicon10 {
+  top: 80%;
+  left: 10%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 23s;
+}
+
+.favicon11 {
+  top: 100%;
+  left: 60%;
+  width: 100px;
+  height: 55px;
+  animation-duration: 13s;
+
+}
+
+.favicon12 {
+  top: 10%;
+  left: 60%;
+  width: 100px;
+  height: 55px;
+  animation-duration: 13s;
+
+}
+
+.favicon13 {
+  top: 100%;
+  left: 40%;
+  width: 100px;
+  height: 65px;
+  animation-duration: 13s;
+
+}
+
+/* ====== ROOT VARIÁVEIS ====== */
+:root {
+  --background: #000000;
+  --primary: #cc33ff;
+  --secondary: #380349;
+  --primary-dark: #463e4977;
+  --primary-light: #9a77a88f;
+  --text-color: #ffffff;
+  --links: #380349;
+  --links-hover: #cc33ff;
+}
+
+/* ====== RESET E BASE ====== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background);
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+}
+
+.footer a {
+  color: var(--links);
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* ====== ANIMAÇÕES ====== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: none;
+}
+
+.animate.start {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-in-out;
+}
+
+.animate.start.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fadeInSlow {
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+/* ====== HEADER ====== */
+
+
+
+/*Propriedades da pagina*/
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+/* Celulares */
+@media (width > 1024px) {
+
+  .homeSlideshow .slide {
+    background-position: center;
+  }
+
+  .slide-1 {
+    background: url('../img/slider1.png') left;
+
+  }
+
+  .slide-2 {
+    /* background-image: url('../img/1366x768-2.JPG'); */
+    background-image: url('../img/slider2.jpg');
+  }
+
+  .slide-3 {
+    /* background-image: url('../img/1366x768-2.JPG'); */
+    background-image: url('../img/slider3.png');
+  }
+}
+
+
+
+/* Celulares */
+@media (width < 1024px) {
+  .home-section {
+    height: 50vh;
+  }
+
+  .slide-1 {
+    /* background-image: url('../img/1366x768.JPG'); */
+    background-image: url('../img/slider-mobile1.jpg');
+  }
+
+  .slide-2 {
+    /* background-image: url('../img/1366x768-2.JPG'); */
+    background-image: url('../img/slider-mobile2.jpg');
+  }
+
+  .slide-3 {
+    /* background-image: url('../img/1366x768-2.JPG'); */
+    background-image: url('../img/slider-mobile3.jpg');
+  }
+}

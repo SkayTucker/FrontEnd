@@ -1,0 +1,54 @@
+/* ====== ANIMAÇÕES ====== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-100px) rotate(10deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+@keyframes floatLogo {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-10px) rotate(-10deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(10deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}

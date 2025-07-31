@@ -1,0 +1,44 @@
+.logoElite {
+  position: relative;
+  display: inline-block;
+  width: 300px; /* ajuste conforme sua logo */
+}
+
+.logoElite img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logoElite .shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    transparent 100%
+  );
+  mask-image: url("assets/img/logo-elite.png");
+  -webkit-mask-image: url("assets/img/logo-elite.png");
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  animation: blade-shine 2.5s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes blade-shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}

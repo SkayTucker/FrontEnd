@@ -1,0 +1,6164 @@
+11/01/2022 21:44: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19456317347
+          [site_id] => 
+          [date_created] => 2022-01-11T20:43:58.463-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-11T20:44:01.107-04:00
+          [payer] => Array
+            (
+              [id] => 235223352
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 3948991164
+          [external_reference] => 30
+          [merchant_order_id] => 3948991164
+          [reason] => Fatura 30 - 100 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 300
+          [net_received_amount] => 0
+          [total_paid_amount] => 300
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_blacklist
+          [installments] => 1
+          [issuer_id] => 25
+          [installment_amount] => 300
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => EC-L2BUY
+          [cardholder] => Array
+            (
+              [name] => ALESSANDRA V SOUSA
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 15220295756
+                )
+
+            )
+
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [last_four_digits] => 6433
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19456317347
+  [topic] => payment
+)
+
+11/01/2022 21:45: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19456358381
+          [site_id] => 
+          [date_created] => 2022-01-11T20:45:33.526-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-11T20:45:36.044-04:00
+          [payer] => Array
+            (
+              [id] => 235223352
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 3949000164
+          [external_reference] => 30
+          [merchant_order_id] => 3949000164
+          [reason] => Fatura 30 - 100 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 300
+          [net_received_amount] => 0
+          [total_paid_amount] => 300
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_blacklist
+          [installments] => 1
+          [issuer_id] => 25
+          [installment_amount] => 300
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => EC-L2BUY
+          [cardholder] => Array
+            (
+              [name] => ALESSANDRA V SOUS
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 15220295756
+                )
+
+            )
+
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [last_four_digits] => 6433
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19456358381
+  [topic] => payment
+)
+
+11/01/2022 22:03: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19456730489
+          [site_id] => 
+          [date_created] => 2022-01-11T21:03:46.022-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-11T21:03:46.022-04:00
+          [payer] => Array
+            (
+              [id] => 235223352
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 3949107114
+          [external_reference] => 30
+          [merchant_order_id] => 3949107114
+          [reason] => Fatura 30 - 100 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 300
+          [net_received_amount] => 0
+          [total_paid_amount] => 300
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_blacklist
+          [installments] => 1
+          [issuer_id] => 25
+          [installment_amount] => 300
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => EC-L2BUY
+          [cardholder] => Array
+            (
+              [name] => Alessandra V Sousa
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 15220295756
+                )
+
+            )
+
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [last_four_digits] => 6433
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19456730489
+  [topic] => payment
+)
+
+12/01/2022 09:01: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19461344130
+          [site_id] => 
+          [date_created] => 2022-01-12T08:01:51.023-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-12T08:01:51.023-04:00
+          [payer] => Array
+            (
+              [id] => 235223352
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 3950341306
+          [external_reference] => 30
+          [merchant_order_id] => 3950341306
+          [reason] => Fatura 30 - 100 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 300
+          [net_received_amount] => 0
+          [total_paid_amount] => 300
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_blacklist
+          [installments] => 1
+          [issuer_id] => 25
+          [installment_amount] => 300
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => EC-L2BUY
+          [cardholder] => Array
+            (
+              [name] => Alessandra V Sousa
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 15220295756
+                )
+
+            )
+
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [last_four_digits] => 6433
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19461344130
+  [topic] => payment
+)
+
+12/01/2022 09:03: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19461375065
+          [site_id] => 
+          [date_created] => 2022-01-12T08:03:41.220-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-12T08:03:41.220-04:00
+          [payer] => Array
+            (
+              [id] => 235223352
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 3950341306
+          [external_reference] => 30
+          [merchant_order_id] => 3950341306
+          [reason] => Fatura 30 - 100 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 300
+          [net_received_amount] => 0
+          [total_paid_amount] => 300
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_blacklist
+          [installments] => 1
+          [issuer_id] => 25
+          [installment_amount] => 300
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => EC-L2BUY
+          [cardholder] => Array
+            (
+              [name] => ALESSANDRA V SOUS
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 15220295756
+                )
+
+            )
+
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [last_four_digits] => 6433
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19461375065
+  [topic] => payment
+)
+
+12/01/2022 18:44: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19474639299
+          [site_id] => 
+          [date_created] => 2022-01-12T17:44:32.338-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-12T17:44:36.037-04:00
+          [payer] => Array
+            (
+              [id] => 235223352
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 3953997734
+          [external_reference] => 30
+          [merchant_order_id] => 3953997734
+          [reason] => Fatura 30 - 100 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 300
+          [net_received_amount] => 0
+          [total_paid_amount] => 300
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_blacklist
+          [installments] => 1
+          [issuer_id] => 25
+          [installment_amount] => 300
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => EC-L2BUY
+          [cardholder] => Array
+            (
+              [name] => Alessandra V Sousa
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 15220295756
+                )
+
+            )
+
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [last_four_digits] => 6433
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19474639299
+  [topic] => payment
+)
+
+12/01/2022 22:36: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19479716367
+  [topic] => payment
+)
+
+12/01/2022 23:22: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19480403835
+  [topic] => payment
+)
+
+13/01/2022 14:07: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19490616119
+          [site_id] => 
+          [date_created] => 2022-01-13T13:07:48.693-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-13T13:07:48.693-04:00
+          [payer] => Array
+            (
+              [id] => 235223352
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 3958487440
+          [external_reference] => 31
+          [merchant_order_id] => 3958487440
+          [reason] => Fatura 31 - 117 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 351
+          [net_received_amount] => 0
+          [total_paid_amount] => 351
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => in_process
+          [status_detail] => pending_review_manual
+          [installments] => 1
+          [issuer_id] => 25
+          [installment_amount] => 351
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => MP*L2BUY
+          [cardholder] => Array
+            (
+              [name] => ALVESSANDRA V SOUSA
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 15220295756
+                )
+
+            )
+
+          [authorization_code] => 074974
+          [marketplace_fee] => 0
+          [last_four_digits] => 6433
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19490616119
+  [topic] => payment
+)
+
+13/01/2022 18:11: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19490616119
+          [site_id] => 
+          [date_created] => 2022-01-13T13:07:48.000-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-13T13:07:48.000-04:00
+          [payer] => Array
+            (
+              [id] => 235223352
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 3958487440
+          [external_reference] => 31
+          [merchant_order_id] => 3958487440
+          [reason] => Fatura 31 - 117 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 351
+          [net_received_amount] => 0
+          [total_paid_amount] => 351
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_high_risk
+          [installments] => 1
+          [issuer_id] => 25
+          [installment_amount] => 351
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => MP*L2BUY
+          [cardholder] => Array
+            (
+              [name] => ALVESSANDRA V SOUSA
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 15220295756
+                )
+
+            )
+
+          [authorization_code] => 074974
+          [marketplace_fee] => 0
+          [last_four_digits] => 6433
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19490616119
+  [topic] => payment
+)
+
+13/01/2022 19:46: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19498273079
+  [topic] => payment
+)
+
+16/01/2022 12:05: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19552988278
+  [topic] => payment
+)
+
+17/01/2022 15:30: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19575386974
+  [topic] => payment
+)
+
+19/01/2022 02:49: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19608597444
+  [topic] => payment
+)
+
+22/01/2022 14:27: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19684198946
+  [topic] => payment
+)
+
+25/01/2022 23:53: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19752853869
+          [site_id] => 
+          [date_created] => 2022-01-25T22:53:33.874-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-25T22:53:33.874-04:00
+          [payer] => Array
+            (
+              [id] => 235223352
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4029749206
+          [external_reference] => 30
+          [merchant_order_id] => 4029749206
+          [reason] => Fatura 30 - 5 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 15
+          [net_received_amount] => 0
+          [total_paid_amount] => 15
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19752853869
+  [topic] => payment
+)
+
+25/01/2022 23:59: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19752906936
+          [site_id] => 
+          [date_created] => 2022-01-25T22:59:38.229-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-25T22:59:38.229-04:00
+          [payer] => Array
+            (
+              [id] => 235223352
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4029765118
+          [external_reference] => 32
+          [merchant_order_id] => 4029765118
+          [reason] => Fatura 32 - 5 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 2
+          [net_received_amount] => 0
+          [total_paid_amount] => 2
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19752906936
+  [topic] => payment
+)
+
+26/01/2022 23:57: Protocolo inexistente! REF: 30 - Dump: Array
+(
+  [id] => 19752853869
+  [topic] => payment
+)
+
+27/01/2022 00:02: Protocolo inexistente! REF: 32 - Dump: Array
+(
+  [id] => 19752906936
+  [topic] => payment
+)
+
+28/01/2022 11:40: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19801545451
+  [topic] => payment
+)
+
+29/01/2022 19:05: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19833692021
+          [site_id] => 
+          [date_created] => 2022-01-29T18:05:49.702-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T18:05:49.702-04:00
+          [payer] => Array
+            (
+              [id] => 266554264
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4051862534
+          [external_reference] => 4
+          [merchant_order_id] => 4051862534
+          [reason] => Fatura 4 - 12 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 36
+          [net_received_amount] => 0
+          [total_paid_amount] => 36
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19833692021
+  [topic] => payment
+)
+
+29/01/2022 19:06: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19833692021
+  [topic] => payment
+)
+
+29/01/2022 19:06: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19833702549
+  [topic] => payment
+)
+
+29/01/2022 19:13: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19833823967
+          [site_id] => 
+          [date_created] => 2022-01-29T18:13:00.714-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T18:13:00.714-04:00
+          [payer] => Array
+            (
+              [id] => 623867605
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4051906363
+          [external_reference] => 6
+          [merchant_order_id] => 4051906363
+          [reason] => Fatura 6 - 5 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 15
+          [net_received_amount] => 0
+          [total_paid_amount] => 15
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19833823967
+  [topic] => payment
+)
+
+29/01/2022 19:17: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19833928139
+          [site_id] => 
+          [date_created] => 2022-01-29T18:17:12.316-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T18:17:12.316-04:00
+          [payer] => Array
+            (
+              [id] => 319196513
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4051929622
+          [external_reference] => 7
+          [merchant_order_id] => 4051929622
+          [reason] => Fatura 7 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19833928139
+  [topic] => payment
+)
+
+29/01/2022 19:18: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19833928139
+  [topic] => payment
+)
+
+29/01/2022 19:20: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19833823967
+  [topic] => payment
+)
+
+29/01/2022 19:24: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19834077486
+          [site_id] => 
+          [date_created] => 2022-01-29T18:24:26.157-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T18:24:26.157-04:00
+          [payer] => Array
+            (
+              [id] => 462130608
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4051970827
+          [external_reference] => 8
+          [merchant_order_id] => 4051970827
+          [reason] => Fatura 8 - 15 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 45
+          [net_received_amount] => 0
+          [total_paid_amount] => 45
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19834077486
+  [topic] => payment
+)
+
+29/01/2022 19:24: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19834077486
+  [topic] => payment
+)
+
+29/01/2022 19:55: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19834779258
+          [site_id] => 
+          [date_created] => 2022-01-29T18:55:37.604-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T18:55:37.604-04:00
+          [payer] => Array
+            (
+              [id] => 600582135
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4052159225
+          [external_reference] => 9
+          [merchant_order_id] => 4052159225
+          [reason] => Fatura 9 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19834779258
+  [topic] => payment
+)
+
+29/01/2022 19:56: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19834779258
+  [topic] => payment
+)
+
+29/01/2022 20:00: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19834867266
+          [site_id] => 
+          [date_created] => 2022-01-29T19:00:03.907-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T19:00:03.907-04:00
+          [payer] => Array
+            (
+              [id] => 430902674
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4052186153
+          [external_reference] => 11
+          [merchant_order_id] => 4052186153
+          [reason] => Fatura 11 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19834867266
+  [topic] => payment
+)
+
+29/01/2022 20:01: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19834867266
+  [topic] => payment
+)
+
+29/01/2022 20:04: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19834936647
+          [site_id] => 
+          [date_created] => 2022-01-29T19:03:59.731-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T19:03:59.731-04:00
+          [payer] => Array
+            (
+              [id] => 356070921
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4052210096
+          [external_reference] => 13
+          [merchant_order_id] => 4052210096
+          [reason] => Factura 13 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19834936647
+  [topic] => payment
+)
+
+29/01/2022 20:04: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19834948412
+  [topic] => payment
+)
+
+29/01/2022 20:05: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19834936647
+  [topic] => payment
+)
+
+29/01/2022 20:18: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19835255063
+          [site_id] => 
+          [date_created] => 2022-01-29T19:18:32.781-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T19:18:32.781-04:00
+          [payer] => Array
+            (
+              [id] => 470663250
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4052299179
+          [external_reference] => 14
+          [merchant_order_id] => 4052299179
+          [reason] => Fatura 14 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19835255063
+  [topic] => payment
+)
+
+29/01/2022 20:19: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19835255063
+  [topic] => payment
+)
+
+29/01/2022 20:20: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19835285205
+          [site_id] => 
+          [date_created] => 2022-01-29T19:20:01.095-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T19:20:01.095-04:00
+          [payer] => Array
+            (
+              [id] => 1065392974
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4052306706
+          [external_reference] => 10
+          [merchant_order_id] => 4052306706
+          [reason] => Fatura 10 - 30 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 90
+          [net_received_amount] => 0
+          [total_paid_amount] => 97.6
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_bad_filled_date
+          [installments] => 3
+          [issuer_id] => 25
+          [installment_amount] => 32.53
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => EC-L2BUY
+          [cardholder] => Array
+            (
+              [name] => gleison farias
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 06280384373
+                )
+
+            )
+
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [last_four_digits] => 2341
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19835285205
+  [topic] => payment
+)
+
+29/01/2022 20:20: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19835304040
+          [site_id] => 
+          [date_created] => 2022-01-29T19:20:48.315-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T19:20:48.315-04:00
+          [payer] => Array
+            (
+              [id] => 1065392974
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4052306706
+          [external_reference] => 10
+          [merchant_order_id] => 4052306706
+          [reason] => Fatura 10 - 30 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 90
+          [net_received_amount] => 0
+          [total_paid_amount] => 97.6
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => in_process
+          [status_detail] => pending_review_manual
+          [installments] => 3
+          [issuer_id] => 25
+          [installment_amount] => 32.53
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => MP*L2BUY
+          [cardholder] => Array
+            (
+              [name] => gleison farias
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 06280384373
+                )
+
+            )
+
+          [authorization_code] => 204949
+          [marketplace_fee] => 0
+          [last_four_digits] => 2341
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19835304040
+  [topic] => payment
+)
+
+29/01/2022 20:24: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19835378695
+          [site_id] => 
+          [date_created] => 2022-01-29T19:24:56.103-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T19:24:56.103-04:00
+          [payer] => Array
+            (
+              [id] => 645211899
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4052338142
+          [external_reference] => 16
+          [merchant_order_id] => 4052338142
+          [reason] => Fatura 16 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19835378695
+  [topic] => payment
+)
+
+29/01/2022 20:25: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19835378695
+  [topic] => payment
+)
+
+29/01/2022 20:41: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19835304040
+          [site_id] => 
+          [date_created] => 2022-01-29T19:20:48.000-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T19:20:48.000-04:00
+          [payer] => Array
+            (
+              [id] => 1065392974
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4052306706
+          [external_reference] => 10
+          [merchant_order_id] => 4052306706
+          [reason] => Fatura 10 - 30 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 90
+          [net_received_amount] => 0
+          [total_paid_amount] => 97.6
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_high_risk
+          [installments] => 3
+          [issuer_id] => 25
+          [installment_amount] => 32.53
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => MP*L2BUY
+          [cardholder] => Array
+            (
+              [name] => gleison farias
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 06280384373
+                )
+
+            )
+
+          [authorization_code] => 204949
+          [marketplace_fee] => 0
+          [last_four_digits] => 2341
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19835304040
+  [topic] => payment
+)
+
+29/01/2022 22:10: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19837539162
+          [site_id] => 
+          [date_created] => 2022-01-29T21:10:24.836-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T21:10:24.836-04:00
+          [payer] => Array
+            (
+              [id] => 254717580
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4052941460
+          [external_reference] => 20
+          [merchant_order_id] => 4052941460
+          [reason] => Fatura 20 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19837539162
+  [topic] => payment
+)
+
+29/01/2022 22:14: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19837539162
+  [topic] => payment
+)
+
+29/01/2022 22:26: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19837780286
+  [topic] => payment
+)
+
+29/01/2022 22:40: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19837966796
+  [topic] => payment
+)
+
+29/01/2022 22:46: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19838063934
+  [topic] => payment
+)
+
+29/01/2022 23:16: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19838528101
+          [site_id] => 
+          [date_created] => 2022-01-29T22:16:39.977-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T22:16:42.560-04:00
+          [payer] => Array
+            (
+              [id] => 101346466
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4053217745
+          [external_reference] => 26
+          [merchant_order_id] => 4053217745
+          [reason] => Fatura 26 - 17 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 51
+          [net_received_amount] => 0
+          [total_paid_amount] => 54.45
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_blacklist
+          [installments] => 2
+          [issuer_id] => 25
+          [installment_amount] => 27.23
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => visa
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => EC-L2BUY
+          [cardholder] => Array
+            (
+              [name] => caique c dos santos
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 09136237922
+                )
+
+            )
+
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [last_four_digits] => 4320
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19838528101
+  [topic] => payment
+)
+
+29/01/2022 23:17: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19838520653
+  [topic] => payment
+)
+
+29/01/2022 23:21: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19838592175
+  [topic] => payment
+)
+
+30/01/2022 00:31: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19839313706
+          [site_id] => 
+          [date_created] => 2022-01-29T23:31:43.911-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-29T23:31:43.911-04:00
+          [payer] => Array
+            (
+              [id] => 347380224
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4053442867
+          [external_reference] => 29
+          [merchant_order_id] => 4053442867
+          [reason] => Fatura 29 - 50 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 150
+          [net_received_amount] => 0
+          [total_paid_amount] => 150
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19839313706
+  [topic] => payment
+)
+
+30/01/2022 01:27: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19839810130
+          [site_id] => 
+          [date_created] => 2022-01-30T00:27:58.749-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T00:27:58.749-04:00
+          [payer] => Array
+            (
+              [id] => 538577601
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4053565232
+          [external_reference] => 32
+          [merchant_order_id] => 4053565232
+          [reason] => Fatura 32 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19839810130
+  [topic] => payment
+)
+
+30/01/2022 01:28: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19839810130
+  [topic] => payment
+)
+
+30/01/2022 01:35: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19839867030
+          [site_id] => 
+          [date_created] => 2022-01-30T00:35:17.624-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T00:35:17.624-04:00
+          [payer] => Array
+            (
+              [id] => 120749332
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4053576874
+          [external_reference] => 34
+          [merchant_order_id] => 4053576874
+          [reason] => Invoice 34 - 50 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 150
+          [net_received_amount] => 0
+          [total_paid_amount] => 150
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => rejected_high_risk
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => digital_wallet
+          [payment_method_id] => paypal
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19839867030
+  [topic] => payment
+)
+
+30/01/2022 02:02: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19840021379
+  [topic] => payment
+)
+
+30/01/2022 02:18: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19840091823
+          [site_id] => 
+          [date_created] => 2022-01-30T01:18:27.915-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T01:18:27.915-04:00
+          [payer] => Array
+            (
+              [id] => 347380224
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4053641844
+          [external_reference] => 35
+          [merchant_order_id] => 4053641844
+          [reason] => Fatura 35 - 60 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 180
+          [net_received_amount] => 0
+          [total_paid_amount] => 180
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19840091823
+  [topic] => payment
+)
+
+30/01/2022 02:19: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19840091823
+  [topic] => payment
+)
+
+30/01/2022 02:52: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19840231949
+  [topic] => payment
+)
+
+30/01/2022 07:18: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19841035438
+          [site_id] => 
+          [date_created] => 2022-01-30T06:18:37.830-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T06:18:37.830-04:00
+          [payer] => Array
+            (
+              [id] => 462130608
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4053838613
+          [external_reference] => 38
+          [merchant_order_id] => 4053838613
+          [reason] => Fatura 38 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19841035438
+  [topic] => payment
+)
+
+30/01/2022 07:19: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19841035438
+  [topic] => payment
+)
+
+30/01/2022 11:04: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19843139283
+          [site_id] => 
+          [date_created] => 2022-01-30T10:04:10.082-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T10:04:10.082-04:00
+          [payer] => Array
+            (
+              [id] => 225691935
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4054254432
+          [external_reference] => 40
+          [merchant_order_id] => 4054254432
+          [reason] => Fatura 40 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19843139283
+  [topic] => payment
+)
+
+30/01/2022 11:05: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19843139283
+  [topic] => payment
+)
+
+30/01/2022 11:08: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19843219245
+          [site_id] => 
+          [date_created] => 2022-01-30T10:08:29.479-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T10:08:29.479-04:00
+          [payer] => Array
+            (
+              [id] => 225691935
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4054271532
+          [external_reference] => 41
+          [merchant_order_id] => 4054271532
+          [reason] => Fatura 41 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19843219245
+  [topic] => payment
+)
+
+30/01/2022 11:16: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19843356798
+          [site_id] => 
+          [date_created] => 2022-01-30T10:16:29.248-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T10:16:29.248-04:00
+          [payer] => Array
+            (
+              [id] => 225691935
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4054299913
+          [external_reference] => 44
+          [merchant_order_id] => 4054299913
+          [reason] => Fatura 44 - 11 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 33
+          [net_received_amount] => 0
+          [total_paid_amount] => 33
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19843356798
+  [topic] => payment
+)
+
+30/01/2022 11:16: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19843356798
+  [topic] => payment
+)
+
+30/01/2022 11:44: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19843830639
+          [site_id] => 
+          [date_created] => 2022-01-30T10:44:45.811-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T10:44:45.811-04:00
+          [payer] => Array
+            (
+              [id] => 258590622
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4054416949
+          [external_reference] => 45
+          [merchant_order_id] => 4054416949
+          [reason] => Fatura 45 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19843830639
+  [topic] => payment
+)
+
+30/01/2022 11:46: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19843830639
+  [topic] => payment
+)
+
+30/01/2022 12:44: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19845021268
+  [topic] => payment
+)
+
+30/01/2022 14:18: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19846563529
+  [topic] => payment
+)
+
+30/01/2022 14:21: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19846602380
+          [site_id] => 
+          [date_created] => 2022-01-30T13:21:14.764-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T13:21:14.764-04:00
+          [payer] => Array
+            (
+              [id] => 569757998
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4055137673
+          [external_reference] => 50
+          [merchant_order_id] => 4055137673
+          [reason] => Fatura 50 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19846602380
+  [topic] => payment
+)
+
+30/01/2022 14:22: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19846602380
+  [topic] => payment
+)
+
+30/01/2022 14:31: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19846745500
+          [site_id] => 
+          [date_created] => 2022-01-30T13:31:58.266-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T13:31:58.266-04:00
+          [payer] => Array
+            (
+              [id] => 569757998
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4055179468
+          [external_reference] => 52
+          [merchant_order_id] => 4055179468
+          [reason] => Fatura 52 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19846745500
+  [topic] => payment
+)
+
+30/01/2022 14:32: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19846745500
+  [topic] => payment
+)
+
+30/01/2022 15:00: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19847192207
+          [site_id] => 
+          [date_created] => 2022-01-30T14:00:08.445-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T14:00:08.445-04:00
+          [payer] => Array
+            (
+              [id] => 311351301
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4055284975
+          [external_reference] => 54
+          [merchant_order_id] => 4055284975
+          [reason] => Fatura 54 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19847192207
+  [topic] => payment
+)
+
+30/01/2022 15:03: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19847192207
+  [topic] => payment
+)
+
+30/01/2022 15:17: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19847456480
+          [site_id] => 
+          [date_created] => 2022-01-30T14:17:13.090-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T14:17:13.090-04:00
+          [payer] => Array
+            (
+              [id] => 569757998
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4055348601
+          [external_reference] => 56
+          [merchant_order_id] => 4055348601
+          [reason] => Fatura 56 - 15 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 45
+          [net_received_amount] => 0
+          [total_paid_amount] => 45
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19847456480
+  [topic] => payment
+)
+
+30/01/2022 15:18: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19847456480
+  [topic] => payment
+)
+
+30/01/2022 15:39: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19847733535
+  [topic] => payment
+)
+
+30/01/2022 15:52: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19847890891
+          [site_id] => 
+          [date_created] => 2022-01-30T14:52:13.647-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T14:52:13.647-04:00
+          [payer] => Array
+            (
+              [id] => 176557351
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4055474311
+          [external_reference] => 58
+          [merchant_order_id] => 4055474311
+          [reason] => Fatura 58 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19847890891
+  [topic] => payment
+)
+
+30/01/2022 15:52: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19847890891
+  [topic] => payment
+)
+
+30/01/2022 16:12: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19848152931
+          [site_id] => 
+          [date_created] => 2022-01-30T15:12:16.541-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T15:12:16.541-04:00
+          [payer] => Array
+            (
+              [id] => 22096947
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4055546307
+          [external_reference] => 59
+          [merchant_order_id] => 4055546307
+          [reason] => Fatura 59 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19848152931
+  [topic] => payment
+)
+
+30/01/2022 16:13: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19848152931
+  [topic] => payment
+)
+
+30/01/2022 16:26: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19848396018
+          [site_id] => 
+          [date_created] => 2022-01-30T15:26:28.766-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T15:26:28.766-04:00
+          [payer] => Array
+            (
+              [id] => 569757998
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4055596815
+          [external_reference] => 60
+          [merchant_order_id] => 4055596815
+          [reason] => Fatura 60 - 5 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 15
+          [net_received_amount] => 0
+          [total_paid_amount] => 15
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19848396018
+  [topic] => payment
+)
+
+30/01/2022 16:27: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19848396018
+  [topic] => payment
+)
+
+30/01/2022 17:22: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19849151234
+  [topic] => payment
+)
+
+30/01/2022 18:15: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19849936461
+  [topic] => payment
+)
+
+30/01/2022 18:15: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19849946287
+  [topic] => payment
+)
+
+30/01/2022 18:31: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19850170309
+          [site_id] => 
+          [date_created] => 2022-01-30T17:31:03.000-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T17:31:03.000-04:00
+          [payer] => Array
+            (
+              [id] => 811514267
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4056063321
+          [external_reference] => 61
+          [merchant_order_id] => 4056063321
+          [reason] => Fatura 61 - 12 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 36
+          [net_received_amount] => 0
+          [total_paid_amount] => 36
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_high_risk
+          [installments] => 1
+          [issuer_id] => 12523
+          [installment_amount] => 36
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => master
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => MERCPAGO*L2BUY
+          [cardholder] => Array
+            (
+              [name] => JANFRANCO LIRA BIONES VIEIRA SIRINO
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 12041626461
+                )
+
+            )
+
+          [authorization_code] => 328809
+          [marketplace_fee] => 0
+          [last_four_digits] => 1294
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19850170309
+  [topic] => payment
+)
+
+30/01/2022 18:32: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19850194442
+  [topic] => payment
+)
+
+30/01/2022 18:33: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19850203024
+          [site_id] => 
+          [date_created] => 2022-01-30T17:33:05.809-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T17:33:05.809-04:00
+          [payer] => Array
+            (
+              [id] => 811514267
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4056063321
+          [external_reference] => 61
+          [merchant_order_id] => 4056063321
+          [reason] => Fatura 61 - 12 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 36
+          [net_received_amount] => 0
+          [total_paid_amount] => 36
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => rejected_high_risk
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => digital_wallet
+          [payment_method_id] => paypal
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19850203024
+  [topic] => payment
+)
+
+30/01/2022 18:33: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19850203628
+          [site_id] => 
+          [date_created] => 2022-01-30T17:33:44.754-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T17:33:44.754-04:00
+          [payer] => Array
+            (
+              [id] => 811514267
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4056074254
+          [external_reference] => 61
+          [merchant_order_id] => 4056074254
+          [reason] => Fatura 61 - 12 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 36
+          [net_received_amount] => 0
+          [total_paid_amount] => 36
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19850203628
+  [topic] => payment
+)
+
+30/01/2022 18:40: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19850290741
+  [topic] => payment
+)
+
+30/01/2022 18:44: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19850343964
+          [site_id] => 
+          [date_created] => 2022-01-30T17:44:12.777-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T17:44:12.777-04:00
+          [payer] => Array
+            (
+              [id] => 811514267
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4056120126
+          [external_reference] => 62
+          [merchant_order_id] => 4056120126
+          [reason] => Fatura 62 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => rejected_high_risk
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => digital_wallet
+          [payment_method_id] => paypal
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19850343964
+  [topic] => payment
+)
+
+30/01/2022 18:47: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19850396056
+  [topic] => payment
+)
+
+30/01/2022 18:47: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19850395383
+          [site_id] => 
+          [date_created] => 2022-01-30T17:47:18.295-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T17:47:18.295-04:00
+          [payer] => Array
+            (
+              [id] => 811514267
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4056120126
+          [external_reference] => 62
+          [merchant_order_id] => 4056120126
+          [reason] => Fatura 62 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 21
+          [net_received_amount] => 0
+          [total_paid_amount] => 21
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_high_risk
+          [installments] => 1
+          [issuer_id] => 12523
+          [installment_amount] => 21
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => master
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => MERCPAGO*L2BUY
+          [cardholder] => Array
+            (
+              [name] => JANFRANCO LIRA BIONES VIEIRA SIRINO
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 12041626461
+                )
+
+            )
+
+          [authorization_code] => 677124
+          [marketplace_fee] => 0
+          [last_four_digits] => 1294
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19850395383
+  [topic] => payment
+)
+
+30/01/2022 18:50: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19850432277
+  [topic] => payment
+)
+
+30/01/2022 20:21: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19851923522
+          [site_id] => 
+          [date_created] => 2022-01-30T19:21:57.078-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T19:21:57.078-04:00
+          [payer] => Array
+            (
+              [id] => 811514267
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4056541353
+          [external_reference] => 63
+          [merchant_order_id] => 4056541353
+          [reason] => Fatura 63 - 13 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 39
+          [net_received_amount] => 0
+          [total_paid_amount] => 39
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => rejected
+          [status_detail] => cc_rejected_high_risk
+          [installments] => 1
+          [issuer_id] => 12523
+          [installment_amount] => 39
+          [deferred_period] => 
+          [payment_type] => credit_card
+          [payment_method_id] => master
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => MERCPAGO*L2BUY
+          [cardholder] => Array
+            (
+              [name] => JANFRANCO LIRA BIONES VIEIRA SIRINO
+              [identification] => Array
+                (
+                  [type] => CPF
+                  [number] => 12041626461
+                )
+
+            )
+
+          [authorization_code] => 545607
+          [marketplace_fee] => 0
+          [last_four_digits] => 1294
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19851923522
+  [topic] => payment
+)
+
+30/01/2022 21:18: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19852977650
+  [topic] => payment
+)
+
+31/01/2022 00:37: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19839313706
+          [site_id] => 
+          [date_created] => 2022-01-29T23:31:43.000-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-30T23:37:28.000-04:00
+          [payer] => Array
+            (
+              [id] => 347380224
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4053442867
+          [external_reference] => 29
+          [merchant_order_id] => 4053442867
+          [reason] => Fatura 29 - 50 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 150
+          [net_received_amount] => 0
+          [total_paid_amount] => 150
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => cancelled
+          [status_detail] => expired
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19839313706
+  [topic] => payment
+)
+
+31/01/2022 08:33: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19857496329
+          [site_id] => 
+          [date_created] => 2022-01-31T07:33:16.483-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-31T07:33:16.483-04:00
+          [payer] => Array
+            (
+              [id] => 433033151
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4058031366
+          [external_reference] => 68
+          [merchant_order_id] => 4058031366
+          [reason] => Fatura 68 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19857496329
+  [topic] => payment
+)
+
+31/01/2022 08:33: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19857496329
+  [topic] => payment
+)
+
+31/01/2022 10:36: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19859574812
+  [topic] => payment
+)
+
+31/01/2022 11:12: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19843219245
+          [site_id] => 
+          [date_created] => 2022-01-30T10:08:29.000-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-31T10:12:33.000-04:00
+          [payer] => Array
+            (
+              [id] => 225691935
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4054271532
+          [external_reference] => 41
+          [merchant_order_id] => 4054271532
+          [reason] => Fatura 41 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => cancelled
+          [status_detail] => expired
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19843219245
+  [topic] => payment
+)
+
+31/01/2022 11:22: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19860583753
+          [site_id] => 
+          [date_created] => 2022-01-31T10:22:13.707-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-31T10:22:13.707-04:00
+          [payer] => Array
+            (
+              [id] => 569757998
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4058893539
+          [external_reference] => 70
+          [merchant_order_id] => 4058893539
+          [reason] => Fatura 70 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19860583753
+  [topic] => payment
+)
+
+31/01/2022 11:23: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19860583753
+  [topic] => payment
+)
+
+31/01/2022 11:39: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19860977995
+          [site_id] => 
+          [date_created] => 2022-01-31T10:38:59.470-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-31T10:38:59.470-04:00
+          [payer] => Array
+            (
+              [id] => 569757998
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4059012604
+          [external_reference] => 72
+          [merchant_order_id] => 4059012604
+          [reason] => Fatura 72 - 26 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 78
+          [net_received_amount] => 0
+          [total_paid_amount] => 78
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19860977995
+  [topic] => payment
+)
+
+31/01/2022 11:39: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19860977995
+  [topic] => payment
+)
+
+31/01/2022 17:26: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19869146769
+  [topic] => payment
+)
+
+31/01/2022 18:17: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19870433098
+          [site_id] => 
+          [date_created] => 2022-01-31T17:17:31.605-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-31T17:17:31.605-04:00
+          [payer] => Array
+            (
+              [id] => 356070921
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4061786895
+          [external_reference] => 78
+          [merchant_order_id] => 4061786895
+          [reason] => Factura 78 - 10 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 30
+          [net_received_amount] => 0
+          [total_paid_amount] => 30
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => pending
+          [status_detail] => pending_waiting_transfer
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19870433098
+  [topic] => payment
+)
+
+31/01/2022 18:17: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19870433098
+  [topic] => payment
+)
+
+31/01/2022 18:37: Transação recebida e processada com sucesso! #2 Array
+(
+  [status] => 200
+  [response] => Array
+    (
+      [collection] => Array
+        (
+          [id] => 19850203628
+          [site_id] => 
+          [date_created] => 2022-01-30T17:33:44.000-04:00
+          [date_approved] => 
+          [money_release_date] => 
+          [last_modified] => 2022-01-31T17:37:50.000-04:00
+          [payer] => Array
+            (
+              [id] => 811514267
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+          [order_id] => 4056074254
+          [external_reference] => 61
+          [merchant_order_id] => 4056074254
+          [reason] => Fatura 61 - 12 Ticket Donate
+          [currency_id] => BRL
+          [transaction_amount] => 36
+          [net_received_amount] => 0
+          [total_paid_amount] => 36
+          [shipping_cost] => 0
+          [coupon_amount] => 0
+          [coupon_fee] => 0
+          [finance_fee] => 0
+          [discount_fee] => 0
+          [coupon_id] => 
+          [status] => cancelled
+          [status_detail] => expired
+          [issuer_id] => 
+          [installment_amount] => 0
+          [deferred_period] => 
+          [payment_type] => bank_transfer
+          [payment_method_id] => pix
+          [marketplace] => 
+          [operation_type] => regular_payment
+          [transaction_order_id] => 
+          [statement_descriptor] => 
+          [cardholder] => 
+          [authorization_code] => 
+          [marketplace_fee] => 0
+          [deduction_schema] => 
+          [refunds] => Array
+            (
+            )
+
+          [amount_refunded] => 0
+          [last_modified_by_admin] => 
+          [api_version] => 
+          [concept_id] => 
+          [concept_amount] => 0
+          [collector] => Array
+            (
+              [id] => 230142532
+              [first_name] => 
+              [last_name] => 
+              [phone] => Array
+                (
+                  [area_code] => 
+                  [number] => 
+                  [extension] => 
+                )
+
+              [identification] => Array
+                (
+                  [type] => 
+                  [number] => 
+                )
+
+              [email] => 
+              [nickname] => 
+            )
+
+        )
+
+    )
+
+)
+ - Dump: Array
+(
+  [id] => 19850203628
+  [topic] => payment
+)
+
+31/01/2022 19:41: Transação recebida e saldo entregue com sucesso! - Dump: Array
+(
+  [id] => 19872652226
+  [topic] => payment
+)
+
+31/01/2022 20:40: Merchant Order ID vazio! - Dump: Array
+(
+  [id] => 19874049846
+  [topic] => payment
+)
+

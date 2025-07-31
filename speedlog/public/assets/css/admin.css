@@ -1,0 +1,291 @@
+@import url('./global.css');
+
+.dashboard,
+.vehicles,
+.users {
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard fieldset {
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.dashboard-title,
+.vehicles-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.dashboard-content,
+.vehicles-content,
+.vehicles-options {
+    background-color: var(--background);
+    width: 100%;
+
+}
+
+/* Grid de cards */
+.dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+.vehicles-section fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Card do veículo */
+.vehicle-cards {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.vehicle-cards:hover {
+    transform: translateY(-4px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Informações internas */
+.menu-vehicle-info {
+    display: flex;
+    background-color: var(--background);
+    justify-content: center;
+    padding: 10px;
+}
+
+.vehicle-img {
+    width: 100px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.vehicle-info-text {
+    height: 100%;
+    flex: 1;
+    color: #333;
+    font-size: 0.95rem;
+    padding: 5px;
+}
+
+
+/* Botão de histórico */
+.vehicle-cards .open-modal {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.vehicle-cards .open-modal:hover {
+    background-color: var(--primary);
+}
+
+
+/*Form Cadastrar Veiculos*/
+#form-cadastrar-veiculo {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-cadastrar-veiculo section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#form-cadastrar-veiculo section fieldset {
+    margin: 10px;
+    max-width: 500px;
+    padding: 10px;
+}
+
+#form-cadastrar-veiculo input,
+select {
+    padding: 2px;
+    border-radius: 8px;
+    width: 150px;
+}
+
+#form-cadastrar-veiculo button {
+    background-color: var(--primary);
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--secondary);
+}
+
+#form-cadastrar-veiculo .close-modal {
+    background-color: var(--secondary);
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+#form-cadastrar-veiculo button:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+#form-cadastrar-veiculo button .close-modal:hover {
+    cursor: point;
+    filter: brightness(110%);
+}
+
+
+/*USERS*/
+.newUserPage {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-self: center;
+    text-align: center;
+
+}
+
+/* Seção de cadastro */
+.newUserPage fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.newUserPage legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+/* Formulário */
+.user-register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Campos de input e select */
+.user-register-form input,
+.user-register-form select {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.user-register-form input:focus,
+.user-register-form select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+    outline: none;
+}
+
+/* Botão de envio */
+.user-register-form button[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.user-register-form button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Table geral */
+#userTable {
+    max-width: 900px;
+    /* controla largura máxima */
+    margin-top: 2rem;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+#userTable thead tr {
+    background-color: #3498db;
+    color: white;
+    text-align: left;
+}
+
+#userTable thead th {
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Corpo da tabela */
+#userTable tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s;
+}
+
+#userTable tbody tr:hover {
+    background-color: #f1f9ff;
+}
+
+/* Células */
+#userTable tbody td {
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    color: #333;
+    vertical-align: middle;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+/* Botões de ação dentro da tabela */
+#userTable button {
+    padding: 6px 10px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#userTable button:hover {
+    filter: brightness(0.9);
+}
+
+/* Botão Alterar Senha */
+#userTable button:first-child {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* Botão Excluir */
+#userTable button:last-child {
+    background-color: #e74c3c;
+    color: white;
+}

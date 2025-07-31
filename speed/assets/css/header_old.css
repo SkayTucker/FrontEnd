@@ -1,0 +1,139 @@
+@import url('assets/css/global.css');
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #27809d85;
+    color: white;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    flex-wrap: wrap;
+  }
+
+  /* Header padrão com menu visível */
+  header.full {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px black;
+    background-color: transparent;
+  }
+
+  header.minimized {
+    transition: all 0.3s ease-in-out;
+  }
+  /* Logo */
+  header .logo {
+    margin-left: 30px;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.438));
+  }
+
+  header .logo .logoFull {
+    display: block;
+  }
+
+  header .logo .logoIcon {
+    display: none;
+  }
+
+  /* Menu (nav) */
+  header nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding: 0 5px;
+  }
+
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 15px;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+  }
+
+  header nav a:hover {
+    border-bottom: 2px solid goldenrod;
+    color: var(--secondary);
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  header .clientArea {
+    background-color: var(--secondary);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 30px 30px/ 70%;
+    padding: 6px 40px;
+  }
+
+  header .clientArea:hover {
+    background-color: white;
+    color: var(--primary);
+    transition: 0.3s;
+    text-shadow: 1px 1px 1px var(--secondary);
+  }
+
+  /* Ocultar menu no modo reduzido */
+  header.minimized nav {
+    display: none;
+  }
+
+  .btnApp, .btnAcess {
+    padding: 0;
+    margin: 0;
+  }/* Dropdowns escondidos por padrão */
+.dropDownApp,
+.dropDownPcd {
+  display: none;
+  position: absolute;
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Quando abertos via JS */
+.dropDownAppShow {
+  display: block;
+  top: 100%;
+  right: 0;
+}
+
+.dropDownPcdShow {
+  display: block;
+  top: 100%;
+  right: 0;
+}
+
+/* Conteúdo dos dropdowns */
+.dropDownApp-content a,
+.dropDownPcd-content a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+/* Hover links internos */
+.dropDownApp-content a:hover,
+.dropDownPcd-content a:hover {
+  background-color: var(--secondary);
+  color: black;
+  border-radius: 8px;
+}
+
+
+  header button {
+    display: none;
+  }
+    /* FIM HEADER*/
+

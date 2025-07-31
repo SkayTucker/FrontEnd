@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerenciador de Tasks – Projetos</title>
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+
+    <!-- Scripts principais carregados com defer para garantir carregamento após HTML -->
+    <script type="module" src="assets/js/projectManager/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="top-bar fadeIn">
+        <h1>Gerenciador de Projetos</h1>
+        <div class="actions">
+            <button id="btnOpenCreateModal">+ Novo Projeto</button>
+            <button id="btnDeleteProject">🗑 Excluir Projeto</button>
+        </div>
+    </header>
+
+    <!-- Conteúdo dinâmico principal -->
+    <main id="mainContent" class="fadeInSlow">
+        <!-- Conteúdo das páginas será carregado dinamicamente aqui -->
+    </main>
+
+    <!-- Rodapé com estatísticas -->
+    <footer class="dashboard fadeIn">
+        <h2>Estatísticas</h2>
+        <ul>
+            <li>Total de Projetos: <span id="totalProjects">0</span></li>
+            <li>Total de Tasks: <span id="totalTasks">0</span></li>
+            <li>Tasks Concluídas: <span id="completedTasks">0</span></li>
+            <li>Tasks Pendentes: <span id="pendingTasks">0</span></li>
+        </ul>
+    </footer>
+
+
+    <!-- Modal: Criação de novo projeto -->
+    <div id="modalOverlay" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="fadeIn modal">
+            <h2 id="modalTitle">Novo Projeto</h2>
+
+            <label for="projectName">Nome do Projeto:</label>
+            <input type="text" id="projectName" placeholder="Ex: L2 MWX" />
+
+            <label for="projectDescription">Descrição:</label>
+            <textarea id="projectDescription" placeholder="Breve descrição do projeto..."></textarea>
+
+            <label for="taskFileInput">Importar Tasks (JSON):</label>
+            <input type="file" id="taskFileInput" accept=".json" />
+
+            <label>Tarefas (adicione manualmente ou importe pelo arquivo):</label>
+            <div id="tasksContainer" class="tasks-container"></div>
+
+            <button id="btnAddTask" type="button">+ Adicionar Tarefa</button>
+
+            <div class="modal-actions">
+                <button id="btnSaveProject" type="button" disabled>Salvar Projeto</button>
+                <button id="btnCancelProject" type="button">Cancelar</button>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

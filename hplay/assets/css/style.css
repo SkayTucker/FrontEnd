@@ -1,0 +1,43 @@
+@import url('./global.css');
+
+/* -------------------- SLIDESHOW DE FUNDO -------------------- */
+.homeSlideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.homeSlideshow .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease;
+    opacity: 0;
+    z-index: 0;
+}
+
+.homeSlideshow .slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide-progress {
+    height: 5px;
+    background-color: var(--primary);
+    animation: progressBar 15s linear forwards;
+}
+
+
+@keyframes progressBar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}

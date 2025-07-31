@@ -1,0 +1,47 @@
+@import url('./global.css');
+
+header.top-bar {
+    background: #2c2c2e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.actions button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background: #4ecca3;
+    border: none;
+    color: #1e1e1e;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.actions button:hover {
+    background: #39b78e;
+}
+
+
+
+
+
+footer.dashboard {
+    background: #292929;
+    padding: 1.5rem 2rem;
+    color: #aaa;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 0.4rem 0;
+}

@@ -1,0 +1,82 @@
+/* ====== FAVICONS FLUTUANTES ====== */
+.favicon-float {
+    position: absolute;
+    background-image: url('../img/favicon.ico');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: 0;
+    animation: float infinite ease-in-out;
+}
+
+.favicon1 {
+    top: 10%;
+    left: 15%;
+    width: 60px;
+    height: 60px;
+    animation-duration: 22s;
+}
+
+.favicon2 {
+    top: 40%;
+    left: 70%;
+    width: 40px;
+    height: 40px;
+    animation-duration: 18s;
+}
+
+.favicon3 {
+    top: 70%;
+    left: 30%;
+    width: 50px;
+    height: 50px;
+    animation-duration: 24s;
+}
+
+.favicon4 {
+    top: 20%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    animation-duration: 20s;
+}
+
+.favicon5 {
+    top: 60%;
+    left: 80%;
+    width: 35px;
+    height: 35px;
+    animation-duration: 26s;
+}
+
+.favicon6 {
+    top: 80%;
+    left: 10%;
+    width: 55px;
+    height: 55px;
+    animation-duration: 23s;
+}
+
+.favicon7 {
+    top: 50%;
+    left: 10%;
+    width: 55px;
+    height: 55px;
+    animation-duration: 13s;
+}
+
+.favicon8 {
+    top: 80%;
+    left: 50%;
+    width: 55px;
+    height: 55px;
+    animation-duration: 7s;
+}
+
+.favicon9 {
+    top: 80%;
+    left: 90%;
+    width: 55px;
+    height: 55px;
+    animation-duration: 25s;
+}

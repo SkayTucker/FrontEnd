@@ -1,0 +1,15 @@
+Os ícones de itens e skills exibidos no site são automaticamente obtidos duma hospedagem externa da Atualstudio.
+Caso precise alterar ou criar um ícone, siga os seguintes passos:
+
+1. Primeiramente, obtenha o ícone de alguma forma. Você pode fazer uma screenshot in-game ou salvar de algum site;
+2. Obtenha o ID do item/skill em sua database. Exemplo: Adena = 57;
+3. Salve o ícone no formato PNG, mas é importante que seu nome seja exatamente igual ao seu ID. Exemplo: "57.png";
+Observação importante: caso seja ícone de um item, será necessário salvá-lo na pasta "itens". Caso seja skill, pasta "skills".
+
+Lembrando que:
+Formato: PNG (.png)
+Tamanho: 32x32 pixels
+
+Vídeo tutorial: https://youtu.be/eJG9F2lNdGI
+
+www.atualstudio.com

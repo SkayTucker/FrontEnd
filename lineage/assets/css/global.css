@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/** ANIMAÇÕES/ TRANSIÇÕES / EFEITOS **/
+/* Efeito de flutuação infinita */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ====== ANIMAÇÕES ====== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: none;
+}
+
+.animate.start {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+}
+
+.animate.start.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.fadeInSlow {
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+:root {
+    --background: #1f1f1fd5;
+    --primary: #20201b;
+    --secondary: #fff;
+    --text-color: goldenrod;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+/*Div externa - separa os conteúdos externa*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    padding: 20px 10px;
+    background-color: var(--primary);
+}
+
+#pageContent {
+    max-width: 768px;
+    padding: 10px 20px;
+}
+
+.homeContent,
+.sobreContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 768px;
+}
+
+
+/**Botão elite**/
+.eliteBtn {
+    background-image: url('../img/eliteBtn.png');
+    width: 180px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: goldenrod;
+    filter: drop-shadow(1px 0 2px black);
+}
+
+.eliteBtnSmall {
+    background-image: url('../img/eliteBtnSmall.png');
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: goldenrod;
+    filter: drop-shadow(1px 0 2px black);
+}
+
+
+.heroBtn {
+    background-image: url('../img/heroBtn.png');
+    width: 170px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: goldenrod;
+    filter: drop-shadow(1px 0 2px black);
+}
+
+.bossBtn {
+    background-image: url('../img/bossBtn.png');
+    width: 170px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: goldenrod;
+    filter: drop-shadow(1px 0 2px black);
+}
+
+.castleBtn {
+    background-image: url('../img/castleBtn.png');
+    width: 170px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: goldenrod;
+    filter: drop-shadow(1px 0 2px black);
+}
+
+.clanBtn {
+    background-image: url('../img/clanBtn.png');
+    width: 170px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: goldenrod;
+    filter: drop-shadow(1px 0 2px black);
+}
+
+
+/*Logo Header*/
+.logoElite {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* ajuste para o tamanho da sua logo */
+    animation: float 3s ease-in-out infinite;
+}
+
+.logoElite img {
+    display: block;
+    width: 400px;
+    margin: 30px 0;
+    height: auto;
+    pointer-events: none;
+}
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--primary);
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    font-style: italic;
+}

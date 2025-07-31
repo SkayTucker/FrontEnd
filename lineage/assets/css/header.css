@@ -1,0 +1,28 @@
+@import url('global.css');
+
+/* ====== VÍDEO DE FUNDO ====== */
+.headerSite {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.headerSite video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+}
+
+.headerSite .video.active {
+    opacity: 1;
+}

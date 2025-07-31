@@ -1,0 +1,89 @@
+﻿As configurações necessárias para o funcionamento do sistema estão no arquivo "private/configs.php". Sempre quando dizermos "arquivo configs" ou apenas "configs" estamos nos referindo a ele.
+A pasta "logs" presente dentro desta mesma pasta ipn contém todos os registros de notificações recebidas, bem ou má sucedidas.
+
+################ IMPORTANTE ################
+
+
+É importante que esta pasta ipn e todas as sub-pastas e arquivos possuam permissão 777.
+
+Renomeie os arquivo de recebimento IPN de forma que apenas você saiba os nomes deles.
+Exemplo: "pagseguro_AAAAAAAA", ao invés do "AAAAAAAA" insira caracteres aleatórios: "pagseguro_N98Y0S67AS".
+
+
+############################################
+
+
+Para que qualquer um dos módulos funcione, é necessário habilitar o envio de notificações e configurar corretamente. Siga os passos abaixo:
+
+--------------------------------------------
+
+# PagSeguro
+1 - Acesse sua conta no site pagseguro.uol.com.br
+2 - No menu lateral, clique em "VENDA ONLINE". Depois em "Integrações".
+3 - Gere um token clicando no botão "Gerar token" e insira no arquivo configs.
+4 - Na opção "Notificação de transação", insira o caminho de acesso ao arquivo secreto do PagSeguro. Ele está contido nesta mesma pasta (pasta ipn). Exemplo: http://www.seusite.com/ipn/pagseguro_AAAAAAAA.php
+>> CUIDADO! Se houver alguma opção de "Página de redirecionamento", não insira o caminho do arquivo secreto neste campo!
+5 - Habilite "Pagamento via Formulário HTML".
+6 - Faça bom uso!
+
+--------------------------------------------
+
+# PayPal:
+1 - Acesse sua sua conta no site www.paypal.com
+2 - Na página inicial, clique em "Ferramentas do vendedor".
+3 - Procure por "Notificações de pagamento instantâneo", clique na opção "Atualizar" ao lado.
+4 - Configure o NIP clicando no botão "Escolher configurações de NIP".
+5 - Em "URL da notificação" insira o caminho de acesso ao arquivo secreto do PayPal. Ele está contido nesta mesma pasta (pasta ipn). Exemplo: http://www.seusite.com/ipn/paypal_AAAAAAAA.php
+6 - Ative o recebimento de NIP selecionando "Receber mensagens de NIP (ativado)".
+7 - Clique em Salvar e faça bom uso!
+
+--------------------------------------------
+
+# MercadoPago:
+1 - Acesse uma conta de VENDEDOR no site www.mercadopago.com
+2 - Obtenha seu CLIENT_ID e CLIENT_SECRET através da página https://www.mercadopago.com/mlb/account/credentials?type=basic
+3 - Insira o CLIENT_ID e CLIENT_SECRET no arquivo configs.
+4 - Acesse https://www.mercadopago.com.br/ipn-notifications, insira o URL do arquivo secreto do MercadoPago. Em "Topics" selecione apenas "payment" e salve.
+5 - Faça bom uso!
+
+--------------------------------------------
+
+# PayGol:
+1 - Acesse sua conta no site www.paygol.com
+2 - Clique em "Account > Notifications" ou visite o endereço: https://secure.paygol.com/dashboard/notifications
+3 - Em "IPN URL" insira o URL do arquivo secreto do PayGol. Deixe vazio o campo "Payments notification email" caso não queira receber e-mails por cada transação.
+4 - Copie o "Service ID" e "Secret key" e insira no configs.
+5 - Clique em "Save" e faça bom uso!
+
+--------------------------------------------
+
+# PayOp
+1 - Acesse sua conta no site do PayOp;
+2 - Crie um novo projeto, caso ainda não possua, acessando "Projects" > "Add new" e preencha os dados solicitados. Caso já possua um projeto criado, acesse-o em "Projects" > "Projects List";
+3 - Haverá um campo "Callback / IPN URL",  insira o caminho secreto do arquivo;
+4 - Após ter seu projeto aprovado pela equipe PayOp, acesse-o em "Projects" > "Projects List" clicando em "Details". Após, copie os "Public Key" e "Secret Key" e insira no configs;
+5 - Agora vá em "Settings" > "JWT Tokens" e crie um novo Token clicando em "Add new token".
+6 - Irá surgir seu token como por exemplo:
+	{
+	  "token": "AAAAA"
+	}
+No exemplo acima, AAAAA é o seu token. Copie-o e insira no configs.
+7 - Salve as alterações e faça bom uso!
+
+--------------------------------------------
+
+
+Desenvolvido por Atualstudio
+www.atualstudio.com
+
+                     ##                                      ##                    ##                                 ##   ##
+                    ###                                     ###                   ###                                ###  ###
+                    ###                                     ###                   ###                                ###  ###
+      #######     ######### ###        ###     #######      ###     ##########  ######### ###        ###     ####### ###           #######
+    ###########     #####   ###        ###   ###########    ###   #############   #####   ###        ###   #############  ###    ###########
+   ###       ###    ###     ###        ###  ###       ###   ###  ####             ###     ###        ###  ###       ####  ###   ###       ###
+  ###         ###   ###     ###        ### ###         ###  ###   ##########      ###     ###        ### ###         ###  ###  ###         ###
+  ###         ###   ###     ###        ### ###         ###  ###      #########    ###     ###        ### ###         ###  ###  ###         ###
+   ###        ###   ###      ###       ###  ###        ###  ###            ####   ###      ###       ###  ###        ###  ###   ###       ###
+    #############   ###       ############   #############  ###  ##############   ###       ############   #############  ###    ###########
+       #########    ###          ########       #########   ###   ###########     ###          ########       #########   ###      #######

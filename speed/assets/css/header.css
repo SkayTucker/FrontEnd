@@ -1,93 +1,121 @@
-@import url('assets/css/global.css');
+@import url('./global.css');
+
 /* HEADER */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #27809d85;
-    color: white;
-    z-index: 1000;
-    transition: all 0.3s ease-in-out;
-    flex-wrap: wrap;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-light);
+  color: white;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  padding: 5px;
+}
 
-  /* Header padrão com menu visível */
-  header.full {
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 5px black;
-    background-color: transparent;
-  }
+/* Header padrão com menu visível */
+header.full {
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 5px black;
+  background-color: transparent;
+  top: 8px;
+}
 
-  header.minimized {
-    transition: all 0.3s ease-in-out;
-  }
-  /* Logo */
-  header .logo {
-    margin-left: 30px;
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.438));
-  }
+header.minimized {
+  transition: all 0.3s ease-in-out;
+}
 
-  header .logo .logoFull {
-    display: block;
-  }
+/* Logo */
+header .logo {
+  margin: 0 30px;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.438));
+}
 
-  header .logo .logoIcon {
-    display: none;
-  }
+header .logo .logoFull {
+  display: block;
+}
 
-  /* Menu (nav) */
-  header nav {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    padding: 0 5px;
-  }
+header .logo .logoIcon {
+  display: none;
+}
 
-  header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 5px 15px;
-    font-weight: 700;
-    border-bottom: 2px solid transparent;
-  }
+.menuWrapper {
+  display: flex;
+}
+/* Menu (nav) */
+header nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  padding: 0 5px;
+}
 
-  header nav a:hover {
-    border-bottom: 2px solid goldenrod;
-    color: var(--secondary);
-    transform: scale(1.1);
-    transition: 0.5s;
-    cursor: pointer;
-  }
+.subMenuHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
 
-  header .clientArea {
-    background-color: var(--secondary);
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 30px 30px/ 70%;
-    padding: 6px 40px;
-  }
+.subMenuHeader a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  background-color: var(--primary-light);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
-  header .clientArea:hover {
-    background-color: white;
-    color: var(--primary);
-    transition: 0.3s;
-    text-shadow: 1px 1px 1px var(--secondary);
-  }
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 15px;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+}
 
-  /* Ocultar menu no modo reduzido */
-  header.minimized nav {
-    display: none;
-  }
+header nav a:hover {
+  border-bottom: 2px solid goldenrod;
+  color: var(--secondary);
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
 
-  .btnApp, .btnAcess {
-    padding: 0;
-    margin: 0;
-  }/* Dropdowns escondidos por padrão */
+header .clientArea {
+  background-color: var(--secondary);
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 30px 30px/ 70%;
+  padding: 6px 40px;
+}
+
+header .clientArea:hover {
+  background-color: white;
+  color: var(--primary);
+  transition: 0.3s;
+  text-shadow: 1px 1px 1px var(--secondary);
+}
+
+/* Ocultar menu no modo reduzido */
+header.minimized nav {
+  display: none;
+}
+
+.btnApp,
+.btnAcess {
+  padding: 0;
+  margin: 0;
+}
+
+/* Dropdowns escondidos por padrão */
 .dropDownApp,
 .dropDownPcd {
   display: none;
@@ -95,7 +123,7 @@ header {
   background-color: var(--primary);
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
 
@@ -132,8 +160,8 @@ header {
 }
 
 
-  header button {
-    display: none;
-  }
-    /* FIM HEADER*/
+header button {
+  display: none;
+}
 
+/* FIM HEADER*/

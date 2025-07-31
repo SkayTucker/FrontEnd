@@ -1,0 +1,17 @@
+{
+    "name": "speedlog",
+    "version": "1.0.0",
+    "description": "Speedlog/\r |-app/ \r |--config/\r |---private/\r |----db.php\r |----config.php\r |---includes.php\r |---telegram_bot.php\r |-public/\r |--assets/\r |--dashboard.php\r |-src/\r |--panel/\r |---modals/\r |---pages/\r |--components/\r |--includes/\r |--services/\r |--utils/\r |-routes/\r |--web.php (ou router.php)\r |-index.php\r |-README.md",
+    "main": "index.php",
+    "scripts": {
+        "watch": "livereload . --port 35729"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^3.0.4",
+        "connect-livereload": "^0.6.1"
+    },
+    "keywords": [],
+    "type": "commonjs"
+}

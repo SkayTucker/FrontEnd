@@ -12,10 +12,156 @@
   src: url('../font/Riga-Light.ttf') format('truetype');
 }
 
+/* Animação opcional */
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-100px) rotate(10deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes floatLogo {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-10px) rotate(-10deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(10deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+}
+
+.favicon-float {
+  position: absolute;
+  background-image: url('../img/criativo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: 0;
+  animation: float 20s infinite ease-in-out;
+}
+
+.favicon1 {
+  top: 10%;
+  left: 15%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 22s;
+}
+
+.favicon2 {
+  top: 40%;
+  left: 70%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 18s;
+}
+
+.favicon3 {
+  top: 70%;
+  left: 30%;
+  width: 50px;
+  height: 50px;
+  animation-duration: 24s;
+}
+
+.favicon4 {
+  top: 20%;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  animation-duration: 20s;
+}
+
+.favicon5 {
+  top: 60%;
+  left: 80%;
+  width: 35px;
+  height: 35px;
+  animation-duration: 26s;
+}
+
+.favicon6 {
+  top: 80%;
+  left: 10%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 23s;
+}
+
+.favicon6 {
+  top: 80%;
+  left: 10%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 23s;
+}
+
+.favicon7 {
+  top: 50%;
+  left: 10%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 13s;
+}
+
+.favicon8 {
+  top: 80%;
+  left: 50%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 7s;
+}
+
+
+.favicon9 {
+  top: 80%;
+  left: 90%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 25s;
+}
+
+.favicon10 {
+  top: 80%;
+  left: 10%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 23s;
+}
+
+
 /* ====== ROOT VARIÁVEIS ====== */
 :root {
   --primary: #277f9d;
-  --light-primary: #27809d67;
+  --primary-light: #27809d67;
   --secondary: #fbae2f;
   --background: #e0e0e0;
   --text-color: #181818;
@@ -30,29 +176,32 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   color: var(--text-color);
   background-color: var(--background);
   line-height: 1.5;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1,
 h2,
 h3 {
-  color: var(--primary);
+  color: var(--text-color);
 }
 
-button {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  color: inherit;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+.footer a {
+  color: var(--links);
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 /* ====== ANIMAÇÕES ====== */
@@ -63,16 +212,6 @@ button {
 
   to {
     opacity: 1;
-  }
-}
-
-@keyframes customSlideAnimation {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
   }
 }
 
@@ -93,14 +232,15 @@ button {
   transform: translateY(0);
 }
 
-/* Detalhes interativos */
-details[open] summary::after {
-  transform: rotate(180deg);
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
 }
 
-details[open] p {
-  animation: fadeIn 0.4s ease-in-out;
+.fadeInSlow {
+  animation: fadeIn 2.5s ease-in-out;
 }
+
+/* ====== HEADER ====== */
 
 
 
@@ -129,7 +269,7 @@ details[open] p {
 }
 
 /* Celulares */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .slide-1 {
     /* background-image: url('../img/320x460.JPG'); */
     background-image: url('../img/SAOJAO-MOBILE.JPG');

@@ -1,0 +1,69 @@
+#partner {
+    height: 100vh;
+    padding: 50px 0;
+    text-align: center;
+    background-color: var(--primary-dark);
+
+
+}
+
+#partner h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.partner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: var(--background);
+}
+
+.depoimentos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.depoimentos-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--secondary);
+    border-radius: 3%;
+    margin: 20px;
+    padding: 20px 80px;
+    text-align: left;
+    font-style: italic;
+    font-weight: 500;
+    min-height: 400px;
+}
+
+
+.depoimentos-content .people-profile {
+    display: flex
+}
+
+.depoimentos-content img {
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    border: 0.1rem solid var(--primary-light);
+    padding: 2px;
+}
+
+.depoimentos-content .people-profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    color: var(--text-color);
+    font-weight: 800;
+}

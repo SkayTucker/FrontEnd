@@ -1,0 +1,238 @@
+@import url('./global.css');
+
+/* Planos - container geral */
+.planContainer {
+    text-align: center;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.slider-navigation {
+    margin: 10px 0;
+}
+
+/* container do slider */
+.plan-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* slider */
+.slider {
+    display: flex;
+    align-items: center;
+    transition: transform 0.8s ease;
+    height: 100%;
+}
+
+/* slides */
+.slide {
+    min-width: 100%;
+}
+/* cards dos planos */
+.planFibraBasic,
+.planFibra,
+.planBusiness,
+.plan {
+    margin: 0 5px;
+    border: 2px solid var(--border-color);
+    background: var(--background);
+    border-radius: 60px 60px / 10%;
+    border: 1px solid var(--secondary);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+/* hover nos cards */
+.planFibraBasic:hover,
+.planFibra:hover,
+.planBusiness:hover,
+.plan:hover {
+    box-shadow:
+        0 6px 15px var(--light-primary)(255, 74, 87, 0.8),
+        0 14px 25px rgba(0, 0, 0, 1);
+    transform: translateY(-8px);
+}
+
+/* nome do plano */
+.planTitle {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px 0 5px 0;
+    user-select: text;
+}
+
+/* topo do plano */
+.planHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--light-primary);
+    border: 2px solid var(--border-color);
+    height: 50px;
+    color: var(--text-color);
+}
+
+/* corpo do plano */
+.planBody {
+    height: 280px;
+    margin: 0 20px;
+    user-select: text;
+}
+
+.planBody ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 25px;
+}
+
+.planBody ul li {
+    margin: 10px 0 0 0;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.2);
+    height: 50px;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 0.6rem;
+}
+
+/* ícones coloridos */
+.planBody ul li i {
+    min-width: 18px;
+    text-align: center;
+}
+
+/* imagens no plano */
+.planBody img {
+    vertical-align: middle;
+    margin-left: 6px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+/* rodapé do plano */
+.planFooter {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    margin-bottom: 15px;
+    padding: 0 0 10px 0;
+}
+
+
+.planFooter p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* botões */
+.planFooter button {
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: 1px solid transparent;
+    min-width: 200px;
+    padding: 12px 0;
+    border-radius: 10px 10px / 10%;
+    transition: 0.3s;
+    margin: 10px auto 0 auto;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 4px 10px rgba(255, 74, 87, 0.6);
+}
+
+.planFooter button:hover {
+    background: #fff;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    box-shadow: 0 6px 14px rgba(255, 74, 87, 1);
+}
+
+/* botões do slider de navegação mensal/anual */
+.slider-btn {
+    background: #444;
+    border: none;
+    margin: 3px;
+    padding: 10px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    color: var(--text-color);
+    user-select: none;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.slider-btn:hover {
+    background: var(--primary);
+    color: var(--secondary);
+    transform: scale(1.1);
+}
+
+/* botão ativo */
+.slider-btn.active {
+    background: var(--secondary);
+    color: white;
+    font-weight: 700;
+    transform: scale(1.1);
+}
+
+/* efeito carta de baralho (entrada dos cards) */
+.planFibraBasic,
+.planFibra,
+.plan {
+    opacity: 0;
+    transform: translateX(-80px) rotateY(-20deg);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+    transform-origin: left center;
+    perspective: 1000px;
+}
+
+.plan-active {
+    opacity: 1;
+    transform: translateX(0) rotateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .planBody {
+        height: auto;
+    }
+
+    .planFibraBasic,
+    .planFibra,
+    .planBusiness,
+    .plan {
+        max-width: 95%;
+        min-height: auto;
+    }
+
+    .planHeader {
+        height: 70px;
+    }
+
+    .planHeader h3 {
+        font-size: 2rem;
+    }
+
+    .planHeader h4 {
+        font-size: 1.8rem;
+    }
+}

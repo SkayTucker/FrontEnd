@@ -1,0 +1,82 @@
+@import url('./global.css');
+.sobreContent {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.sobreContent h2,
+.sobreContent h3 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sobreContent h2 {
+    font-size: 1.8em;
+}
+
+.sobreContent h3 {
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+.sobreContent p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sobreContent ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.sobreContent ul li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    list-style-type: none;
+    position: relative;
+    padding-left: 24px;
+}
+
+.sobreContent ul li::before {
+    content: '✔';
+    color: goldenrod;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Sub-listas */
+.sobreContent ul li ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.sobreContent ul li ul li::before {
+    content: '➤';
+    color: goldenrod;
+}
+
+@media (max-width: 768px) {
+    .sobreContent {
+        padding: 20px;
+    }
+
+    .sobreContent h2 {
+        font-size: 1.4em;
+    }
+
+    .sobreContent h3 {
+        font-size: 1.2em;
+    }
+
+    .sobreContent p {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>Hplay</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="A Hplay oferece streaming de canais ao vivo, filmes, séries e esportes com qualidade HD. Assista onde e quando quiser com estabilidade e ótimo custo-benefício.">
+    <meta name="keywords"
+        content="streaming de canais, IPTV, TV online, canais ao vivo, filmes, séries, esportes, Hplay, entretenimento digital">
+    <meta name="author" content="Hplay">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Hplay - Streaming de Canais, Filmes e Séries">
+    <meta property="og:description"
+        content="A Hplay oferece streaming de canais ao vivo, filmes, séries e esportes com qualidade HD. Assista onde e quando quiser com estabilidade e ótimo custo-benefício.">
+    <meta property="og:image" content="https://localhost/hplay/assets/slider2.jpg">
+    <!-- Substitua pelo seu link real -->
+    <meta property="og:url" content="https://localhost"> <!-- Substitua pelo seu link real -->
+    <meta property="og:type" content="website">
+    <!-- Canonical URL -->
+    <meta property="og:image" content="https://localhost/hplay/assets/img/favicon.ico">
+    <meta property="og:url" content="https://localhost/">
+    <meta property="og:type" content="website">
+
+
+    <!--  Global CSS -->
+    <link id="themeStylesheet" rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/homeslideshow.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/canaisSlider.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/sobre.css">
+    <link rel="stylesheet" href="assets/css/whatsapp.css">
+    <link rel="stylesheet" href="assets/css/planos.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/f5de20681c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="main-header" class="full">
+        <div class="logo">
+            <img class="logoFull" width="120px" src="assets/img/png-logo-site.png" alt="">
+            <img class="logoIcon" width="40px" src="assets/img/favicon.ico" alt="">
+        </div>
+
+        <button id="btnMenu"><i class="fa-solid fa-bars"></i></button>
+
+        <nav id="menuHeader" class="menuHeader">
+            <button id="btnCloseMenu" aria-label="Fechar menu">X</button>
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#planos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        </nav>
+
+    </header>
+
+    <!-- HomeSection -->
+    <section id="home" class="home-section">
+        <!-- Slideshow de fundo -->
+        <div class="homeSlideshow">
+            <div class="slide slide-1 active">
+                <div class="slide-progress"></div>
+            </div>
+            <div class="slide slide-2">
+                <div class="slide-progress"></div>
+            </div>
+            <div class="slide slide-3">
+                <div class="slide-progress"></div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <button class="prevSlide">&#10094;</button>
+            <button class="nextSlide">&#10095;</button>
+        </div>
+        <!-- Canais e Botão whatsapp -->
+        <div class="conteudoDinamico">
+
+            <!-- Whatsapp -->
+            <button id="chatbotButton" class="chatbot-button" style="font-size: small;">
+                <i class="fa fa-whatsapp"></i>
+            </button>
+            <div id="chatbot" class="chatbot">
+                <div class="chatbot-header">
+                    <h3 style="color: white;">Suporte Rápido</h3>
+                    <button id="closeChatbot">✖</button>
+                </div>
+                <div class="chatbot-body">
+                    <h5>Precisa de Ajuda?</h5>
+                    <ul>
+                        <li><a style="text-decoration: none;" href="http://wa.me/558186074648">Atendimento</a></li>
+                        <li>
+                            <details>
+                                <summary>Ajuda Rápida</summary>
+                                <ul>
+                                    <li><a style="text-decoration: none;" href="#">Como contratar um plano</a></li>
+                                    <li><a style="text-decoration: none;" href="#">Configurações técnicas</a></li>
+                                    <li><a style="text-decoration: none;" href="#">Perguntas frequentes</a></li>
+                                    <li><a style="text-decoration: none;" href="https://www.google.com"
+                                            target="_blank">Ver
+                                            mais</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Planos -->
+    <section id="planos" class="">
+        <!-- Slideshow de Planos -->
+        <div class="planContainer">
+            <div class="plan-container">
+                <h1>Conheça nossos Planos de Streaming</h1>
+                <div class="slider-navigation">
+                    <button class="slider-btn active" data-slide="0">Mensal</button>
+                    <button class="slider-btn" data-slide="1">Anual</button>
+                </div>
+
+                <!-- Slider -->
+                <div class="slider">
+                    <!-- Planos Mensais -->
+                    <div class="slide plan-active">
+                        <div class="container">
+                            <div class="planFibraBasic">
+                                <div class="planTitle">Plano Básico</div>
+                                <div class="planHeader">
+                                    <h3>+120 canais</h3>
+                                </div>
+                                <div class="planBody">
+                                    <ul>
+                                        <li><i class="fa-solid fa-tv"></i> 20 canais nacionais</li>
+                                        <li><i class="fa-solid fa-film"></i> Acesso a filmes e séries populares</li>
+                                        <li><i class="fa-solid fa-clock"></i> Conteúdo sob demanda</li>
+                                        <li><i class="fa-solid fa-headset"></i> Suporte ao cliente 24h</li>
+                                    </ul>
+                                </div>
+                                <div class="planFooter">
+                                      <p>R$29,90/mês</b>
+                                    <a href="http://wa.me/558186074648"><button>Assinar</button></a>
+                                </div>
+                            </div>
+                            <div class="planFibraBasic">
+                                <div class="planTitle">Plano Básico</div>
+                                <div class="planHeader">
+                                    <h3>+120 canais</h3>
+                                </div>
+                                <div class="planBody">
+                                    <ul>
+                                        <li><i class="fa-solid fa-tv"></i> 20 canais nacionais</li>
+                                        <li><i class="fa-solid fa-film"></i> Acesso a filmes e séries populares</li>
+                                        <li><i class="fa-solid fa-clock"></i> Conteúdo sob demanda</li>
+                                        <li><i class="fa-solid fa-headset"></i> Suporte ao cliente 24h</li>
+                                    </ul>
+                                </div>
+                                <div class="planFooter">
+                                      <p>R$29,90/mês</b>
+                                    <a href="http://wa.me/558186074648"><button>Assinar</button></a>
+                                </div>
+                            </div>
+                            <div class="planFibraBasic">
+                                <div class="planTitle">Plano Básico</div>
+                                <div class="planHeader">
+                                    <h3>+120 canais</h3>
+                                </div>
+                                <div class="planBody">
+                                    <ul>
+                                        <li><i class="fa-solid fa-tv"></i> 20 canais nacionais</li>
+                                        <li><i class="fa-solid fa-film"></i> Acesso a filmes e séries populares</li>
+                                        <li><i class="fa-solid fa-clock"></i> Conteúdo sob demanda</li>
+                                        <li><i class="fa-solid fa-headset"></i> Suporte ao cliente 24h</li>
+                                    </ul>
+                                </div>
+                                <div class="planFooter">
+                                      <p>R$29,90/mês</b>
+                                    <a href="http://wa.me/558186074648"><button>Assinar</button></a>
+                                </div>
+                            </div>
+                            <div class="planFibraBasic">
+                                <div class="planTitle">Plano Básico</div>
+                                <div class="planHeader">
+                                    <h3>+120 canais</h3>
+                                </div>
+                                <div class="planBody">
+                                    <ul>
+                                        <li><i class="fa-solid fa-tv"></i> 20 canais nacionais</li>
+                                        <li><i class="fa-solid fa-film"></i> Acesso a filmes e séries populares</li>
+                                        <li><i class="fa-solid fa-clock"></i> Conteúdo sob demanda</li>
+                                        <li><i class="fa-solid fa-headset"></i> Suporte ao cliente 24h</li>
+                                    </ul>
+                                </div>
+                                <div class="planFooter">
+                                      <p>R$29,90/mês</b>
+                                    <a href="http://wa.me/558186074648"><button>Assinar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Planos Anuais -->
+                    <div class="slide">
+                        <div class="container">
+                            <div class="planFibraBasic">
+                                <div class="planTitle">Plano Básico</div>
+                                <div class="planHeader">
+                                    <h3>+120 canais</h3>
+                                </div>
+                                <div class="planBody">
+                                    <ul>
+                                        <li><i class="fa-solid fa-tv"></i> 20 canais nacionais</li>
+                                        <li><i class="fa-solid fa-film"></i> Acesso a filmes e séries populares</li>
+                                        <li><i class="fa-solid fa-clock"></i> Conteúdo sob demanda</li>
+                                        <li><i class="fa-solid fa-headset"></i> Suporte ao cliente 24h</li>
+                                    </ul>
+                                </div>
+                                <div class="planFooter">
+                                      <p>R$29,90/mês</b>
+                                    <a href="http://wa.me/558186074648"><button>Assinar</button></a>
+                                </div>
+                            </div>
+                            <div class="planFibraBasic">
+                                <div class="planTitle">Plano Básico</div>
+                                <div class="planHeader">
+                                    <h3>+120 canais</h3>
+                                </div>
+                                <div class="planBody">
+                                    <ul>
+                                        <li><i class="fa-solid fa-tv"></i> 20 canais nacionais</li>
+                                        <li><i class="fa-solid fa-film"></i> Acesso a filmes e séries populares</li>
+                                        <li><i class="fa-solid fa-clock"></i> Conteúdo sob demanda</li>
+                                        <li><i class="fa-solid fa-headset"></i> Suporte ao cliente 24h</li>
+                                    </ul>
+                                </div>
+                                <div class="planFooter">
+                                      <p>R$29,90/mês</b>
+                                    <a href="http://wa.me/558186074648"><button>Assinar</button></a>
+                                </div>
+                            </div>
+                            <div class="planFibraBasic">
+                                <div class="planTitle">Plano Básico</div>
+                                <div class="planHeader">
+                                    <h3>+120 canais</h3>
+                                </div>
+                                <div class="planBody">
+                                    <ul>
+                                        <li><i class="fa-solid fa-tv"></i> 20 canais nacionais</li>
+                                        <li><i class="fa-solid fa-film"></i> Acesso a filmes e séries populares</li>
+                                        <li><i class="fa-solid fa-clock"></i> Conteúdo sob demanda</li>
+                                        <li><i class="fa-solid fa-headset"></i> Suporte ao cliente 24h</li>
+                                    </ul>
+                                </div>
+                                <div class="planFooter">
+                                      <p>R$29,90/mês</b>
+                                    <a href="http://wa.me/558186074648"><button>Assinar</button></a>
+                                </div>
+                            </div>
+                            <div class="planFibraBasic">
+                                <div class="planTitle">Plano Básico</div>
+                                <div class="planHeader">
+                                    <h3>+120 canais</h3>
+                                </div>
+                                <div class="planBody">
+                                    <ul>
+                                        <li><i class="fa-solid fa-tv"></i> 20 canais nacionais</li>
+                                        <li><i class="fa-solid fa-film"></i> Acesso a filmes e séries populares</li>
+                                        <li><i class="fa-solid fa-clock"></i> Conteúdo sob demanda</li>
+                                        <li><i class="fa-solid fa-headset"></i> Suporte ao cliente 24h</li>
+                                    </ul>
+                                </div>
+                                <div class="planFooter">
+                                      <p>R$29,90/mês</b>
+                                    <a href="http://wa.me/558186074648"><button>Assinar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Section 2: Sobre a Empresa -->
+    <section id="sobre">
+        <article class="sobreContainer">
+            <h1>hplay</h1>
+            <p>Bem-vindo à nossa plataforma de streaming, criada para oferecer o melhor do conteúdo regional e nacional
+                em um só lugar.
+
+                Atendemos provedores de internet e clientes finais, sempre com conteúdo autorizado pelas operadoras,
+                garantindo segurança e estabilidade.</p>
+
+            <b>Aqui, você encontra soluções modernas e inovadoras, pensadas para facilitar o acesso ao entretenimento de
+                qualidade, com uma seleção ampla que agrada a todos os gostos.<br>
+
+                Nossa missão é proporcionar momentos únicos de lazer, com inovação, diversidade e a confiança de que
+                você está recebendo sempre o melhor.</b>
+
+            <button type="button">Saiba Mais</button>
+        </article>
+        <div class="sobreBanner">
+            <img src="assets/img/bannersobre.jpg" alt="banner-sobre.jpg">
+        </div>
+    </section>
+
+    <!-- Menu Flutuante Responsivo obrigatório -->
+    <script>
+        const menu = document.getElementById("menuHeader");
+        const btnMenuToogle = document.getElementById("btnMenu");
+        const btnClose = document.getElementById("btnCloseMenu");
+
+        btnMenuToogle.addEventListener('click', () => {
+            menu.classList.toggle('menuHeadOpen');
+        });
+
+        btnClose.addEventListener('click', () => {
+            menu.classList.toggle('menuHeadOpen');
+        });
+
+        const dropApp = document.getElementById("dropDownApp");
+        const btnApp = document.getElementById("btnApp");
+        btnApp.addEventListener('click', () => {
+            dropApp.classList.toggle('dropDownAppShow');
+        });
+
+        const dropMenuPcd = document.getElementById("dropDownPcd");
+        const btnAcess = document.getElementById("btnAcess");
+        btnAcess.addEventListener('click', () => {
+            dropMenuPcd.classList.toggle('dropDownPcdShow');
+        });
+    </script>
+    <script src="assets/js/homeslideshow.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/canaisslider.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+    <script src="assets/js/planos.js"></script>
+</body>
+
+</html>

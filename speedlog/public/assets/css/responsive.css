@@ -1,0 +1,121 @@
+/* Responsividade */
+@media (max-width: 1152px) {
+
+  /*Index*/
+  .auth-container {
+    width: 80%;
+    height: 45%;
+  }
+
+  .logoStart img {
+    width: 300px;
+    height: auto;
+    user-select: none;
+  }
+
+  /*FIM INDEX*/
+
+  /*DASHBOARD*/
+  .dashboard,
+  .dashboard-content,
+  .vehicles-content,
+  .vehicles-options,
+  .vehicles-container {
+    margin-top: 30px;
+  }
+
+  /* Container em grade para os cards */
+  .vehicle-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-items: center;
+  }
+
+  .vehicle-cards:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+
+  .menuVehicles-content {
+    justify-content: center;
+  }
+
+
+  .image-grid img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .solicitar-veiculos-info {
+    display: flex;
+  }
+
+
+  /* Outros componentes e containers */
+  .image-type-group {
+    margin: 5px;
+    max-width: 300px;
+    padding: 0;
+  }
+
+  .image-type-group {
+    flex: 1 1 100px;
+  }
+
+  .image-grid img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+
+  }
+
+  .image-grid img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  .checklist-items label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .table-historico tbody {
+    grid-template-columns: 1fr;
+  }
+
+  .historicoBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+
+  /*OPERADOR*/
+  .menuVehicles-info {
+    max-width: 150px;
+  }
+
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image-grid img {
+    max-width: 50px;
+    max-height: 50px;
+
+  }
+
+  .vehicle-info fieldset {
+    max-width: fit-content;
+  }
+
+}
