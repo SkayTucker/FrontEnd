@@ -1,260 +1,190 @@
-/*Planos*/
-/*container do slideshow planos*/
-.planContainer {
-    text-align: center;
-    height: 100%;
-}
+@import url('./global.css');
 
-/*Titulo dos planos*/
-.plan-container h1 {
-    font-size: 2.5rem;
-    padding: 40px 0 0 0;
-}
-
-.slider-navigation {
-    margin: 10px 0;
-}
-
-.plan-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.planNavBtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.439);
-    color: var(--primary);
-    box-shadow: 1px 1px 2px black;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 24px;
-    z-index: 2;
-}
-
-.prevPlan {
-    left: 10px;
-}
-
-.nextPlan {
-    right: 10px;
-}
-
-.planNavBtn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/*Conteudo dos Planos*/
-.slider {
-    display: flex;
-    align-items: center;
-    transition: transform 0.8s ease;
-    height: 100%;
-}
-
-.slide {
-    min-width: 100%;
-}
-
-/*Style dos Cards dos PLanos*/
-.planFibraBasic,
-.planFibra {
-    margin: 0 5px;
-    border: 2px solid var(--primary);
+/* ====== Container dos Planos ====== */
+.hplay-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* sempre 3 colunas */
+    gap: 2.5rem;
     width: 100%;
-    background-color: var(--background);
-    border-radius: 60px 60px / 10%;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.383);
-    text-align: center;
-    transition: transform 0.3s;
+}
+
+/* ====== Card ====== */
+.hplay-card {
+    background-color: rgb(41, 41, 41);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.plan {
-    margin: 0 5px;
-    border: 2px solid var(--primary);
-    min-width: 290px;
-    min-height: 500px;
-    background: #fff;
-    border-radius: 60px 60px / 10%;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.383);
     text-align: center;
-    transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    margin: 2rem 0;
 }
 
-.planBusiness {
-    margin: 0 5px;
-    border: 2px solid var(--primary);
-    min-width: 300px;
-    min-height: 500px;
-    background: #fff;
-    border-radius: 60px 60px / 10%;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.383);
-    text-align: center;
-    transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-/*Nome do plano*/
-.planTitle {
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--text-color);
-    font-weight: 700;
-    margin: 10px;
-    padding: 5px 0 0 0;
-}
-
-/*Topo do plano*/
-.planHeader {
-    display: flex;
-    text-align: center;
-    width: 90%;
-    justify-content: center;
-    background-color: var(--secondary);
-    border-radius: 60px 60px / 80%;
-    border: 2px solid var(--primary);
-    height: 80px;
-    margin: 10px 0;
-}
-
-/*Velocidade*/
-.planHeader h3 {
-    font-size: 2.8rem;
-    align-self: center;
-}
-
-/*MB/GB/TB*/
-.planHeader h4 {
-    font-size: 2.4rem;
-    margin-left: 5px;
-    align-self: center;
-}
-
-/*Tamanho do Conteudo do Plano*/
-.planBody {
-    height: 280px;
-    margin: 0 20px;
-}
-
-.planBody ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: left;
-    justify-content: baseline;
-    margin: 0 25px;
-}
-
-.planBody ul li {
-    margin: 10px 0 0 0;
-    border-bottom: 1px solid rgba(192, 192, 192, 0.594);
-    font-size: 1.12rem;
-    letter-spacing: 1px;
-    text-align: left;
-    padding: 4px 0;
-}
-
-/*Valor do Plano*/
-.planFooter {
-    display: flex;
-    flex-direction: column;
-}
-
-.planFooter .footerHeader {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.planFooter .footerHeader p {
-    font-size: 2.6rem;
-    font-weight: 700;
-
-}
-
-.planFooter .footerHeader b {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-}
-
-.planFooter h2 {
-    border-top: 1px solid var(--primary);
-}
-
-.planFooter button {
-    color: var(--background);
-    background-color: var(--primary);
-    border: 1px solid;
-    min-width: 200px;
-    padding: 12px 0;
-    border-radius: 40px 40px / 70%;
-    transition: 0.3s;
-    margin: 5px 0;
-    font-size: 1.1rem;
-}
-
-.planFooter button:hover {
-    cursor: pointer;
-    background: #fff;
-    color: var(--secondary);
-    border: 1px solid var(--secondary);
-
-}
-
-.slider-btn {
-    background: #ccc;
-    border: none;
-    margin: 3px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s, transform 0.2s;
-}
-
-.slider-btn:hover {
-    background: #888;
-    transform: scale(1.1);
-}
-
-/* Estilização do botão ativo */
-.slider-btn.active {
+/* Topo do card */
+.hplay-card .card-top {
     background: var(--primary);
-    color: white;
+    color: var(--secondary);
     font-weight: bold;
-    transform: scale(1.1);
+    padding: 0.8rem;
+    font-size: 2rem;
 }
 
-/* Efeito carta de baralho */
-.planFibraBasic,
-.planFibra,
-.plan {
-    opacity: 0;
-    transform: translateX(-80px) rotateY(-20deg);
-    transition: opacity 3.9s ease, transform 1.2s ease;
-    transform-origin: left center;
-    perspective: 1000px;
+.hplay-card .provider {
+    color: var(--background);
+    font-weight: normal;
+    margin-right: 0.3rem;
 }
 
-.plan-active {
-    opacity: 1;
-    transform: translateX(0) rotateY(0);
+/* Conteúdo */
+.hplay-card .card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1.5rem;
+    color: var(--text-color);
+}
+
+/* ====== Preço em Destaque ====== */
+.price {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.price strong {
+    display: inline-block;
+    font-size: clamp(2.5rem, 4.2vw, 3rem);
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.price small {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--primary);
+    text-decoration: line-through;
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* ====== Benefícios ====== */
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin: 1.2rem 0;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.benefits p {
+    display: flex;
+    align-items: center;
+}
+
+.benefits i {
+    color: var(--primary);
+    margin-right: 20px;
+}
+
+/* ====== Botão ====== */
+.btn-yellow {
+    display: inline-block;
+    background: var(--primary);
+    color: #000;
+    padding: 0.7rem 2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+    align-self: center;
+    margin-bottom: 2.5rem;
+}
+
+.btn-yellow:hover {
+    background: var(--secondary);
+    transform: scale(1.05);
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 1024px) {
+    .hplay-plans {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hplay-plans {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-yellow {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hplay-card {
+        border-radius: 12px;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    .price strong {
+        font-size: 2rem;
+    }
+
+    .btn-yellow {
+        width: 100%;
+        padding: 0.7rem 1rem;
+    }
+}
+
+/* Estilo geral do switch */
+.plan-switch {
+    display: flex;
+    background: var(--secondary);
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+}
+
+.plan-switch input[type="radio"] {
+    display: none;
+}
+
+.plan-switch label {
+    flex: 1;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    transition: all 0.3s ease;
+    color: white;
+    background: transparent;
+}
+
+/* Estado ativo */
+.plan-switch label.active {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover opcional */
+.plan-switch label:hover {
+    background: rgba(0, 0, 0, 0.05);
 }

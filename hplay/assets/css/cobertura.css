@@ -1,0 +1,212 @@
+/* ====== ÁREA DE COBERTURA ====== */
+.coverage-section {
+  padding: clamp(40px, 5vw, 80px) 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.coverage-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  /* 🔑 Faz os dois blocos ficarem com a mesma altura */
+  gap: clamp(20px, 3vw, 60px);
+  max-width: 1400px;
+  margin: auto;
+  padding: 60px;
+}
+
+/* Texto da cobertura */
+.coverage-text {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* Centraliza o conteúdo dentro */
+  gap: clamp(10px, 1.5vw, 20px);
+  /* Igual ao map-container */
+  border-radius: 7px;
+  padding: 20px;
+  color: #fff;
+}
+
+
+.coverage-text h2 {
+  color: var(--primary);
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.coverage-text p {
+  color: var(--text-color);
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  line-height: 1.4;
+}
+
+/* Lista de regiões */
+/* Lista de regiões dentro do mapa */
+.regions-covered {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  /* Fixa dentro do .map-container */
+  bottom: 20px;
+  /* Distância da parte de baixo do mapa */
+  right: 20px;
+  /* Distância da lateral direita */
+
+  font-size: 0.75rem;
+  /* Texto menor */
+  transform: scale(0.9);
+  /* Reduz um pouco */
+}
+
+.regions-covered li {
+  background: var(--primary-dark);
+  padding: 5px 10px;
+  /* Compacta */
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+/* Mapa */
+.map-container {
+  flex: 1 1 400px;
+  max-width: 600px;
+  position: relative;
+  border-radius: 7px;
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Regiões interativas */
+.region {
+  position: absolute;
+}
+
+.region-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(204, 51, 255, 0.35);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.region:hover .region-overlay {
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(204, 51, 255, 0.6);
+}
+
+/* Hotspots posicionados proporcionalmente */
+.region.sudeste {
+  top: 65%;
+  left: 55%;
+  width: 8%;
+  aspect-ratio: 1/1;
+}
+
+.region.sul {
+  top: 80%;
+  left: 50%;
+  width: 7%;
+  aspect-ratio: 1/1;
+}
+
+.region.nordeste {
+  top: 45%;
+  left: 70%;
+  width: 9%;
+  aspect-ratio: 1/1;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .coverage-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .coverage-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .regions-covered li {
+    width: 100%;
+  }
+
+  .map-container {
+    width: 90%;
+    max-width: 100%;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+  .coverage-container {
+    gap: 20px;
+  }
+
+  .coverage-text h2 {
+    font-size: clamp(1.3rem, 4vw, 2rem);
+  }
+
+  .coverage-text p {
+    font-size: clamp(0.85rem, 3vw, 1.1rem);
+  }
+
+  .regions-covered li {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+  }
+
+  .map-container {
+    width: 100%;
+  }
+}
+
+/* Pequenos smartphones */
+@media (max-width: 480px) {
+  .coverage-section {
+    padding: 20px 10px;
+  }
+
+  .coverage-text h2 {
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
+  }
+
+  .coverage-text p {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+  }
+
+  .regions-covered li {
+    font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+  }
+}
+
+/* Ultra wide screens */
+@media (min-width: 1920px) {
+  .coverage-container {
+    gap: 80px;
+  }
+
+  .coverage-text h2 {
+    font-size: 3rem;
+  }
+
+  .coverage-text p {
+    font-size: 1.5rem;
+  }
+}

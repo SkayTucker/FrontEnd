@@ -1,99 +1,110 @@
+@import url('./global.css');
+
+:root {
+  --dark: #000;
+  --gray-dark: #111;
+  --gray-mid: #1a1a1a;
+  --yellow: #ffeb3b;
+  --yellow-light: #fff176;
+  --red: #e50914;
+  --white: #fff;
+
+  --radius: 16px;
+  --gap: 24px;
+}
+
+/* ===== Seção ===== */
 .fightCardSliderSection {
-  background-color: #000;
+  background-color: var(--primary-dark);
   padding: 3rem 0;
   text-align: center;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
 }
 
+/* ===== Container & Slider ===== */
 .fightCardSliderContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   width: 100%;
-  max-width: 100%;
   overflow: hidden;
 }
 
 .fightCardSliderWrapper {
-  overflow-x: auto;
   width: 100%;
+  overflow: hidden;
+  /* remove scroll bar */
 }
 
 .fightCardSliderTrack {
   display: flex;
-  gap: 24px;
+  gap: var(--gap);
   padding: 0 40px;
-  transition: transform 0.5s ease-in-out;
+  will-change: transform;
 }
 
-/* Estilo de quadrinhos/retângulos heroicos */
+/* ===== Card ===== */
 .fightCardItem {
-  flex: 0 0 calc(100% / 4 - 24px); /* 4 por linha com gap */
-  height: 200px;
-  background: repeating-linear-gradient(
-      135deg,
-      #111,
-      #111 10px,
-      #1a1a1a 10px,
-      #1a1a1a 20px
-  );
-  border: 4px solid #ffeb3b;
-  border-radius: 10px;
-  box-shadow: 4px 4px 0 #e50914, -4px -4px 0 #2196f3;
+  flex: 0 0 calc(25% - var(--gap));
+  height: 220px;
+  background: linear-gradient(145deg, var(--primary-dark), var(--background) 40%, var(--primary-dark));
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
   position: relative;
   text-align: center;
-}
-
-.fightCardItem:hover {
-  transform: scale(1.05);
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
 .fightCardItem img {
   width: 80%;
-  height: auto;
   max-height: 100px;
   object-fit: contain;
-  margin-bottom: 10px;
-  filter: drop-shadow(2px 2px 2px black);
+  margin-bottom: 12px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+  transition: transform 0.3s ease;
 }
 
 .fightCardItem span {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background: #e50914;
-  color: #fff;
-  font-size: 0.75rem;
+  bottom: 12px;
+  right: 12px;
+  background: var(--secondary);
+  color: var(--white);
+  font-size: 0.89rem;
   font-weight: bold;
-  padding: 4px 10px;
-  border-radius: 5px;
+  padding: 4px 12px;
+  border-radius: 6px;
   text-transform: uppercase;
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--dark);
+  letter-spacing: 0.5px;
 }
 
+/* ===== Botões ===== */
 .sliderBtn {
-  background: #ffeb3b;
-  color: #000;
+  background: var(--yellow);
+  color: var(--dark);
   font-size: 2rem;
   border: none;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 54px;
+  height: 54px;
   cursor: pointer;
   z-index: 10;
-  box-shadow: 2px 2px 0 #000;
-  transition: background 0.3s ease;
+  box-shadow: 2px 2px 0 var(--dark);
+  transition: background 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .sliderBtn:hover {
-  background: #fff176;
+  background: var(--yellow-light);
+  transform: scale(1.1);
+  box-shadow: 3px 3px 0 var(--dark);
 }
 
 .leftBtn {
@@ -104,21 +115,35 @@
   margin-left: 10px;
 }
 
+/* ===== Responsividade ===== */
+@media (max-width: 1400px) {
+  .fightCardItem {
+    flex: 0 0 calc(30% - var(--gap));
+  }
+}
+
 @media (max-width: 1024px) {
   .fightCardItem {
-    flex: 0 0 calc(100% / 2.5 - 24px); /* Menos por linha */
+    flex: 0 0 calc(40% - var(--gap));
+  }
+}
+
+@media (max-width: 768px) {
+  .fightCardItem {
+    flex: 0 0 calc(55% - var(--gap));
+    height: 180px;
   }
 }
 
 @media (max-width: 600px) {
   .fightCardItem {
-    flex: 0 0 calc(100% / 1.4 - 24px);
+    flex: 0 0 calc(75% - var(--gap));
     height: 160px;
   }
 
   .sliderBtn {
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
+    width: 44px;
+    height: 44px;
+    font-size: 1.4rem;
   }
 }

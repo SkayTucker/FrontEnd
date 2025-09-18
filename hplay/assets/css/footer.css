@@ -1,42 +1,73 @@
-
 /* Footer */
 footer {
     color: var(--text-color);
-    padding: 20px 0;
-    text-align: center;
     background-color: var(--primary-dark);
+    padding: 40px;
 }
+
 .footer-content {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    /* permite quebrar linha */
+    justify-content: space-evenly;
+    /* centraliza o conjunto no meio */
+    /* alinha topo com topo (h3 com h3) */
+    gap: 60px;
+    /* espaço entre colunas */
+    max-width: 1200px;
+    /* limite máximo no desktop */
+    margin: 0 auto;
+    /* centraliza dentro do footer */
+    text-align: left;
+    /* garante que conteúdo fique coeso */
 }
 
-.footer-content i {
-    margin: 5px;
-    font-size: 1.2rem;
-
+.footer-content>div {
+    flex: 1 1 280px;
+    /* largura mínima de cada bloco */
+    max-width: 350px;
+    /* limite opcional */
 }
 
 .footer-content h3 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+    /* títulos alinhados com o conteúdo */
 }
 
+.footer-content p,
+.footer-content a {
+    margin: 6px 0;
+    display: flex;
+    /* ícone + texto bem alinhados */
+    align-items: center;
+    gap: 8px;
+    /* espaço entre ícone e texto */
+}
+
+.footer-content i {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+/* Links de baixo */
 footer .links {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 15px;
 }
+
 footer .links a {
     color: var(--primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
+    text-align: center;
 }
-.footer-note {
-    margin-top: 20px;
-    font-size: 0.8rem;
+
+footer p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    font-weight: 100;
+    text-align: left;
 }

@@ -1,167 +1,244 @@
-@import url('./global.css');
+@import url(./global.css);
 
-/* HEADER */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--primary-light);
-  color: white;
-  z-index: 1000;
-  transition: all 0.3s ease-in-out;
-  flex-wrap: wrap;
-  font-size: 1.2rem;
-  padding: 5px;
+/* Container principal */
+.main-header {
+    background-color: var(--primary-light);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Header padrão com menu visível */
-header.full {
-  font-size: 1.1rem;
-  text-shadow: 1px 1px 5px black;
-  background-color: transparent;
-  top: 8px;
-}
-
-header.minimized {
-  transition: all 0.3s ease-in-out;
-}
-
-/* Logo */
-header .logo {
-  margin: 0 30px;
-  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.438));
-}
-
-header .logo .logoFull {
-  display: block;
-}
-
-header .logo .logoIcon {
-  display: none;
-}
-
-.menuWrapper {
-  display: flex;
-}
-/* Menu (nav) */
-header nav {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-  padding: 0 5px;
-}
-
-.subMenuHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1.2rem;
-}
-
-.subMenuHeader a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: 500;
-  background-color: var(--primary-light);
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-header nav a {
-  color: white;
-  text-decoration: none;
-  margin: 5px 15px;
-  font-weight: 700;
-  border-bottom: 2px solid transparent;
-}
-
-header nav a:hover {
-  border-bottom: 2px solid goldenrod;
-  color: var(--secondary);
-  transform: scale(1.1);
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-header .clientArea {
-  background-color: var(--secondary);
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  border-radius: 30px 30px/ 70%;
-  padding: 6px 40px;
-}
-
-header .clientArea:hover {
-  background-color: white;
-  color: var(--primary);
-  transition: 0.3s;
-  text-shadow: 1px 1px 1px var(--secondary);
-}
-
-/* Ocultar menu no modo reduzido */
-header.minimized nav {
-  display: none;
-}
-
-.btnApp,
-.btnAcess {
-  padding: 0;
-  margin: 0;
-}
-
-/* Dropdowns escondidos por padrão */
-.dropDownApp,
-.dropDownPcd {
-  display: none;
-  position: absolute;
-  background-color: var(--primary);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-}
-
-/* Quando abertos via JS */
-.dropDownAppShow {
-  display: block;
-  top: 100%;
-  right: 0;
-}
-
-.dropDownPcdShow {
-  display: block;
-  top: 100%;
-  right: 0;
-}
-
-/* Conteúdo dos dropdowns */
-.dropDownApp-content a,
-.dropDownPcd-content a {
-  display: block;
-  padding: 10px 15px;
-  color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: background 0.3s ease;
-}
-
-/* Hover links internos */
-.dropDownApp-content a:hover,
-.dropDownPcd-content a:hover {
-  background-color: var(--secondary);
-  color: black;
-  border-radius: 8px;
+.main-header .container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: padding 0.4s ease;
+    /* smooth no padding */
 }
 
 
-header button {
-  display: none;
+/* Menu desktop */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-/* FIM HEADER*/
+.nav-links li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    filter: drop-shadow(1px 1px 2px var(--primary-light));
+    border: none;
+    font-family: 'Archivo Black';
+}
+
+.nav-links li a:hover {
+    color: var(--primary);
+    transition: 0.5s;
+}
+
+/* Botão hamburger */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    display: none;
+}
+
+/* Menu mobile */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--secondary);
+    color: var(--text-color);
+    padding: 2rem;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.mobile-menu ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.2rem;
+    font-family: 'Archivo Black';
+    border: none;
+    margin: 10px;
+    box-shadow: 0x 1px 2px black;
+    padding: 5px;
+}
+
+.mobile-menu ul li a:hover {
+    color: var(--primary);
+    background-color: var(--primary-light);
+}
+
+/* Botão fechar menu */
+.close-menu {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+/* Menu mobile visível */
+.mobile-menu.open {
+    right: 0;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.logoIcon {
+    display: none;
+}
+
+.logoFull {
+    display: block;
+}
+
+.logoFull img {
+    width: 130px;
+    transform: scale(1);
+    transition: transform 0.4s ease, width 0.4s ease;
+}
+
+.logoIcon img {
+    width: 50px;
+}
+
+
+.main-header.transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Quando header for transparente → logo menor */
+.main-header.transparent .logoFull img {
+    transform: scale(1.2);
+}
+
+.main-header.transparent .container {
+    padding: 10px;
+}
+
+.nav-links li a.active {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    transition: 0.3s;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logoIcon {
+        display: block;
+    }
+
+    .logoFull {
+        display: none;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .logoFull img {
+        width: 200px;
+        padding: 5px;
+    }
+
+    .main-header {
+        width: 100%;
+    }
+
+    .main-header .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 5px 20px;
+        /* opcional, só para não grudar nas bordas */
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+}
+
+.cta-button {
+    position: relative;
+    display: inline-block;
+    padding: 8px 28px;
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2),
+        0 0 8px var(--primary),
+        inset 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    box-shadow: 0 0 15px var(--primary),
+        0 0 30px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    color: #fff;
+}
+
+/* Brilho lâmina */
+.cta-button .shine {
+    position: absolute;
+    top: -50%;
+    left: -95%;
+    width: 90%;
+    height: 250%;
+    background: linear-gradient(120deg,
+            #ffffff00 10%,
+            rgba(255, 255, 255, 0.432) 30%,
+            rgba(255, 255, 255, 0) 80%);
+    transform: rotate(25deg);
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Ripple */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--primary-light);
+    pointer-events: none;
+}

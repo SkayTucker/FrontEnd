@@ -2,7 +2,7 @@
 
 .provedorSection {
     margin-top: 40px;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: var(--background);
     color: var(--text-color);
@@ -11,221 +11,229 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    padding: 40px 20px;
 }
 
+/* Layout base já configurado */
 .provedorContent {
     background-color: var(--primary-dark);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     align-items: center;
+    justify-content: center;
     position: relative;
     width: 100%;
-    height: 95%;
-    overflow: hidden;
+    max-width: 1200px; /* limite padrão */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    z-index: 2;
+    margin: 0 auto; /* centraliza sempre */
 }
 
-/* Ícones flutuando */
-.provedorContent::before,
-.provedorContent::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1;
-}
-
+/* Header */
 .provedorHeader {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     justify-content: center;
     text-align: left;
-    width: 95%;
-    padding: 50px 0;
+    gap: 20px;
 }
 
 .provedorHeader h1 {
-
-    font-size: 3rem;
-    margin-bottom: 20px;
-    padding: 0 40px;
-    width: 80%;
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin: 0;
 }
 
 .provedorHeader p {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
-    padding: 0 50px;
-}
-
-
-.provedorServices {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    font-size: 1.2rem;
+    opacity: 0.9;
 }
 
 .provedorServicesList {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
     list-style: none;
     padding: 0;
-    margin: 0 20px;
 }
 
 .provedorServicesList li {
-    margin: 0 20px;
-    text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .provedorServicesList li i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--primary);
-    margin-bottom: 10px;
 }
 
+/* Form */
 .provedorForm {
+    background-color: var(--background);
+    color: var(--text-color);
+    border-radius: 12px;
+    padding: 30px 25px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 50px 0;
-    padding: 20px;
-    height: 100%;
-    background-color: var(--background);
-    color: var(--text-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 100%;
 }
 
 .provedorForm h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .form-group label {
-    font-size: 1rem;
-    margin-bottom: 5px;
+    font-size: 0.95rem;
     color: var(--text-color);
 }
 
 .form-group input,
 .form-group select {
-    padding: 7px;
+    padding: 12px;
     font-size: 1rem;
     border: 1px solid var(--primary);
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #111;
     color: #fff;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, transform 0.2s ease;
 }
 
 .form-group input:focus,
 .form-group select:focus {
     border-color: var(--primary-light);
+    transform: scale(1.02);
 }
 
 .form-button {
-    padding: 12px;
-    font-size: 1rem;
-    background-color: var(--primary);
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
     color: #fff;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .form-button:hover {
-    background-color: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsividade */
-
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .provedorContent {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
     .provedorHeader {
-        width: 100%;
+        align-items: center;
         text-align: center;
-
-    }
-
-    .provedorHeader h1 {
-        width: 100%;
-        font-size: 1.7rem;
-    }
-
-    .provedorHeader p {
-        font-size: 1rem;
     }
 
     .provedorServicesList {
-        flex-direction: column;
         align-items: center;
     }
 
-    .provedorServicesList li {
-        margin: 0 10px;
-        font-size: 1rem;
-        text-align: center;
+    .provedorForm {
         width: 100%;
     }
+}
 
-    .provedorServicesList li i {
-        font-size: 1.5rem;
+/* UltraWide Responsividade */
+@media (min-width: 1600px) {
+    .provedorContent {
+        max-width: 1600px; /* libera um pouco mais */
+        gap: 60px;
+        padding: 60px;
     }
 
-
-    .provedorSection {
-        padding: 10px;
+    .provedorHeader h1 {
+        font-size: 3rem;
     }
 
-    .provedorSection form {
-        width: 90%;
-        border-radius: 50px 50px / 3%;
-        padding: 20px;
+    .provedorHeader p {
+        font-size: 1.4rem;
     }
 
-    .favicon1,
-    .favicon2,
-    .favicon3 {
-        width: 50px;
-        height: 50px;
+    .provedorServicesList li {
+        font-size: 1.3rem;
+    }
+
+    .provedorForm {
+        padding: 40px 35px;
+    }
+
+    .provedorForm h2 {
+        font-size: 2.2rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 1.1rem;
+        padding: 14px;
+    }
+
+    .form-button {
+        font-size: 1.2rem;
+        padding: 16px;
+    }
+}
+
+/* Super UltraWide (monitores 32:9, >2200px) */
+@media (min-width: 2200px) {
+    .provedorContent {
+        max-width: 1800px; /* não deixa abrir infinito */
+        gap: 80px;
+        padding: 80px;
+    }
+
+    .provedorHeader h1 {
+        font-size: 3.5rem;
+    }
+
+    .provedorHeader p {
+        font-size: 1.6rem;
+        max-width: 90%;
+    }
+
+    .provedorForm {
+        padding: 50px 40px;
+        border-radius: 20px;
+    }
+
+    .provedorForm h2 {
+        font-size: 2.5rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 1.2rem;
+        padding: 16px;
+    }
+
+    .form-button {
+        font-size: 1.3rem;
+        padding: 18px;
     }
 }

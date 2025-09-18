@@ -7,8 +7,7 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <title>Hplay</title>
     <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="A Hplay oferece streaming de canais ao vivo, filmes, séries e esportes com qualidade HD. Assista onde e quando quiser com estabilidade e ótimo custo-benefício.">
+    <meta name="description" content="Seja cliente Hplay e aproveite os benefícios!">
     <meta name="keywords"
         content="streaming de canais, IPTV, TV online, canais ao vivo, filmes, séries, esportes, Hplay, entretenimento digital">
     <meta name="author" content="Hplay">
@@ -16,17 +15,15 @@
 
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Hplay - Streaming de Canais, Filmes e Séries">
-    <meta property="og:description"
-        content="A Hplay oferece streaming de canais ao vivo, filmes, séries e esportes com qualidade HD. Assista onde e quando quiser com estabilidade e ótimo custo-benefício.">
-    <meta property="og:image" content="http://dev.hplay.tv/assets/favicon.ico">
+    <meta property="og:description" content="Seja cliente Hplay e aproveite os benefícios!">
+    <meta property="og:image" content="http://dev.hplay.tv/assets/assinantes.png">
     <!-- Substitua pelo seu link real -->
-    <meta property="og:url" content="http://localhost"> <!-- Substitua pelo seu link real -->
+    <meta property="og:url" content="http://dev.hplay.tv/"> <!-- Substitua pelo seu link real -->
     <meta property="og:type" content="website">
     <!-- Canonical URL -->
-    <meta property="og:image" content="http://dev.hplay.tv/assets/img/favicon.ico">
+    <meta property="og:image" content="http://dev.hplay.tv/assets/img/assinantes.png">
     <meta property="og:url" content="http://dev.hplay.tv/">
     <meta property="og:type" content="website">
-
 
     <!--  Global CSS -->
     <link id="themeStylesheet" rel="stylesheet" href="assets/css/global.css">
@@ -35,29 +32,59 @@
     <link rel="stylesheet" href="assets/css/assinantes.css">
     <link rel="stylesheet" href="assets/css/canaisSlider.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/duvidas.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-
+    <link rel="stylesheet" href="assets/css/juridico.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/planos.css">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/f5de20681c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 
 </head>
 
 <body>
-    <!-- Header -->
-    <header id="main-header" class="full">
-        <nav class="nav-header">
-            <a href="index.html" class="back-link">
-                &lt; Voltar
-            </a>
-            <a href="index.html" class="logo">
-                <img class="logoFull" src="assets/img/png-logo-site.png" alt="Logo Completa" width="120" />
-                <img class="logoIcon" src="assets/img/favicon.ico" alt="Ícone do Site" width="40" />
-            </a>
-        </nav>
+    <!-- HEADER -->
+    <header class="main-header transparent">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logoFull" width="130px" src="assets/img/png-logo-site.png" alt="">
+                    <img class="logoIcon" width="40px" src="assets/img/favicon.ico" alt="">
+                </a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">
+                            < Voltar</a>
+                    </li>
+                    <li><a href="#" class="active">Seja Assinante</a></li>
+                </ul>
+            </nav>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="mobile-menu">
+            <button id="close-menu" class="close-menu" aria-label="Fechar menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="index.html">
+                        < Voltar</a>
+                </li>
+                <li><a href="#" class="active">Seja Assinante</a></li>
+            </ul>
+        </div>
     </header>
 
-    <section class="planos-container">
+    <section class="planos-container" id="home">
+
         <span class="favicon-float favicon1"></span>
         <span class="favicon-float favicon2"></span>
         <span class="favicon-float favicon3"></span>
@@ -73,81 +100,32 @@
         <span class="favicon-float favicon13"></span>
         <span class="favicon-float favicon14"></span>
         <span class="favicon-float favicon15"></span>
-        <h1>Escolha seu Plano</h1>
-        <p class="center">Altere ou cancele quando quiser.</p>
 
-        <div class="plans">
-            <div class="plan">
-                <h2>Start</h2>
-                <div class="price">R$ 19,90/mês</div>
-                <div class="sub-price">7 dias grátis</div>
-                <a href="#" class="btn">Selecionar</a>
-                <details class="channel-dropdown">
-                    <summary>Ver canais</summary>
-                    <div class="channel-icons">
-                        <img src="assets/img/canais/hotgo.png" alt="Globo" title="Globo">
-                        <img src="assets/img/canais/360.png" alt="Record" title="Record">
-                        <!-- Adicione quantos quiser -->
-                    </div>
-                </details>
-            </div>
-            <div class="plan">
-                <h2>Premium</h2>
+        <div class="plan-switch">
+            <input type="radio" id="monthly" name="plan" value="monthly" checked>
+            <label for="monthly"><span>Mensal</span></label>
 
-                <div class="price">R$ 39,90/mês</div>
-                <div class="sub-price">7 dias grátis</div>
-                <a href="#" class="btn">Selecionar</a>
-            </div>
-            <div class="plan">
-                <h2>Master</h2>
-                <div class="price">R$ 59,90/mês</div>
-                <div class="sub-price">7 dias grátis</div>
-                <a href="#" class="btn">Selecionar</a>
-            </div>
+            <input type="radio" id="quarterly" name="plan" value="quarterly">
+            <label for="quarterly"><span>Semestral</span></label>
+
+            <input type="radio" id="yearly" name="plan" value="yearly">
+            <label for="yearly"><span>Anual</span></label>
+
+            <div class="switch-slider"></div>
         </div>
 
-        <section class="fightCardSliderSection">
-            <p class="destaque-esporte">
-                🥊 Ao vivo: UFC, Boxe, WWE, MMA e grandes combates esportivos!
-            </p>
-            <div class="fightCardSliderContainer">
-                <button class="sliderBtn leftBtn">‹</button>
 
-                <div class="fightCardSliderWrapper">
-                    <div class="fightCardSliderTrack">
-                        <div class="fightCardItem">
-                            <img src="assets/img/canais/combate.png" alt="Combate" />
-                            <span>AO VIVO</span>
-                        </div>
-                        <div class="fightCardItem">
-                            <img src="assets/img/canais/ufc.png" alt="UFC" />
-                            <span>EXCLUSIVO</span>
-                        </div>
-                        <div class="fightCardItem">
-                            <img src="assets/img/canais/wwe.png" alt="WWE" />
-                            <span>PPV</span>
-                        </div>
-                        <div class="fightCardItem">
-                            <img src="assets/img/canais/boxingtv.png" alt="BoxingTV" />
-                            <span>INTERNACIONAL</span>
-                        </div>
-                        <!-- Adicione mais itens conforme desejar -->
-                    </div>
-                </div>
-
-                <button class="sliderBtn rightBtn">›</button>
+        <div class="planContainer">
+            <div id="planContent" tabindex="0" aria-live="polite" aria-atomic="true">
+                <!-- Conteúdo dos planos será carregado aqui via AJAX -->
+                <p>Carregando planos...</p>
             </div>
-        </section>
-
-
-
-
-
+        </div>
         <div class="table-wrapper">
             <table>
                 <tr>
                     <th>Recursos</th>
-                    <th>Start</th>
+                    <th>basic</th>
                     <th>Premium</th>
                     <th>Master</th>
                 </tr>
@@ -183,53 +161,157 @@
                 </tr>
                 <tr>
                     <td>Qualidade de vídeo e áudio</td>
-                    <td>HD + estéreo</td>
-                    <td>Full HD + 5.1</td>
-                    <td>4K UHD + Dolby Atmos</td>
+                    <td>HD</td>
+                    <td>Full HD</td>
+                    <td>Full HD</td>
                 </tr>
                 <tr>
                     <td>Telas simultâneas</td>
+                    <td>1</td>
                     <td>2</td>
-                    <td>4</td>
                     <td>4</td>
                 </tr>
             </table>
         </div>
-    </section>
 
+        <section id="duvidas" class="duvidas linear-gradient">
+            <h1>Dúvidas Frequentes</h1>
+            <div class="duvidasContent">
 
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <h3>Contato</h3>
-                <p><i class="fa fa-map-marker me-3"></i>
-                    AV BRASIL, 120 - CENTRO.<br>
-                    PALMITOS/SC, 89887-000</p>
-                <p><i class="fa fa-whatsapp"></i>(49)3647.2586</p>
-                <p><i class="fa fa-envelope me-3"></i>hplaystreaming@gmail.com</p>
-            </div>
+                <div class="dropdown-section">
+                    <details>
+                        <summary>Dispositivos Compatíveis
+                        </summary>
+                        <p>Smartphone/Tablet - TVs Smart - Computadores/Notebooks
 
-            <div class="social-media">
-                <h3>Redes Sociais</h3>
-                <div style="display: flex; flex-direction: column;">
-                    <a href="https://www.instagram.com/hplay/" style="text-decoration: none; color: white;"><i
-                            class="fa-brands fa-instagram"></i>Instagram</a>
-                    <a href="http://wa.me/558186074648" style="text-decoration: none; color: white;"><i
-                            class="fa fa-whatsapp"></i>Whatsapp</a>
-                    <div style="display: flex; align-items: center; justify-content: center;">
-                        <a style="margin: 10px;" href="https://apps.apple.com/br/app/hplay"
-                            title="baixar app na apple store">
-                            <img src="assets/img/applestore.png" width="120px" alt="applestore.png">
-                        </a>
-                        <a style="margin: 10px;" href="https://play.google.com/store/apps/details?id=com.r3r.hplay"
-                            title="baixar app na google play">
-                            <img src="assets/img/googleplay.png" width="120px" alt="googleplay.png">
-                        </a>
-                    </div>
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Como Funciona a Plataforma?
+                        </summary>
+                        <p>Este é um novo método que usa somente o sinal de Internet. Você pode assistir a todo o
+                            conteúdo de onde estiver, com apenas 10 MB de conexão.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>O que é Guia EPG?</summary>
+                        <p> O Guia de Programação Eletrônica (EPG), é uma interface digital que exibe a grade de
+                            programação de canais, tanto atual quanto a futura dos conteúdos ao vivo. Exibe informações
+                            como o horário dos programas, título, descrição, gênero e duração.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Posso testar antes de assinar?
+                        </summary>
+                        <p>Sim! Disponibilizamos um teste de 24 horas, justamente para você poder conhecer a plataforma
+                            e todo o conteúdo.
+
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Como funciona o pagamento?
+                        </summary>
+                        <p>Trabalhamos com o sistema PIX e também cartão de crédito recorrente. Possuímos planos
+                            mensais, com renovação livre. Bem como planos mais longos, como os anuais, com grandes
+                            descontos. O poder de escolha é todo seu!
+
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Como funcionam as renovações?
+                        </summary>
+                        <p>Nossas assinaturas não possuem taxas, multas ou fidelidades, podendo ser canceladas a
+                            qualquer momento.</p>
+                    </details>
                 </div>
             </div>
-            <img src="assets/img/png-logo-site.png" width="150px" alt="Hplay Logo">
+        </section>
+    </section>
+
+    <!-- Modal Jurídico -->
+    <div id="legalModal" class="legal-modal-overlay">
+        <div class="legal-modal-content">
+            <span class="close-btn" onclick="closeLegalModal()">×</span>
+            <div style="max-height:600px; overflow-y:auto; font-size:14px; line-height:1.5; width: 100%;">
+                <p>1. Valores promocionais válidos apenas para
+                    novos assinantes e por tempo limitado para vendas de assinaturas realizadas nesta página. Ao
+                    sair
+                    desta página sem efetivar a contratação, você poderá perder o acesso a este preço</p>
+                <p>2. O Premiere exibe para seus assinantes os
+                    seguintes jogos ao vivo: todos os jogos da Copa do Nordeste 2025 a partir da fase de grupos;
+                    todos
+                    os jogos dos Campeonato Mineiro 2025 dos clubes Atlético Mineiro, América Mineiro e Cruzeiro,
+                    incluindo as fases decisivas; todos os jogos do Campeonato Gaúcho 2025 dos clubes Grêmio,
+                    Internacional e Juventude, também incluindo as fases decisivas; jogos do Campeonato Carioca 2025
+                    dos
+                    quatro clubes representantes do estado na Série A do Brasileirão de 2025 – Botafogo, Flamengo,
+                    Fluminense e Vasco – até a fase final da competição; todas as partidas do torneio amistoso FC
+                    Series, com a participação de clubes brasileiros; 54 jogos da Copa do Brasil 2025 (da 1ª fase
+                    até a
+                    final); e 342 jogos do Campeonato Brasileiro Série A 2025, sendo 9 jogos por rodada. A
+                    disponibilização desses campeonatos e partidas, bem como sua abrangência, está sujeita às
+                    negociações em andamento e pode ser alterada a qualquer tempo e a exclusivo critério da Globo.
+                </p>
+                <p>3. A assinatura do Combate está sujeita aos
+                    termos do respectivo contrato de assinatura, conforme a modalidade contratada: plano mensal por
+                    R$34,90/mês; plano anual por R$ 238,80/ano, divididos em 12 parcelas de R$ 19,90. A assinatura
+                    do
+                    plano anual dá acesso ao Combate por 12 meses, contados a partir da sua data de assinatura.
+                    Verifique a disponibilidade e as condições específicas da oferta dos planos do Combate (i)
+                    diretamente junto à Globo através da internet (combate.globo) ou (ii) junto à sua Operadora.
+                    Oferta
+                    do plano anual não disponível para contratações via loja de aplicativos da Apple. Parcelamento
+                    do
+                    plano anual não disponível para contratações via loja de aplicativos Google. Os atuais preços
+                    são
+                    exclusivos para os novos assinantes.</p>
+            </div>
         </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Contato -->
+            <div class="contact-info">
+                <h3>Contato</h3>
+                <p><i class="bi bi-pin-map"></i>Av Brasil, 120, Centro, Palmitos/SC</p>
+
+                <p>
+                    <i class="bi bi-envelope-at-fill"></i>
+                    contato@hplay.com.br
+                </p>
+            </div>
+            <!-- Redes sociais -->
+            <div class="social-media">
+                <h3>Redes Sociais</h3>
+                <a href="https://www.instagram.com/hplay.streaming/">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+                <a
+                    href="https://api.whatsapp.com/send?phone=+554936472586&text=Ol%C3%A1+Encontrei+voc%C3%AA+pelo+site+gostaria+de+mais+informa%C3%A7%C3%B5es">
+                    <i class="bi bi-whatsapp"></i> Whatsapp
+                </a>
+                <a href="https://www.youtube.com/@HplayStreaming">
+                    <i class="bi bi-youtube"></i> Youtube
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=tv.hplay.hplaystreaming&hl=pt_BR">
+                    <i class="bi bi-google-play"></i> Google Play
+                </a>
+            </div>
+        </div>
+
+        <!-- Links extras -->
         <div class="links">
             <a href="#">FAQ</a>
             <a href="#">Suporte</a>
@@ -237,8 +319,43 @@
             <a href="#">Política de Privacidade</a>
             <a href="#">Termos de Serviço</a>
         </div>
-        <p class="footer-note">&copy; 2025 - Hplay. Todos os direitos reservados.</p>
+
     </footer>
+
+
+    <button class="juridico-toggle" onclick="showLegalModal()">Informações legais</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const details = document.querySelectorAll(".dropdown-section details");
+
+            details.forEach((el) => {
+                const content = el.querySelector("p");
+
+                // estado inicial
+                content.style.overflow = "hidden";
+                content.style.maxHeight = "0";
+                content.style.transition = "max-height 0.4s ease";
+
+                // ao abrir/fechar
+                el.addEventListener("toggle", () => {
+                    if (el.open) {
+                        content.style.maxHeight = content.scrollHeight + "px"; // expande suave
+                    } else {
+                        content.style.maxHeight = "0"; // recolhe suave
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    </script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/canaisslider.js"></script>
+    <script src="assets/js/juridico.js"></script>
+    <script src="assets/js/planos.js"></script>
+
 </body>
 
 </html>

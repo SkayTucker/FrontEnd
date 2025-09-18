@@ -1,23 +1,30 @@
-const track = document.querySelector('.fightCardSliderTrack');
-const leftBtn = document.querySelector('.leftBtn');
-const rightBtn = document.querySelector('.rightBtn');
+document.addEventListener("DOMContentLoaded", function () {
+    const slideTrack = document.querySelector(".fightCardSliderTrack");
+    const slideItems = Array.from(slideTrack.children);
 
-let scrollAmount = 0;
-const cardWidth = 200; // Largura + gap
+    // Guarda a largura do bloco original
+    const originalWidth = slideTrack.scrollWidth;
 
-rightBtn.addEventListener('click', () => {
-  scrollAmount += cardWidth;
-  track.scrollTo({
-    left: scrollAmount,
-    behavior: 'smooth'
-  });
-});
+    // Clona os itens para duplicar e criar efeito infinito
+    slideItems.forEach(item => {
+        const clone = item.cloneNode(true);
+        slideTrack.appendChild(clone);
+    });
 
-leftBtn.addEventListener('click', () => {
-  scrollAmount -= cardWidth;
-  if (scrollAmount < 0) scrollAmount = 0;
-  track.scrollTo({
-    left: scrollAmount,
-    behavior: 'smooth'
-  });
+    let position = 0;
+    const speed = 1; // px/frame (ajuste fino depois)
+
+    function animateSlide() {
+        position -= speed;
+        slideTrack.style.transform = `translateX(${position}px)`;
+
+        // Quando atingir a largura do bloco original, reseta
+        if (Math.abs(position) >= originalWidth) {
+            position = 0;
+        }
+
+        requestAnimationFrame(animateSlide);
+    }
+
+    animateSlide();
 });

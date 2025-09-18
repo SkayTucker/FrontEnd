@@ -1,21 +1,155 @@
 /* ====== IMPORTS ====== */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Sora:wght@100..800&display=swap');
 
+/* ====== ROOT VARIÁVEIS ====== */
+:root {
+  /* Paleta */
+  --background: #000000;
+  --primary: #cc33ff;
+  --secondary: #380349;
+  --primary-dark: #463e4977;
+  --primary-light: #9a77a88f;
+  --text-color: #ffffff;
+  --links: #380349;
+  --links-hover: #cc33ff;
 
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, #cc33ff, #380349);
 
-/* Fontes locais */
-@font-face {
-  font-family: 'Riga';
-  src: url('../font/Riga.ttf') format('truetype');
+  /* Tipografia - escalas fluidas */
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.85rem);
+  --font-size-sm: clamp(1rem, 0.9rem + 0.3vw, 1rem);
+  --font-size-base: clamp(1.8rem, 0.9rem + 0.4vw, 1.1rem);
+  --font-size-lg: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --font-size-xl: clamp(1.5rem, 1.3rem + 0.6vw, 2rem);
+  --font-size-x2: clamp(2rem, 1.9rem + 0.7vw, 2.3rem);
+  --font-size-2xl: clamp(2rem, 1.7rem + 0.8vw, 2.5rem);
+  --font-size-3xl: clamp(2.5rem, 2.2rem + 1vw, 3.5rem);
+  --font-size-4xl: clamp(3.5rem, 3.2rem + 1vw, 4rem);
+
+  /* Containers */
+  --max-width: 1280px;
+  --container-padding: 1rem;
 }
 
-@font-face {
-  font-family: 'Riga Light';
-  src: url('../font/Riga-Light.ttf') format('truetype');
+/* ====== RESET ====== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Animação opcional */
+/* ====== BASE ====== */
+body {
+  font-family: "Sora", sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Container padrão */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* ====== TIPOGRAFIA ====== */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+}
+
+p,
+li,
+a,
+span {
+  font-size: var(--font-size-base);
+  line-height: 1.7;
+  font-weight: 100;
+}
+
+/* ====== LINKS ====== */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--links-hover);
+}
+
+/* Footer Links */
+footer a {
+  color: var(--text-color);
+  font-size: var(--font-size-sm);
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--links-hover);
+}
+
+.ico {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+/* ====== SLIDESHOW ====== */
+.homeSlideshow .slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-1 {
+  background: url('../img/slider.jpg') no-repeat center/cover;
+}
+
+.slide-2 {
+  background: url('../img/slider2.png') no-repeat center/cover;
+}
+
+/* Mobile Slideshow */
+@media (max-width: 1024px) {
+  .slide-1 {
+    background-image: url('../img/slider-mobile1.png');
+  }
+
+  .slide-2 {
+    background-image: url('../img/slider-mobile2.jpg');
+  }
+}
+
+/* ====== ANIMAÇÕES ====== */
 @keyframes slideInFromTop {
   from {
     opacity: 0;
@@ -28,222 +162,6 @@
   }
 }
 
-@keyframes float {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-100px) rotate(10deg);
-  }
-
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-}
-
-@keyframes floatLogo {
-  0% {
-    transform: translateY(0px) rotate(0deg);
-  }
-
-  25% {
-    transform: translateY(-10px) rotate(-10deg);
-  }
-
-  50% {
-    transform: translateY(-10px) rotate(10deg);
-  }
-
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-}
-
-.favicon-float {
-  position: absolute;
-  background-image: url('../img/favicon.ico');
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  z-index: 0;
-  animation: float 20s infinite ease-in-out;
-}
-
-.favicon1 {
-  top: 10%;
-  left: 15%;
-  width: 60px;
-  height: 60px;
-  animation-duration: 22s;
-}
-
-.favicon2 {
-  top: 40%;
-  left: 70%;
-  width: 40px;
-  height: 40px;
-  animation-duration: 18s;
-}
-
-.favicon3 {
-  top: 70%;
-  left: 30%;
-  width: 50px;
-  height: 50px;
-  animation-duration: 24s;
-}
-
-.favicon4 {
-  top: 20%;
-  left: 50%;
-  width: 45px;
-  height: 45px;
-  animation-duration: 20s;
-}
-
-.favicon5 {
-  top: 60%;
-  left: 80%;
-  width: 35px;
-  height: 35px;
-  animation-duration: 26s;
-}
-
-.favicon6 {
-  top: 80%;
-  left: 10%;
-  width: 55px;
-  height: 55px;
-  animation-duration: 23s;
-}
-
-.favicon6 {
-  top: 80%;
-  left: 10%;
-  width: 55px;
-  height: 55px;
-  animation-duration: 23s;
-}
-
-.favicon7 {
-  top: 50%;
-  left: 10%;
-  width: 55px;
-  height: 55px;
-  animation-duration: 13s;
-}
-
-.favicon8 {
-  top: 80%;
-  left: 50%;
-  width: 55px;
-  height: 55px;
-  animation-duration: 7s;
-}
-
-.favicon9 {
-  top: 80%;
-  left: 90%;
-  width: 55px;
-  height: 55px;
-  animation-duration: 25s;
-}
-
-.favicon10 {
-  top: 80%;
-  left: 10%;
-  width: 55px;
-  height: 55px;
-  animation-duration: 23s;
-}
-
-.favicon10 {
-  top: 80%;
-  left: 10%;
-  width: 55px;
-  height: 55px;
-  animation-duration: 23s;
-}
-
-.favicon11 {
-  top: 100%;
-  left: 60%;
-  width: 100px;
-  height: 55px;
-  animation-duration: 13s;
-
-}
-
-.favicon12 {
-  top: 10%;
-  left: 60%;
-  width: 100px;
-  height: 55px;
-  animation-duration: 13s;
-
-}
-
-.favicon13 {
-  top: 100%;
-  left: 40%;
-  width: 100px;
-  height: 65px;
-  animation-duration: 13s;
-
-}
-
-/* ====== ROOT VARIÁVEIS ====== */
-:root {
-  --background: #000000;
-  --primary: #cc33ff;
-  --secondary: #380349;
-  --primary-dark: #463e4977;
-  --primary-light: #9a77a88f;
-  --text-color: #ffffff;
-  --links: #380349;
-  --links-hover: #cc33ff;
-}
-
-/* ====== RESET E BASE ====== */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-
-body {
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: var(--text-color);
-  background-color: var(--background);
-  line-height: 1.5;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
-h1,
-h2,
-h3 {
-  color: var(--text-color);
-}
-
-.footer a {
-  color: var(--links);
-  text-decoration: none;
-  display: block;
-  margin: 5px 0;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-/* ====== ANIMAÇÕES ====== */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -254,6 +172,37 @@ h3 {
   }
 }
 
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-100px) rotate(10deg);
+  }
+}
+
+@keyframes floatLogo {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ====== HELPERS ====== */
 .animate {
   opacity: 1;
   transform: translateY(0);
@@ -279,62 +228,99 @@ h3 {
   animation: fadeIn 2.5s ease-in-out;
 }
 
-/* ====== HEADER ====== */
-
-
-
-/*Propriedades da pagina*/
-.container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+/* ====== FAVICONS FLOAT ====== */
+.favicon-float {
+  position: absolute;
+  background: url('../img/favicon.ico') no-repeat center/contain;
+  opacity: 0.15;
+  z-index: 0;
+  animation: float 20s infinite ease-in-out;
 }
 
+.favicon1 {
+  top: 10%;
+  left: 55%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 22s;
+}
 
+.favicon2 {
+  top: 15%;
+  left: 70%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 18s;
+}
 
-/* Celulares */
-@media (width > 1024px) {
+.favicon3 {
+  top: 25%;
+  left: 30%;
+  width: 50px;
+  height: 50px;
+  animation-duration: 24s;
+}
 
-  .homeSlideshow .slide {
-    background-position: center;
+.favicon4 {
+  top: 20%;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  animation-duration: 20s;
+}
+
+.favicon5 {
+  top: 45%;
+  left: 80%;
+  width: 35px;
+  height: 35px;
+  animation-duration: 26s;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: var(--font-size-2xl);
   }
 
-  .slide-1 {
-    background: url('../img/slider1.png') left;
-
+  h2 {
+    font-size: var(--font-size-xl);
   }
 
-  .slide-2 {
-    /* background-image: url('../img/1366x768-2.JPG'); */
-    background-image: url('../img/slider2.jpg');
-  }
-
-  .slide-3 {
-    /* background-image: url('../img/1366x768-2.JPG'); */
-    background-image: url('../img/slider3.png');
+  .container {
+    padding: 0 1rem;
   }
 }
 
-
-
-/* Celulares */
-@media (width < 1024px) {
-  .home-section {
-    height: 50vh;
+/* Smartphones */
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--font-size-xl);
   }
 
-  .slide-1 {
-    /* background-image: url('../img/1366x768.JPG'); */
-    background-image: url('../img/slider-mobile1.jpg');
+  h2 {
+    font-size: var(--font-size-lg);
   }
 
-  .slide-2 {
-    /* background-image: url('../img/1366x768-2.JPG'); */
-    background-image: url('../img/slider-mobile2.jpg');
+  p {
+    font-size: var(--font-size-sm);
   }
 
-  .slide-3 {
-    /* background-image: url('../img/1366x768-2.JPG'); */
-    background-image: url('../img/slider-mobile3.jpg');
+}
+
+/* Pequenos smartphones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: var(--font-size-lg);
+  }
+
+  h2 {
+    font-size: var(--font-size-base);
+  }
+
+  footer a {
+    font-size: var(--font-size-xs);
   }
 }

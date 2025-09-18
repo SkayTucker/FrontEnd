@@ -1,0 +1,64 @@
+#funcionalidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+#funcionalidades h1 {
+  font-size: clamp(2rem, 1.5rem + 1.5vw, 2.8rem);
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* Grid responsivo */
+.funcionalidades-list {
+  width: 80%;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* centraliza cada card */
+  margin: 0 50px;
+}
+
+/* Card */
+.funcionalidades-list li {
+  list-style: none;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--primary-dark);
+  border: 1px solid var(--secondary);
+  padding: 25px;
+  margin: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  /* garante coesão no desktop */
+}
+
+.funcionalidades-list li:hover {
+  background-color: var(--secondary);
+  box-shadow: 0 4px 12px var(--primary-dark);
+  color: white;
+  transform: translateY(-5px);
+  cursor: default;
+}
+
+.funcionalidades-list li p {
+  margin-top: 15px;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+  line-height: 1.5;
+}
+
+.funcionalidades-list li i {
+  font-size: clamp(2.5rem, 2rem + 1vw, 4rem);
+  margin-bottom: 15px;
+  color: var(--primary);
+}
